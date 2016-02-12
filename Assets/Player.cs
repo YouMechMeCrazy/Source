@@ -118,6 +118,12 @@ public class Player : MonoBehaviour {
 
     }
 
+    void OnTriggerStay(Collider other) {
+        if (other.GetComponent<Button>()&&Input.GetButtonDown("PickUp")){
+            other.GetComponent<Button>().Hit();
+        }
+    }
+
 
     void Movement() {
         float speedMult = GetSpeedMult();
@@ -153,7 +159,7 @@ public class Player : MonoBehaviour {
     {
 
         RaycastHit[] hits;
-        hits = Physics.BoxCastAll(center, new Vector3(0.3f, 0.3f, 0.3f), Vector3.down, Quaternion.identity, fallspeed * Time.deltaTime+0.5f);
+        hits = Physics.BoxCastAll(center, new Vector3(0.3f, 0.3f, 0.3f), Vector3.down, Quaternion.identity, fallspeed * Time.deltaTime+0.5f,1,QueryTriggerInteraction.Ignore);
        
         if (hits.Length > 0)
         {
@@ -222,7 +228,7 @@ public class Player : MonoBehaviour {
         if (holding != null)
         {
             armFacingVector = Quaternion.AngleAxis(armFacingAngle, Vector3.up) * Vector3.right;
-            if (Physics.CheckSphere(center+armFacingVector*(reach+holding.GetSize()), holding.GetSize())) { armFacingAngle = oldFacingAngle; }
+            if (Physics.CheckSphere(center+armFacingVector*(reach+holding.GetSize()), holding.GetSize(),1, QueryTriggerInteraction.Ignore)) { armFacingAngle = oldFacingAngle; }
         }
 
         //Debug.Log(facingangle.ToString() + " " + inputangle.ToString());
@@ -230,8 +236,8 @@ public class Player : MonoBehaviour {
 
     bool WallCheck(Vector3 offset) {
         
-        if (holding != null) { if( Physics.CheckSphere(holding.transform.position + offset, holding.GetSize())){ return true; } }
-        if (Physics.CheckSphere(center + offset, 0.5f)){ return true; }
+        if (holding != null) { if( Physics.CheckSphere(holding.transform.position + offset, holding.GetSize(),1,QueryTriggerInteraction.Ignore)){ return true; } }
+        if (Physics.CheckSphere(center + offset, 0.5f, 1, QueryTriggerInteraction.Ignore)){ return true; }
         return false;
         
     }
