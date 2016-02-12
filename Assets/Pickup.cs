@@ -23,7 +23,7 @@ public class Pickup : MonoBehaviour {
 
    protected virtual void Gravity() {
         RaycastHit[] hits;
-        hits = Physics.BoxCastAll(transform.position, new Vector3(0.3f, 0.3f, 0.3f), Vector3.down, Quaternion.identity, fallspeed * Time.deltaTime + 0.5f);
+        hits = Physics.BoxCastAll(transform.position, new Vector3(0.3f, 0.3f, 0.3f), Vector3.down, Quaternion.identity, fallspeed * Time.deltaTime + 0.5f,1,QueryTriggerInteraction.Ignore);
         bool ok = false;
         if (hits.Length > 0)
         {
