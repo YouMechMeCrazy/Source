@@ -28,7 +28,7 @@ public class PressurePlate : MonoBehaviour {
 
     bool on = false;
 
-	// Use this for initialization
+	
 	void Start () {
         TriggerList = new List<Collider>();
 	}
