@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: e60a13e537e2c7448b75833141e13eb5
+timeCreated: 1455917904
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Red_Robot_Rig_final:LOW_JNT_GRP
+    100004: Red_Robot_Rig_final:polySurface1
+    100006: Red_Robot_Rig_final:polySurface10
+    100008: Red_Robot_Rig_final:polySurface11
+    100010: Red_Robot_Rig_final:polySurface12
+    100012: Red_Robot_Rig_final:polySurface13
+    100014: Red_Robot_Rig_final:polySurface13 1
+    100016: Red_Robot_Rig_final:polySurface14
+    100018: Red_Robot_Rig_final:polySurface15
+    100020: Red_Robot_Rig_final:polySurface16
+    100022: Red_Robot_Rig_final:polySurface17
+    100024: Red_Robot_Rig_final:polySurface18
+    100026: Red_Robot_Rig_final:polySurface19
+    100028: Red_Robot_Rig_final:polySurface2
+    100030: Red_Robot_Rig_final:polySurface20
+    100032: Red_Robot_Rig_final:polySurface21
+    100034: Red_Robot_Rig_final:polySurface22
+    100036: Red_Robot_Rig_final:polySurface23
+    100038: Red_Robot_Rig_final:polySurface24
+    100040: Red_Robot_Rig_final:polySurface25
+    100042: Red_Robot_Rig_final:polySurface26
+    100044: Red_Robot_Rig_final:polySurface27
+    100046: Red_Robot_Rig_final:polySurface3
+    100048: Red_Robot_Rig_final:polySurface4
+    100050: Red_Robot_Rig_final:polySurface5
+    100052: Red_Robot_Rig_final:polySurface6
+    100054: Red_Robot_Rig_final:polySurface7
+    100056: Red_Robot_Rig_final:polySurface8
+    100058: Red_Robot_Rig_final:polySurface9
+    100060: Red_Robot_Rig_final:red_robot_l_foot_jnt
+    100062: Red_Robot_Rig_final:red_robot_l_leg_1_jnt
+    100064: Red_Robot_Rig_final:red_robot_l_leg_2_jnt
+    100066: Red_Robot_Rig_final:red_robot_l_toe_jnt
+    100068: Red_Robot_Rig_final:red_robot_l_toetip_jnt
+    100070: Red_Robot_Rig_final:red_robot_lower_hips_jnt
+    100072: Red_Robot_Rig_final:red_robot_r_foot_jnt
+    100074: Red_Robot_Rig_final:red_robot_r_leg_1_jnt
+    100076: Red_Robot_Rig_final:red_robot_r_leg_2_jnt
+    100078: Red_Robot_Rig_final:red_robot_r_toe_jnt
+    100080: Red_Robot_Rig_final:red_robot_r_toetip_jnt
+    100082: Red_Robot_Rig_final:Robot_Red
+    100084: Red_Robot_Rig_final:transform1
+    100086: Red_Robot_Rig_final:transform10
+    100088: Red_Robot_Rig_final:transform11
+    100090: Red_Robot_Rig_final:transform12
+    100092: Red_Robot_Rig_final:transform13
+    100094: Red_Robot_Rig_final:transform14
+    100096: Red_Robot_Rig_final:transform15
+    100098: Red_Robot_Rig_final:transform16
+    100100: Red_Robot_Rig_final:transform17
+    100102: Red_Robot_Rig_final:transform18
+    100104: Red_Robot_Rig_final:transform19
+    100106: Red_Robot_Rig_final:transform2
+    100108: Red_Robot_Rig_final:transform20
+    100110: Red_Robot_Rig_final:transform21
+    100112: Red_Robot_Rig_final:transform22
+    100114: Red_Robot_Rig_final:transform23
+    100116: Red_Robot_Rig_final:transform24
+    100118: Red_Robot_Rig_final:transform25
+    100120: Red_Robot_Rig_final:transform26
+    100122: Red_Robot_Rig_final:transform27
+    100124: Red_Robot_Rig_final:transform28
+    100126: Red_Robot_Rig_final:transform3
+    100128: Red_Robot_Rig_final:transform4
+    100130: Red_Robot_Rig_final:transform5
+    100132: Red_Robot_Rig_final:transform6
+    100134: Red_Robot_Rig_final:transform7
+    100136: Red_Robot_Rig_final:transform8
+    100138: Red_Robot_Rig_final:transform9
+    400000: //RootNode
+    400002: Red_Robot_Rig_final:LOW_JNT_GRP
+    400004: Red_Robot_Rig_final:polySurface1
+    400006: Red_Robot_Rig_final:polySurface10
+    400008: Red_Robot_Rig_final:polySurface11
+    400010: Red_Robot_Rig_final:polySurface12
+    400012: Red_Robot_Rig_final:polySurface13
+    400014: Red_Robot_Rig_final:polySurface13 1
+    400016: Red_Robot_Rig_final:polySurface14
+    400018: Red_Robot_Rig_final:polySurface15
+    400020: Red_Robot_Rig_final:polySurface16
+    400022: Red_Robot_Rig_final:polySurface17
+    400024: Red_Robot_Rig_final:polySurface18
+    400026: Red_Robot_Rig_final:polySurface19
+    400028: Red_Robot_Rig_final:polySurface2
+    400030: Red_Robot_Rig_final:polySurface20
+    400032: Red_Robot_Rig_final:polySurface21
+    400034: Red_Robot_Rig_final:polySurface22
+    400036: Red_Robot_Rig_final:polySurface23
+    400038: Red_Robot_Rig_final:polySurface24
+    400040: Red_Robot_Rig_final:polySurface25
+    400042: Red_Robot_Rig_final:polySurface26
+    400044: Red_Robot_Rig_final:polySurface27
+    400046: Red_Robot_Rig_final:polySurface3
+    400048: Red_Robot_Rig_final:polySurface4
+    400050: Red_Robot_Rig_final:polySurface5
+    400052: Red_Robot_Rig_final:polySurface6
+    400054: Red_Robot_Rig_final:polySurface7
+    400056: Red_Robot_Rig_final:polySurface8
+    400058: Red_Robot_Rig_final:polySurface9
+    400060: Red_Robot_Rig_final:red_robot_l_foot_jnt
+    400062: Red_Robot_Rig_final:red_robot_l_leg_1_jnt
+    400064: Red_Robot_Rig_final:red_robot_l_leg_2_jnt
+    400066: Red_Robot_Rig_final:red_robot_l_toe_jnt
+    400068: Red_Robot_Rig_final:red_robot_l_toetip_jnt
+    400070: Red_Robot_Rig_final:red_robot_lower_hips_jnt
+    400072: Red_Robot_Rig_final:red_robot_r_foot_jnt
+    400074: Red_Robot_Rig_final:red_robot_r_leg_1_jnt
+    400076: Red_Robot_Rig_final:red_robot_r_leg_2_jnt
+    400078: Red_Robot_Rig_final:red_robot_r_toe_jnt
+    400080: Red_Robot_Rig_final:red_robot_r_toetip_jnt
+    400082: Red_Robot_Rig_final:Robot_Red
+    400084: Red_Robot_Rig_final:transform1
+    400086: Red_Robot_Rig_final:transform10
+    400088: Red_Robot_Rig_final:transform11
+    400090: Red_Robot_Rig_final:transform12
+    400092: Red_Robot_Rig_final:transform13
+    400094: Red_Robot_Rig_final:transform14
+    400096: Red_Robot_Rig_final:transform15
+    400098: Red_Robot_Rig_final:transform16
+    400100: Red_Robot_Rig_final:transform17
+    400102: Red_Robot_Rig_final:transform18
+    400104: Red_Robot_Rig_final:transform19
+    400106: Red_Robot_Rig_final:transform2
+    400108: Red_Robot_Rig_final:transform20
+    400110: Red_Robot_Rig_final:transform21
+    400112: Red_Robot_Rig_final:transform22
+    400114: Red_Robot_Rig_final:transform23
+    400116: Red_Robot_Rig_final:transform24
+    400118: Red_Robot_Rig_final:transform25
+    400120: Red_Robot_Rig_final:transform26
+    400122: Red_Robot_Rig_final:transform27
+    400124: Red_Robot_Rig_final:transform28
+    400126: Red_Robot_Rig_final:transform3
+    400128: Red_Robot_Rig_final:transform4
+    400130: Red_Robot_Rig_final:transform5
+    400132: Red_Robot_Rig_final:transform6
+    400134: Red_Robot_Rig_final:transform7
+    400136: Red_Robot_Rig_final:transform8
+    400138: Red_Robot_Rig_final:transform9
+    4300000: Red_Robot_Rig_final:polySurface13
+    9500000: //RootNode
+    13700000: Red_Robot_Rig_final:polySurface13
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

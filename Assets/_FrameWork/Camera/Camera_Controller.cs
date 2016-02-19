@@ -28,10 +28,18 @@ public class Camera_Controller : MonoBehaviour {
     public LayerMask bounds;//use this layer for level bounds.
    
     Ray[] cameraBounds = new Ray[4];//Quad rays that delimit the camera view. (top, bot, right, left)
-    bool[] boundHitting = new bool[4]{false, false, false, false};//The result of the raycast from cameraBounds[]. True means we have hit a wall.
+
+    //The result of the raycast from cameraBounds[] and movement between current position and mean position.
+    //[0] hit top; [1] hit bot; [2] hit right; [3] hit left; [4] moving Up; [5] moving down; [6] moving right; [7] moving left
+    bool[] boundHittingAndMovement = new bool[8]{false, false, false, false, false, false, false, false };
     
+
+    Vector3 boundOffsets = new Vector3(0f,0f,0f);
+
     //Vector to manipulate to set camera new target position.
     Vector3 newMeanPosition;
+    Vector3 transitionOffset = new Vector3(0f,0f,0f);
+    bool isTransitioning = false;
     #endregion
     // Update is called once per frame
 	void Update () 
@@ -56,43 +64,45 @@ public class Camera_Controller : MonoBehaviour {
             //Check if we are hitting a level bound.
             if (Physics.Raycast(cameraBounds[(int)i], out hit, 1000f, bounds))
             {
-                boundHitting[(int)i] = true;
-
+                boundHittingAndMovement[(int)i] = true;  
             }
             else
             {
-                boundHitting[(int)i] = false;
+                boundHittingAndMovement[(int)i] = false;
             }
-
         }
+        
 
-        bool goingUp = newMeanPosition.z > transform.position.z;
-        bool goingRight = newMeanPosition.x > transform.position.x;
+        boundHittingAndMovement[4] = newMeanPosition.z > transform.position.z;
+        boundHittingAndMovement[5] = newMeanPosition.z < transform.position.z;
+        boundHittingAndMovement[6] = newMeanPosition.x > transform.position.x;
+        boundHittingAndMovement[7] = newMeanPosition.x < transform.position.x;
 
-        if (goingUp && boundHitting[0])
+
+        if (boundHittingAndMovement[4] && boundHittingAndMovement[0])
         {
             newMeanPosition = new Vector3(newMeanPosition.x, transform.position.y, transform.position.z);
         }
-        else if (!goingUp && boundHitting[1])
+        else if (boundHittingAndMovement[5] && boundHittingAndMovement[1])
         {
             newMeanPosition = new Vector3(newMeanPosition.x, transform.position.y, transform.position.z);
         }
 
 
-        if (goingRight && boundHitting[2])
+        if (boundHittingAndMovement[6] && boundHittingAndMovement[2])
         {
             newMeanPosition = new Vector3(transform.position.x, transform.position.y, newMeanPosition.z);
         }
-        else if (!goingRight && boundHitting[3])
+        else if (boundHittingAndMovement[7] && boundHittingAndMovement[3])
         {
             newMeanPosition = new Vector3(transform.position.x, transform.position.y, newMeanPosition.z);
         }
-
         //Stop the camera from going higher up if we are hitting a bound to prevent seeing over it.
-        if (boundHitting[0] || boundHitting[1] || boundHitting[2] || boundHitting[3])
+        if (boundHittingAndMovement[0] || boundHittingAndMovement[1] || boundHittingAndMovement[2] || boundHittingAndMovement[3])
         {
             newMeanPosition = new Vector3(newMeanPosition.x, transform.position.y, newMeanPosition.z);
         }
+
         //Our actual camera movement.
         transform.position = Vector3.Lerp(transform.position, newMeanPosition, smoothing * Time.deltaTime);
         
@@ -101,6 +111,10 @@ public class Camera_Controller : MonoBehaviour {
     //Returns the average position between player 1 and 2 with an offset on the Z axis for the camera angle
     Vector3 GetMeanPosition(Vector3 p1, Vector3 p2) 
     {
+        if (isTransitioning)
+        {
+            return transitionOffset;
+        }
         //Averages of our 2 player positions.
         float xMean = (p1.x + p2.x) / 2f;
         float yMean = (p1.y + p2.y) / 2f;
@@ -121,7 +135,16 @@ public class Camera_Controller : MonoBehaviour {
         float zOffset = -Mathf.Sqrt((Mathf.Pow((yMean - yReturned), 2) * Mathf.Pow((Mathf.Cos(cameraAngle * Mathf.Deg2Rad)), 2) + Mathf.Pow((xMean - xReturned), 2) * Mathf.Pow(Mathf.Cos(cameraAngle * Mathf.Deg2Rad), 2))
             / (1f - Mathf.Pow(Mathf.Cos(cameraAngle * Mathf.Deg2Rad), 2)));
 
-        return new Vector3(xReturned, yReturned, zReturned + zOffset);
+
+        Vector3 toReturn = new Vector3(xReturned, yReturned, zReturned + zOffset);
+
+        return toReturn + boundOffsets;
+    }
+
+    public void OffSetCamera(Vector3 offset, bool status)
+    {
+        transitionOffset = offset;
+        isTransitioning = status;
     }
     #endregion
 }
