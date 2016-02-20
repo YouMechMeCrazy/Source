@@ -45,18 +45,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AndGate.cs" />
-     <Compile Include="Assets\AndGateLight.cs" />
-     <Compile Include="Assets\Button.cs" />
-     <Compile Include="Assets\DebugBlock.cs" />
-     <Compile Include="Assets\InputObject.cs" />
-     <Compile Include="Assets\Laser.cs" />
-     <Compile Include="Assets\Pickup.cs" />
-     <Compile Include="Assets\Player.cs" />
-     <Compile Include="Assets\PressurePlate.cs" />
-     <Compile Include="Assets\Statics.cs" />
-     <Compile Include="Assets\Weight.cs" />
      <Compile Include="Assets\_FrameWork\Camera\Camera_Controller.cs" />
+     <Compile Include="Assets\_FrameWork\Environment\AndGate.cs" />
+     <Compile Include="Assets\_FrameWork\Environment\AndGateLight.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\Button.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\DebugBlock.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\Doorway.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\InputObject.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\Laser.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\Pickup.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\PressurePlate.cs" />
+     <Compile Include="Assets\_FrameWork\Player\PlayerController\Player.cs" />
+     <Compile Include="Assets\_FrameWork\Static\Statics.cs" />
+     <Compile Include="Assets\_FrameWork\Utilities\Weight.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
