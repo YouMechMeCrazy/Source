@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Camera_Level_Selector : MonoBehaviour {
@@ -27,7 +28,8 @@ public class Camera_Level_Selector : MonoBehaviour {
     [SerializeField]
     Vector3 baseCameraPosition;
 
-    bool isMoving = false;
+    private bool isMoving = false;
+    private bool inputPaused = false;
     Transform target;
     Vector3 startPOS;
 
@@ -37,59 +39,67 @@ public class Camera_Level_Selector : MonoBehaviour {
     private float journeyLength;
 
     private Quaternion endRotation;
+    private CTR_LevelSelection levelSelectionScript;
+
+    [SerializeField]
+    GameObject fadeScreen;
+    [SerializeField]
+    float fadingTime = 3f;
+    float fadingStartTime = 0f;
+
+    delegate void UpdateDelegate();
+    UpdateDelegate updateDelegate;
+
+    void Awake() 
+    {
+        levelSelectionScript = GameObject.Find("Controller_LevelSelection").GetComponent<CTR_LevelSelection>();
+       
+    }
+
+    void Start() 
+    {
+        updateDelegate += PlayerInput;
+    }
 
 	// Update is called once per frame
     void Update()
     {
-        if (!isMoving)
+
+        if (updateDelegate != null)
         {
-            ViewInput();
-            if (Input.GetAxis("Fire1") != 0)
-            {
-                Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width/2f, Screen.height/2f, 0f));
-                RaycastHit hit;
-                if (Physics.Raycast(ray, out hit, 10000f, clickable))
-                {
-                    if (hit.collider.gameObject.name != transform.parent.name)
-                    {
-                        target = hit.collider.transform;
-                        transform.SetParent(hit.collider.transform);
-                        startPOS = transform.localPosition;
-
-                        startTime = Time.time;
-                        journeyLength = Vector3.Distance(startPOS, baseCameraPosition);
-
-                        speed = journeyLength / speedRatio;
-
-                        isMoving = true;
-                       
-                    }
-                    
-                }
-            }
-
-          
-       
-            
+            updateDelegate();
         }
-        else 
-        {
-            Move();
-        }
-
     }
 
-    void Move() 
+    
+    #region PlayerInputs
+    void PlayerInput() 
     {
-        float distCovered = (Time.time - startTime) * speed;
-        float fracJourney = distCovered / journeyLength;
-        transform.localPosition = Vector3.Lerp(startPOS, baseCameraPosition, fracJourney);
-        transform.LookAt(transform.parent.position);
-
-        if (Vector3.Distance(transform.localPosition, baseCameraPosition) < 0.5f)
+        ViewInput();
+        if (Input.GetAxis("Fire1") != 0)
         {
-            rotationY = -transform.localEulerAngles.x;
-            isMoving = false;
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0f));
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 10000f, clickable))
+            {
+                if (hit.collider.gameObject.name != transform.parent.name)
+                {
+                    target = hit.collider.transform;
+                    transform.SetParent(hit.collider.transform);
+                    SelectNewDestination();
+                }
+            }
+        }
+
+        if (Input.GetAxis("Submit") == 1)
+        {
+            updateDelegate -= PlayerInput;
+            updateDelegate += FadeToBack;
+
+            fadingStartTime = Time.time;
+            fadeScreen.transform.FindChild("Text").GetComponent<Text>().text = "Loading " + transform.parent.name;
+            StartCoroutine(DelaySceneLoad());
+            
         }
     }
 
@@ -117,6 +127,54 @@ public class Camera_Level_Selector : MonoBehaviour {
             transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
         }
     }
+    #endregion
+    #region CameraMovement
+    void Move()
+    {
+        float distCovered = (Time.time - startTime) * speed;
+        float fracJourney = distCovered / journeyLength;
+        transform.localPosition = Vector3.Lerp(startPOS, baseCameraPosition, fracJourney);
+        transform.LookAt(transform.parent.position);
+
+        if (Vector3.Distance(transform.localPosition, baseCameraPosition) < 0.5f)
+        {
+            rotationY = -transform.localEulerAngles.x;
+            updateDelegate -= Move;
+            updateDelegate += PlayerInput;
+        }
+    }
+
+    void SelectNewDestination()
+    {
+        //Lerping values.
+        startPOS = transform.localPosition;
+        startTime = Time.time;
+        journeyLength = Vector3.Distance(startPOS, baseCameraPosition);
+        speed = journeyLength / speedRatio;
+
+        updateDelegate += Move;
+        updateDelegate -= PlayerInput;
+        //Changes the currently selected world in our controller.
+        levelSelectionScript.SetCurrentWorld(transform.parent.name);
+    }
+    #endregion
+    #region Utilities
+    IEnumerator DelaySceneLoad()
+    {
+        yield return new WaitForSeconds(fadingTime);
+        updateDelegate += PlayerInput;
+        updateDelegate -= FadeToBack;
+        levelSelectionScript.LoadSelectedWorld();
+    }
+
+    void FadeToBack() 
+    {
+        fadeScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, (Time.time - fadingStartTime) / fadingTime);
+        fadeScreen.transform.FindChild("Text").GetComponent<Text>().color = new Color(1f, 1f, 1f, (Time.time - fadingStartTime) / fadingTime);
+    }
+
+    #endregion
+
 }
 
 
