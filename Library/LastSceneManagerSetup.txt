@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/w_2_lvl_1_Junkyard.unity
+- path: Assets/Scenes/Level_Selection.unity
   isLoaded: 1
   isActive: 1
