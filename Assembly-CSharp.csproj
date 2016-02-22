@@ -48,6 +48,7 @@
      <Compile Include="Assets\_FrameWork\Camera\Camera_Controller.cs" />
      <Compile Include="Assets\_FrameWork\Camera\Camera_Level_Selector.cs" />
      <Compile Include="Assets\_FrameWork\Controllers\CTR_LevelSelection.cs" />
+     <Compile Include="Assets\_FrameWork\Controllers\CTR_WorldSelection.cs" />
      <Compile Include="Assets\_FrameWork\Environment\AndGate.cs" />
      <Compile Include="Assets\_FrameWork\Environment\AndGateLight.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Button.cs" />

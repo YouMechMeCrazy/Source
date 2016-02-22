@@ -39,7 +39,7 @@ public class Camera_Level_Selector : MonoBehaviour {
     private float journeyLength;
 
     private Quaternion endRotation;
-    private CTR_LevelSelection levelSelectionScript;
+    private CTR_WorldSelection levelSelectionScript;
 
     [SerializeField]
     GameObject fadeScreen;
@@ -52,7 +52,7 @@ public class Camera_Level_Selector : MonoBehaviour {
 
     void Awake() 
     {
-        levelSelectionScript = GameObject.Find("Controller_LevelSelection").GetComponent<CTR_LevelSelection>();
+        levelSelectionScript = GameObject.Find("Controller_LevelSelection").GetComponent<CTR_WorldSelection>();
        
     }
 
@@ -80,6 +80,7 @@ public class Camera_Level_Selector : MonoBehaviour {
         {
             Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0f));
             RaycastHit hit;
+            Debug.Log("Shot");
             if (Physics.Raycast(ray, out hit, 10000f, clickable))
             {
                 if (hit.collider.gameObject.name != transform.parent.name)
