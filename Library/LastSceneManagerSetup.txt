@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/JUNKYARD_LevelSelect.unity
+- path: Assets/Scenes/World_Selection.unity
   isLoaded: 1
   isActive: 1
