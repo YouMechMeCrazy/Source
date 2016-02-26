@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/World_Selection.unity
-=======
-- path: Assets/Scenes/w_2_lvl_1_Junkyard.unity
->>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
+- path: Assets/Scenes/Scene.unity
   isLoaded: 1
   isActive: 1

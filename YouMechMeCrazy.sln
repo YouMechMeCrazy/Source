@@ -1,14 +1,7 @@
-<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
 Project("{735A4607-76FF-AF59-7029-CBCC00548B25}") = "YouMechMeCrazy", "Assembly-CSharp.csproj", "{4B2CAE78-B835-A4C2-6135-5BA8CBB55E9C}"
-=======
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "youmechmecrazy.CSharp", "youmechmecrazy.CSharp.csproj", "{9E2CF330-8C70-7E48-DA9A-84F5964FB9C6}"
->>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,25 +9,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
 		{4B2CAE78-B835-A4C2-6135-5BA8CBB55E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4B2CAE78-B835-A4C2-6135-5BA8CBB55E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B2CAE78-B835-A4C2-6135-5BA8CBB55E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B2CAE78-B835-A4C2-6135-5BA8CBB55E9C}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{9E2CF330-8C70-7E48-DA9A-84F5964FB9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E2CF330-8C70-7E48-DA9A-84F5964FB9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E2CF330-8C70-7E48-DA9A-84F5964FB9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E2CF330-8C70-7E48-DA9A-84F5964FB9C6}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-<<<<<<< HEAD
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
-=======
->>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
 EndGlobal

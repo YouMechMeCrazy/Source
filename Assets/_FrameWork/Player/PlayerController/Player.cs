@@ -26,31 +26,31 @@ public class Player : MonoBehaviour {
     [SerializeField]
     float reach = 1;
 
-<<<<<<< HEAD
+
     Animator animTop;
     Animator animBot;
 
 
-=======
->>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
     Pickup holding = null;
     Vector3 holdingAngle;
     float holdingrotate = 0;
+
+        [SerializeField]
+    int pressState;
+    float pressTimer;
 
     [SerializeField]
     bool player2;
 
     private bool isDying = false;
 
-<<<<<<< HEAD
+
     void Awake() 
     {
         animTop = transform.FindChild("Arms").transform.FindChild("Top").GetComponent<Animator>();
         animBot = transform.FindChild("Legs").transform.FindChild("Bot").GetComponent<Animator>();
     }
 
-=======
->>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
 	// Use this for initialization
 	void Start () {
         facingVector = new Vector3(1f, 0f, 0f);
@@ -92,11 +92,23 @@ public class Player : MonoBehaviour {
 
         PickUp(inputbonus);
 
+        Press(inputbonus);
+
+        
+
         legs.rotation = Quaternion.LookRotation(facingVector.normalized);
         arms.rotation = Quaternion.LookRotation(armFacingVector.normalized);
 
     }
 
+    void Press(string inputbonus) {
+        //this isn't the actual code where the pressing happens, this is basically a "Key Down" thinger for the Pickup input, for pressing buttons
+        pressTimer -= Time.deltaTime;
+
+        if (Input.GetAxis("PickUp" + inputbonus) !=0 && pressState == 0) { Debug.Log("Pressed"); pressState = 1; pressTimer = 0.5f; }
+        if (Input.GetAxis("PickUp" + inputbonus) == 0) { pressState = 0; }
+        if (pressTimer < 0 && pressState == 1) { pressState = 2; }
+    }
 
     void PickUp(string inputbonus) {
 
@@ -113,7 +125,7 @@ public class Player : MonoBehaviour {
         }
 
 
-        if (Input.GetAxis("PickUp") < 0 || Input.GetAxis("PickUp") > 0)
+        if (Input.GetAxis("PickUp" + inputbonus) < 0 || Input.GetAxis("PickUp" + inputbonus) > 0)
         {
             if (holding == null)
             {
@@ -123,6 +135,8 @@ public class Player : MonoBehaviour {
                     Pickup temp = hits[i].transform.GetComponent<Pickup>();
                     if (temp != null)
                     {
+                        animTop.SetBool("Pickup", true);
+                        animBot.SetBool("Pickup", true);
                         temp.OnPickedUp();
                         holding = temp;
                         holding.transform.position = center + armFacingVector * (reach + holding.GetSize());
@@ -135,8 +149,12 @@ public class Player : MonoBehaviour {
 
             }
         }
+
         else {
-            if (holding != null) { holding.OnPutDown(); holding = null; }
+            if (holding != null) { holding.OnPutDown(); holding = null;
+            animTop.SetBool("Pickup", false);
+            animBot.SetBool("Pickup", false);
+            }
         }
 
         if (Input.GetAxis("PickUp" + inputbonus) < 0 || Input.GetAxis("PickUp" + inputbonus) > 0)
@@ -162,15 +180,23 @@ public class Player : MonoBehaviour {
             }
         }
         else {
-            if (holding != null) { holding.OnPutDown(); holding = null; }
+            if (holding != null) { holding.OnPutDown(); holding = null;
+            animTop.SetBool("Pickup", false);
+            animBot.SetBool("Pickup", false);
+            }
         }
 
 
     }
 
     void OnTriggerStay(Collider other) {
-        if (other.GetComponent<Button>()&&Input.GetButtonDown("PickUp")){
-            other.GetComponent<Button>().Hit();
+        if (other.GetComponent<Button>())
+        {
+            if (pressState == 1)
+            {
+                pressState = 2;
+                other.GetComponent<Button>().Hit();
+            }
         }
     }
 
@@ -179,12 +205,10 @@ public class Player : MonoBehaviour {
         float speedMult = GetSpeedMult();
         float speed = moveSpeed * speedMult * Time.deltaTime;
 
-<<<<<<< HEAD
+
         animBot.SetFloat("move", Mathf.Abs(speed));
         animTop.SetFloat("move", Mathf.Abs(speed));
 
-=======
->>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
         Vector3 dirvector = facingVector;
         bool ok = true;
         //bool check = false;
@@ -192,6 +216,7 @@ public class Player : MonoBehaviour {
         //if (!check)
         //{
             //if (Physics.CheckSphere(center + (facingVector * speed), 0.5f))
+
             if(WallCheck(facingVector*speed))
             {
                 ok = false;
