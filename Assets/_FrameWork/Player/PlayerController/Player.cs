@@ -26,6 +26,13 @@ public class Player : MonoBehaviour {
     [SerializeField]
     float reach = 1;
 
+<<<<<<< HEAD
+    Animator animTop;
+    Animator animBot;
+
+
+=======
+>>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
     Pickup holding = null;
     Vector3 holdingAngle;
     float holdingrotate = 0;
@@ -35,6 +42,15 @@ public class Player : MonoBehaviour {
 
     private bool isDying = false;
 
+<<<<<<< HEAD
+    void Awake() 
+    {
+        animTop = transform.FindChild("Arms").transform.FindChild("Top").GetComponent<Animator>();
+        animBot = transform.FindChild("Legs").transform.FindChild("Bot").GetComponent<Animator>();
+    }
+
+=======
+>>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
 	// Use this for initialization
 	void Start () {
         facingVector = new Vector3(1f, 0f, 0f);
@@ -163,6 +179,12 @@ public class Player : MonoBehaviour {
         float speedMult = GetSpeedMult();
         float speed = moveSpeed * speedMult * Time.deltaTime;
 
+<<<<<<< HEAD
+        animBot.SetFloat("move", Mathf.Abs(speed));
+        animTop.SetFloat("move", Mathf.Abs(speed));
+
+=======
+>>>>>>> 54f92f0fac2741b50ef8d9e03b41266313c8b734
         Vector3 dirvector = facingVector;
         bool ok = true;
         //bool check = false;
