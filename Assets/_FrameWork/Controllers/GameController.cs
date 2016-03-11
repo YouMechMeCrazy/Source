@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour {
 
     bool isPaused = false;
 
+    PauseScreen pauseScreen;
+
     void Awake()
     {
         if (Instance != null)
@@ -33,6 +35,7 @@ public class GameController : MonoBehaviour {
         player2Script = GameObject.Find("Brian").GetComponent<Player>();
         p1 = GameObject.Find("John");
         p2 = GameObject.Find("Brian");
+        pauseScreen = GameObject.Find("PauseScreen").GetComponent<PauseScreen>();
 	}
 
 
@@ -139,11 +142,13 @@ public class GameController : MonoBehaviour {
         isPaused = !isPaused;
         if (isPaused)
         {
+            pauseScreen.Show();
             Time.timeScale = 0f;
         }
         else 
         {
             Time.timeScale = 1f;
+            pauseScreen.Hide();
         }
     }
 }

@@ -19,7 +19,7 @@ public class Player : MonoBehaviour {
     Transform legs; //the correct answer
     Transform arms; //who needs arms with legs like these
     Vector3 center;
-    
+
     [SerializeField]
     float reach = 1;
 
@@ -50,7 +50,7 @@ public class Player : MonoBehaviour {
 
     Rigidbody rb;
 
-    void Awake() 
+    void Awake()
     {
         animTop = transform.FindChild("Arms").transform.FindChild("Top").GetComponent<Animator>();
         animBot = transform.FindChild("Legs").transform.FindChild("Bot").GetComponent<Animator>();
@@ -58,18 +58,18 @@ public class Player : MonoBehaviour {
     }
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         facingVector = new Vector3(1f, 0f, 0f);
         legs = transform.FindChild("Legs");
         arms = transform.FindChild("Arms");
 
-        
+
         if (player2) { inputbonus = "2"; }
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
         if (Input.GetButtonDown("Submit" + inputbonus))
         {
@@ -80,15 +80,15 @@ public class Player : MonoBehaviour {
         {
             return;
         }
-        
-        
+
+
         center = transform.position + new Vector3(0f, 1f, 0f);
 
-        facingVector = Quaternion.AngleAxis(facingAngle, Vector3.up)*Vector3.right;
+        facingVector = Quaternion.AngleAxis(facingAngle, Vector3.up) * Vector3.right;
         armFacingVector = Quaternion.AngleAxis(armFacingAngle, Vector3.up) * Vector3.right;
 
 
-        input = new Vector3(Input.GetAxis("Horizontal"+inputbonus), 0f, Input.GetAxis("Vertical" + inputbonus));
+        input = new Vector3(Input.GetAxis("Horizontal" + inputbonus), 0f, Input.GetAxis("Vertical" + inputbonus));
         arminput = new Vector3(Input.GetAxis("HorizontalArms" + inputbonus), 0f, Input.GetAxis("VerticalArms" + inputbonus));
 
         if (input != Vector3.zero) {
@@ -109,19 +109,19 @@ public class Player : MonoBehaviour {
 
     }
 
-   
+
 
 
     void PickUp(string inputbonus) {
 
-        if (holding!= null) {
-            holding.transform.position = center + armFacingVector * (reach + holding.GetSize()) + new Vector3(0f, Mathf.Clamp(playerHoldingHigth * ((Time.time - pickUpStartTime)*10f), 0f, playerHoldingHigth), 0f);
-            
-            holdingrotate = Vector2.Angle(new Vector2(armFacingVector.x,armFacingVector.z), new Vector2(holdingAngle.x,holdingAngle.z));
-     
+        if (holding != null) {
+            holding.transform.position = center + armFacingVector * (reach + holding.GetSize()) + new Vector3(0f, Mathf.Clamp(playerHoldingHigth * ((Time.time - pickUpStartTime) * 10f), 0f, playerHoldingHigth), 0f);
+
+            holdingrotate = Vector2.Angle(new Vector2(armFacingVector.x, armFacingVector.z), new Vector2(holdingAngle.x, holdingAngle.z));
+
             Vector3 cross = Vector3.Cross(new Vector2(armFacingVector.x, armFacingVector.z), new Vector2(holdingAngle.x, holdingAngle.z));
             if (cross.z < 0) { holdingrotate = 360 - holdingrotate; }
-            
+
             holding.transform.rotation = Quaternion.LookRotation(Quaternion.AngleAxis(holdingrotate, Vector3.up) * Vector3.right);
 
         }
@@ -159,7 +159,7 @@ public class Player : MonoBehaviour {
 
             }
         }
-        else 
+        else
         {
             if (holding != null) {
                 GetComponent<Weight>().RemoveWeight(holding.gameObject.GetComponent<Weight>().GetWeight());
@@ -173,7 +173,7 @@ public class Player : MonoBehaviour {
     }
 
     void OnTriggerStay(Collider other) {
-        if (other.GetComponent<Button>()&&Input.GetButtonDown("PickUp")){
+        if (other.GetComponent<Button>() && Input.GetButtonDown("PickUp")) {
             other.GetComponent<Button>().Hit();
         }
     }
@@ -182,7 +182,7 @@ public class Player : MonoBehaviour {
 
     void Movement() {
 
-        float xAxis = Mathf.Abs( Input.GetAxis("Horizontal" + inputbonus));
+        float xAxis = Mathf.Abs(Input.GetAxis("Horizontal" + inputbonus));
         if (xAxis < 0.1f)
         {
             xAxis = 0f;
@@ -195,31 +195,31 @@ public class Player : MonoBehaviour {
         }
 
         float[] move = new float[] { xAxis, yAxis };
-        Vector3 dirvector = new Vector3(facingVector.x, 1f, facingVector.z) * moveSpeed * Mathf.Max( move) * Time.deltaTime;
+        Vector3 dirvector = new Vector3(facingVector.x, 1f, facingVector.z) * moveSpeed * Mathf.Max(move) * Time.deltaTime;
 
         rb.velocity = new Vector3(dirvector.x, rb.velocity.y, dirvector.z);
-        
+
         animBot.SetFloat("move", Mathf.Max(move));
         animTop.SetFloat("move", Mathf.Max(move));
 
 
     }
 
-    
+
 
 
 
     void LegRotate() {
-        
-        float inputangle = Vector2.Angle(new Vector2(input.x, input.z), Vector2.right)+0.01f;
+
+        float inputangle = Vector2.Angle(new Vector2(input.x, input.z), Vector2.right) + 0.01f;
         Vector3 cross = Vector3.Cross(new Vector2(input.x, input.z), Vector2.right);
         if (cross.z < 0) { inputangle = 360 - inputangle; }
-        
+
         float f = Mathf.Sign(Mathf.DeltaAngle(facingAngle, inputangle)) * rotateSpeed * Time.deltaTime;
 
         if (Mathf.Abs(f) < Mathf.Abs(Mathf.DeltaAngle(facingAngle, inputangle))) { facingAngle += f; }
-        else { facingAngle = inputangle; }        
-        
+        else { facingAngle = inputangle; }
+
     }
 
     void ArmRotate()
@@ -239,11 +239,12 @@ public class Player : MonoBehaviour {
         if (holding != null)
         {
             armFacingVector = Quaternion.AngleAxis(armFacingAngle, Vector3.up) * Vector3.right;
-            if (Physics.CheckSphere(center+armFacingVector*(reach+holding.GetSize()), holding.GetSize(),1, QueryTriggerInteraction.Ignore)) { armFacingAngle = oldFacingAngle; }
+            if (Physics.CheckSphere(center + armFacingVector * (reach + holding.GetSize()), holding.GetSize(), 1, QueryTriggerInteraction.Ignore)) { armFacingAngle = oldFacingAngle; }
         }
 
-       
+
     }
+
 
 
     #region Leos New junk
@@ -303,5 +304,7 @@ public class Player : MonoBehaviour {
     }
 
     #endregion
+
+
 
 }

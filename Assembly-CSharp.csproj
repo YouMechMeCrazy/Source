@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C70029F1-61FC-6565-FB1E-266EA2311A5A}</ProjectGuid>
+    <ProjectGuid>{4B2CAE78-B835-A4C2-6135-5BA8CBB55E9C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MainMenu.cs" />
+     <Compile Include="Assets\PauseScreen.cs" />
      <Compile Include="Assets\_FrameWork\Camera\Camera_Controller.cs" />
      <Compile Include="Assets\_FrameWork\Camera\Camera_Controller_SmallFOV.cs" />
      <Compile Include="Assets\_FrameWork\Camera\Camera_Level_Selector.cs" />
@@ -60,6 +62,8 @@
      <Compile Include="Assets\_FrameWork\Interactives\DebugBlock.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Doorway\Doorway.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Doorway\Doorway_Triggerzone.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\ForceField\ForceField.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\ObjectSpawner\Object_Spawner.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Pickup.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Spawns\SpawnPoint.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Spawns\SpawnPointOccupationZone.cs" />
@@ -70,6 +74,7 @@
      <Compile Include="Assets\_FrameWork\Interactives\Utility\Programable_Mover.cs" />
      <Compile Include="Assets\_FrameWork\Player\PlayerController\Player.cs" />
      <Compile Include="Assets\_FrameWork\Static\Statics.cs" />
+     <Compile Include="Assets\_FrameWork\Utilities\Destructable.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\Rotation_Script.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\SpeachBubble\Speach_Bubble.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\SpeachBubble\Trigger_Bubble.cs" />

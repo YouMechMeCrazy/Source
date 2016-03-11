@@ -1,0 +1,134 @@
+fileFormatVersion: 2
+guid: 7effeaf227b47f342a51307c9457866a
+timeCreated: 1457721962
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Car
+    100002: Grille
+    100004: Hood
+    100006: LDoor
+    100008: LFrontWheel
+    100010: LRearWheel
+    100012: //RootNode
+    100014: RDoor
+    100016: RearWindow
+    100018: RFrontWheel
+    100020: RRearWheel
+    100022: Trunk
+    100024: Windshield
+    400000: Car
+    400002: Grille
+    400004: Hood
+    400006: LDoor
+    400008: LFrontWheel
+    400010: LRearWheel
+    400012: //RootNode
+    400014: RDoor
+    400016: RearWindow
+    400018: RFrontWheel
+    400020: RRearWheel
+    400022: Trunk
+    400024: Windshield
+    2300000: Car
+    2300002: Grille
+    2300004: Hood
+    2300006: LDoor
+    2300008: LFrontWheel
+    2300010: LRearWheel
+    2300012: RDoor
+    2300014: RearWindow
+    2300016: RFrontWheel
+    2300018: RRearWheel
+    2300020: Trunk
+    2300022: Windshield
+    3300000: Car
+    3300002: Grille
+    3300004: Hood
+    3300006: LDoor
+    3300008: LFrontWheel
+    3300010: LRearWheel
+    3300012: RDoor
+    3300014: RearWindow
+    3300016: RFrontWheel
+    3300018: RRearWheel
+    3300020: Trunk
+    3300022: Windshield
+    4300000: Car
+    4300002: RFrontWheel
+    4300004: Trunk
+    4300006: RDoor
+    4300008: Grille
+    4300010: Windshield
+    4300012: RRearWheel
+    4300014: Hood
+    4300016: LRearWheel
+    4300018: LFrontWheel
+    4300020: LDoor
+    4300022: RearWindow
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
