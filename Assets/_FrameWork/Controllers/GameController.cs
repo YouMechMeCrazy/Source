@@ -16,14 +16,12 @@ public class GameController : MonoBehaviour {
     bool isPaused = false;
 
     PauseScreen pauseScreen;
-
-    
+     
 
     void Awake()
     {
         if (Instance != null)
         {
-
             DestroyImmediate(Instance.gameObject);
             Instance = this;
             Time.timeScale = 1f;
@@ -59,7 +57,6 @@ public class GameController : MonoBehaviour {
         
         activeSpawnPoint = sP;
     }
-
 
     public void KillPlayer(bool isPlayerTwo) 
     {
@@ -137,7 +134,6 @@ public class GameController : MonoBehaviour {
 
        
     }
-
 
     public Vector3 GetactiveSpawnPoint() 
     {
