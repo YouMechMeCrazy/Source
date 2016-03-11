@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: d08272f31a0fd5a44b139d3d64a05110
+timeCreated: 1457726068
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: M_mech_blue
+    100004: polySurface38
+    100006: polySurface39
+    100008: polySurface40
+    100010: polySurface41
+    100012: polySurface42
+    100014: polySurface42 1
+    100016: polySurface47
+    100018: polySurface48
+    100020: polySurface50
+    100022: polySurface54
+    100024: polySurface55
+    100026: polySurface56
+    100028: polySurface57
+    100030: polySurface58
+    100032: polySurface59
+    100034: polySurface60
+    100036: polySurface62
+    100038: polySurface65
+    100040: red_robot_hair_1
+    100042: red_robot_hair_2
+    100044: red_robot_hair_3
+    100046: red_robot_hair_nobind
+    100048: red_robot_l_arm
+    100050: red_robot_l_index_1
+    100052: red_robot_l_index_2
+    100054: red_robot_l_index_nobind
+    100056: red_robot_l_mid_nobind
+    100058: red_robot_l_middle_1
+    100060: red_robot_l_middle_2
+    100062: red_robot_l_palm
+    100064: red_robot_l_pinkey_1
+    100066: red_robot_l_pinkey_2
+    100068: red_robot_l_pinkey_nobind
+    100070: red_robot_l_shoulder
+    100072: red_robot_l_thumb_1
+    100074: red_robot_l_thumb_nobind
+    100076: red_robot_l_wrist
+    100078: red_robot_r_arm
+    100080: red_robot_r_index_1
+    100082: red_robot_r_index_2
+    100084: red_robot_r_index_nobind
+    100086: red_robot_r_mid_nobind
+    100088: red_robot_r_middle_1
+    100090: red_robot_r_middle_2
+    100092: red_robot_r_palm
+    100094: red_robot_r_pinkey_1
+    100096: red_robot_r_pinkey_2
+    100098: red_robot_r_pinkey_nobind
+    100100: red_robot_r_shoulder
+    100102: red_robot_r_thumb_2
+    100104: red_robot_r_thumb_nobind
+    100106: red_robot_r_wrist
+    100108: red_robot_spine
+    100110: red_robot_thumb_1
+    100112: red_robot_thumb_1 1
+    100114: transform41
+    100116: transform42
+    100118: transform43
+    100120: transform44
+    100122: transform45
+    100124: transform46
+    100126: transform47
+    100128: transform48
+    100130: transform49
+    100132: transform57
+    100134: transform58
+    100136: transform59
+    100138: transform60
+    100140: transform61
+    100142: transform62
+    100144: transform63
+    100146: transform64
+    400000: //RootNode
+    400002: M_mech_blue
+    400004: polySurface38
+    400006: polySurface39
+    400008: polySurface40
+    400010: polySurface41
+    400012: polySurface42
+    400014: polySurface42 1
+    400016: polySurface47
+    400018: polySurface48
+    400020: polySurface50
+    400022: polySurface54
+    400024: polySurface55
+    400026: polySurface56
+    400028: polySurface57
+    400030: polySurface58
+    400032: polySurface59
+    400034: polySurface60
+    400036: polySurface62
+    400038: polySurface65
+    400040: red_robot_hair_1
+    400042: red_robot_hair_2
+    400044: red_robot_hair_3
+    400046: red_robot_hair_nobind
+    400048: red_robot_l_arm
+    400050: red_robot_l_index_1
+    400052: red_robot_l_index_2
+    400054: red_robot_l_index_nobind
+    400056: red_robot_l_mid_nobind
+    400058: red_robot_l_middle_1
+    400060: red_robot_l_middle_2
+    400062: red_robot_l_palm
+    400064: red_robot_l_pinkey_1
+    400066: red_robot_l_pinkey_2
+    400068: red_robot_l_pinkey_nobind
+    400070: red_robot_l_shoulder
+    400072: red_robot_l_thumb_1
+    400074: red_robot_l_thumb_nobind
+    400076: red_robot_l_wrist
+    400078: red_robot_r_arm
+    400080: red_robot_r_index_1
+    400082: red_robot_r_index_2
+    400084: red_robot_r_index_nobind
+    400086: red_robot_r_mid_nobind
+    400088: red_robot_r_middle_1
+    400090: red_robot_r_middle_2
+    400092: red_robot_r_palm
+    400094: red_robot_r_pinkey_1
+    400096: red_robot_r_pinkey_2
+    400098: red_robot_r_pinkey_nobind
+    400100: red_robot_r_shoulder
+    400102: red_robot_r_thumb_2
+    400104: red_robot_r_thumb_nobind
+    400106: red_robot_r_wrist
+    400108: red_robot_spine
+    400110: red_robot_thumb_1
+    400112: red_robot_thumb_1 1
+    400114: transform41
+    400116: transform42
+    400118: transform43
+    400120: transform44
+    400122: transform45
+    400124: transform46
+    400126: transform47
+    400128: transform48
+    400130: transform49
+    400132: transform57
+    400134: transform58
+    400136: transform59
+    400138: transform60
+    400140: transform61
+    400142: transform62
+    400144: transform63
+    400146: transform64
+    4300000: polySurface38
+    4300002: polySurface65
+    9500000: //RootNode
+    13700000: polySurface38
+    13700002: polySurface65
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

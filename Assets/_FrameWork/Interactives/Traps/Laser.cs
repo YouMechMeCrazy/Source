@@ -43,5 +43,10 @@ public class Laser : InputObject {
         {
             GameController.Instance.KillPlayer(other.gameObject.GetComponent<Player>().IsPlayerTwo());
         }
+
+        if (other.gameObject.GetComponent<Destructable>() && other.gameObject.activeSelf)
+        {
+            other.gameObject.SetActive(false);
+        }
     }
 }

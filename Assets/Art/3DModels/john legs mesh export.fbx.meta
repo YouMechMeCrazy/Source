@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 956ae541c8239b844bdcce40c958520f
+timeCreated: 1457726058
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: blue_robot_hips
+    100002: blue_robot_l_foot
+    100004: blue_robot_l_leg_1
+    100006: blue_robot_l_leg_2
+    100008: blue_robot_r_foot
+    100010: blue_robot_r_leg_1
+    100012: blue_robot_r_leg_2
+    100014: //RootNode
+    100016: M_mech_blue
+    100018: polySurface43
+    100020: polySurface44
+    100022: polySurface45
+    100024: polySurface46
+    100026: polySurface46 1
+    100028: polySurface49
+    100030: polySurface51
+    100032: polySurface51 1
+    100034: polySurface52
+    100036: polySurface53
+    100038: polySurface61
+    100040: polySurface63
+    100042: polySurface64
+    100044: transform41
+    100046: transform50
+    100048: transform51
+    100050: transform52
+    100052: transform53
+    100054: transform54
+    100056: transform55
+    100058: transform56
+    100060: transform65
+    100062: transform66
+    100064: transform67
+    100066: transform68
+    100068: transform69
+    400000: blue_robot_hips
+    400002: blue_robot_l_foot
+    400004: blue_robot_l_leg_1
+    400006: blue_robot_l_leg_2
+    400008: blue_robot_r_foot
+    400010: blue_robot_r_leg_1
+    400012: blue_robot_r_leg_2
+    400014: //RootNode
+    400016: M_mech_blue
+    400018: polySurface43
+    400020: polySurface44
+    400022: polySurface45
+    400024: polySurface46
+    400026: polySurface46 1
+    400028: polySurface49
+    400030: polySurface51
+    400032: polySurface51 1
+    400034: polySurface52
+    400036: polySurface53
+    400038: polySurface61
+    400040: polySurface63
+    400042: polySurface64
+    400044: transform41
+    400046: transform50
+    400048: transform51
+    400050: transform52
+    400052: transform53
+    400054: transform54
+    400056: transform55
+    400058: transform56
+    400060: transform65
+    400062: transform66
+    400064: transform67
+    400066: transform68
+    400068: transform69
+    4300000: polySurface46
+    9500000: //RootNode
+    13700000: polySurface46
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
