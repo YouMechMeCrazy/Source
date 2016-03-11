@@ -17,27 +17,38 @@ public class GameController : MonoBehaviour {
 
     PauseScreen pauseScreen;
 
+    
+
     void Awake()
     {
         if (Instance != null)
         {
-            DestroyImmediate(gameObject);
+
+            DestroyImmediate(Instance.gameObject);
+            Instance = this;
+            Time.timeScale = 1f;
             return;
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        Time.timeScale = 1f;
     }
 
 	// Use this for initialization
 	void Start ()
+    {
+        SetReferences();
+	}
+
+
+    public void SetReferences()
     {
         player1Script = GameObject.Find("John").GetComponent<Player>();
         player2Script = GameObject.Find("Brian").GetComponent<Player>();
         p1 = GameObject.Find("John");
         p2 = GameObject.Find("Brian");
         pauseScreen = GameObject.Find("PauseScreen").GetComponent<PauseScreen>();
-	}
-
+    }
 
     public void SetActiveSpawnPoint(Transform sP) 
     {
@@ -133,10 +144,9 @@ public class GameController : MonoBehaviour {
         return activeSpawnPoint.position;
     }
 
-   
-
     public void Pause() 
     {
+        Debug.Log("pause");
         //playsound
         //show UI
         isPaused = !isPaused;

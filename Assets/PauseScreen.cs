@@ -6,6 +6,8 @@ public class PauseScreen : MonoBehaviour {
 
     GameObject canvas;
 
+    
+
 	// Use this for initialization
 	void Start () {
         canvas = transform.FindChild("PauseScreenCanvas").gameObject;
@@ -17,6 +19,8 @@ public class PauseScreen : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+
+
 	}
 
     public void MainMenu() {
