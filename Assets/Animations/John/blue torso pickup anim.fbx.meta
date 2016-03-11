@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: 114631fedd46db34b8447f237b1b1a0c
+timeCreated: 1456685032
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: blue_robot_rig:red_robot_hair_1
+    100004: blue_robot_rig:red_robot_hair_2
+    100006: blue_robot_rig:red_robot_hair_3
+    100008: blue_robot_rig:red_robot_hair_nobind
+    100010: blue_robot_rig:red_robot_l_arm
+    100012: blue_robot_rig:red_robot_l_index_1
+    100014: blue_robot_rig:red_robot_l_index_2
+    100016: blue_robot_rig:red_robot_l_index_nobind
+    100018: blue_robot_rig:red_robot_l_mid_nobind
+    100020: blue_robot_rig:red_robot_l_middle_1
+    100022: blue_robot_rig:red_robot_l_middle_2
+    100024: blue_robot_rig:red_robot_l_palm
+    100026: blue_robot_rig:red_robot_l_pinkey_1
+    100028: blue_robot_rig:red_robot_l_pinkey_2
+    100030: blue_robot_rig:red_robot_l_pinkey_nobind
+    100032: blue_robot_rig:red_robot_l_shoulder
+    100034: blue_robot_rig:red_robot_l_thumb_1
+    100036: blue_robot_rig:red_robot_l_thumb_nobind
+    100038: blue_robot_rig:red_robot_l_wrist
+    100040: blue_robot_rig:red_robot_r_arm
+    100042: blue_robot_rig:red_robot_r_index_1
+    100044: blue_robot_rig:red_robot_r_index_2
+    100046: blue_robot_rig:red_robot_r_index_nobind
+    100048: blue_robot_rig:red_robot_r_mid_nobind
+    100050: blue_robot_rig:red_robot_r_middle_1
+    100052: blue_robot_rig:red_robot_r_middle_2
+    100054: blue_robot_rig:red_robot_r_palm
+    100056: blue_robot_rig:red_robot_r_pinkey_1
+    100058: blue_robot_rig:red_robot_r_pinkey_2
+    100060: blue_robot_rig:red_robot_r_pinkey_nobind
+    100062: blue_robot_rig:red_robot_r_shoulder
+    100064: blue_robot_rig:red_robot_r_thumb_2
+    100066: blue_robot_rig:red_robot_r_thumb_nobind
+    100068: blue_robot_rig:red_robot_r_wrist
+    100070: blue_robot_rig:red_robot_spine
+    100072: blue_robot_rig:red_robot_thumb_1
+    100074: blue_robot_rig:red_robot_thumb_1 1
+    400000: //RootNode
+    400002: blue_robot_rig:red_robot_hair_1
+    400004: blue_robot_rig:red_robot_hair_2
+    400006: blue_robot_rig:red_robot_hair_3
+    400008: blue_robot_rig:red_robot_hair_nobind
+    400010: blue_robot_rig:red_robot_l_arm
+    400012: blue_robot_rig:red_robot_l_index_1
+    400014: blue_robot_rig:red_robot_l_index_2
+    400016: blue_robot_rig:red_robot_l_index_nobind
+    400018: blue_robot_rig:red_robot_l_mid_nobind
+    400020: blue_robot_rig:red_robot_l_middle_1
+    400022: blue_robot_rig:red_robot_l_middle_2
+    400024: blue_robot_rig:red_robot_l_palm
+    400026: blue_robot_rig:red_robot_l_pinkey_1
+    400028: blue_robot_rig:red_robot_l_pinkey_2
+    400030: blue_robot_rig:red_robot_l_pinkey_nobind
+    400032: blue_robot_rig:red_robot_l_shoulder
+    400034: blue_robot_rig:red_robot_l_thumb_1
+    400036: blue_robot_rig:red_robot_l_thumb_nobind
+    400038: blue_robot_rig:red_robot_l_wrist
+    400040: blue_robot_rig:red_robot_r_arm
+    400042: blue_robot_rig:red_robot_r_index_1
+    400044: blue_robot_rig:red_robot_r_index_2
+    400046: blue_robot_rig:red_robot_r_index_nobind
+    400048: blue_robot_rig:red_robot_r_mid_nobind
+    400050: blue_robot_rig:red_robot_r_middle_1
+    400052: blue_robot_rig:red_robot_r_middle_2
+    400054: blue_robot_rig:red_robot_r_palm
+    400056: blue_robot_rig:red_robot_r_pinkey_1
+    400058: blue_robot_rig:red_robot_r_pinkey_2
+    400060: blue_robot_rig:red_robot_r_pinkey_nobind
+    400062: blue_robot_rig:red_robot_r_shoulder
+    400064: blue_robot_rig:red_robot_r_thumb_2
+    400066: blue_robot_rig:red_robot_r_thumb_nobind
+    400068: blue_robot_rig:red_robot_r_wrist
+    400070: blue_robot_rig:red_robot_spine
+    400072: blue_robot_rig:red_robot_thumb_1
+    400074: blue_robot_rig:red_robot_thumb_1 1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

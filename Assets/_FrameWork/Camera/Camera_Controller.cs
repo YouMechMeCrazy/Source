@@ -1,15 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//Enum to lean the code a bit.
-public enum CameraBounds
-{
-    TOP,
-    BOT,
-    RIGHT,
-    LEFT,
-    END
-}
+
 
 public class Camera_Controller : MonoBehaviour {
 
@@ -27,11 +19,15 @@ public class Camera_Controller : MonoBehaviour {
     [Tooltip("Layer mask we hit with screen side raycasts. Bounds is our default and only layer we want to hit.")]
     public LayerMask bounds;//use this layer for level bounds.
    
+   
+
+
     Ray[] cameraBounds = new Ray[4];//Quad rays that delimit the camera view. (top, bot, right, left)
 
     //The result of the raycast from cameraBounds[] and movement between current position and mean position.
     //[0] hit top; [1] hit bot; [2] hit right; [3] hit left; [4] moving Up; [5] moving down; [6] moving right; [7] moving left
-    bool[] boundHittingAndMovement = new bool[8]{false, false, false, false, false, false, false, false };
+    
+    public bool[] boundHittingAndMovement = new bool[8]{false, false, false, false, false, false, false, false };
     
 
     Vector3 boundOffsets = new Vector3(0f,0f,0f);
@@ -129,7 +125,7 @@ public class Camera_Controller : MonoBehaviour {
 
         float[] planeValues = new float[] { horizontalFactor, verticalFactor };
         //We set the Y position by taking our biggest distance between X and Z and adding a small bonus base on the Y distance of our players.
-        float yReturned = Mathf.Clamp(((Mathf.Max(planeValues)+ (yMean*2f)) * zoomFactor), 10f, 100f);
+        float yReturned = Mathf.Clamp(((Mathf.Max(planeValues)+ (yMean*2f)) * zoomFactor), 150f, 300f);
 
         //figure the correct z offset with fancy math.
         float zOffset = -Mathf.Sqrt((Mathf.Pow((yMean - yReturned), 2) * Mathf.Pow((Mathf.Cos(cameraAngle * Mathf.Deg2Rad)), 2) + Mathf.Pow((xMean - xReturned), 2) * Mathf.Pow(Mathf.Cos(cameraAngle * Mathf.Deg2Rad), 2))

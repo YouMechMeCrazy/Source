@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Player : MonoBehaviour {
 
     Vector3 input;
@@ -18,57 +19,69 @@ public class Player : MonoBehaviour {
     Transform legs; //the correct answer
     Transform arms; //who needs arms with legs like these
     Vector3 center;
-    [SerializeField]
-    float gravity;
-    float fallspeed;
-    [SerializeField]
-    float maxFallSpeed;
+    
     [SerializeField]
     float reach = 1;
 
+    [SerializeField]
+    float deathAnimDuration = 3f;
+    [SerializeField]
+    float reviveAnimDuration = 3f;
 
     Animator animTop;
     Animator animBot;
-
 
     Pickup holding = null;
     Vector3 holdingAngle;
     float holdingrotate = 0;
 
-        [SerializeField]
-    int pressState;
-    float pressTimer;
-
     [SerializeField]
     bool player2;
 
-    private bool isDying = false;
+    [SerializeField]
+    float playerHoldingHigth = 2.4f;
 
+
+    private bool hasControl = true;
+    private float pickUpStartTime = 0f;
+    private bool isPressing = false;
+
+    private string inputbonus = "";
+
+    Rigidbody rb;
 
     void Awake() 
     {
         animTop = transform.FindChild("Arms").transform.FindChild("Top").GetComponent<Animator>();
         animBot = transform.FindChild("Legs").transform.FindChild("Bot").GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
+
 
 	// Use this for initialization
 	void Start () {
         facingVector = new Vector3(1f, 0f, 0f);
         legs = transform.FindChild("Legs");
         arms = transform.FindChild("Arms");
-        fallspeed = 0;
-	}
+
+        
+        if (player2) { inputbonus = "2"; }
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if (isDying)
+        if (Input.GetButtonDown("Submit" + inputbonus))
+        {
+            GameController.Instance.Pause();
+        }
+
+        if (!hasControl)
         {
             return;
         }
-        string inputbonus = "";
-        if (player2) { inputbonus = "2"; }
-
+        
+        
         center = transform.position + new Vector3(0f, 1f, 0f);
 
         facingVector = Quaternion.AngleAxis(facingAngle, Vector3.up)*Vector3.right;
@@ -88,35 +101,24 @@ public class Player : MonoBehaviour {
 
         Movement();
 
-        Gravity();
 
         PickUp(inputbonus);
-
-        Press(inputbonus);
-
-        
 
         legs.rotation = Quaternion.LookRotation(facingVector.normalized);
         arms.rotation = Quaternion.LookRotation(armFacingVector.normalized);
 
     }
 
-    void Press(string inputbonus) {
-        //this isn't the actual code where the pressing happens, this is basically a "Key Down" thinger for the Pickup input, for pressing buttons
-        pressTimer -= Time.deltaTime;
+   
 
-        if (Input.GetAxis("PickUp" + inputbonus) !=0 && pressState == 0) { Debug.Log("Pressed"); pressState = 1; pressTimer = 0.5f; }
-        if (Input.GetAxis("PickUp" + inputbonus) == 0) { pressState = 0; }
-        if (pressTimer < 0 && pressState == 1) { pressState = 2; }
-    }
 
     void PickUp(string inputbonus) {
 
         if (holding!= null) {
-             holding.transform.position = center + armFacingVector * (reach+holding.GetSize());
+            holding.transform.position = center + armFacingVector * (reach + holding.GetSize()) + new Vector3(0f, Mathf.Clamp(playerHoldingHigth * ((Time.time - pickUpStartTime)*10f), 0f, playerHoldingHigth), 0f);
             
             holdingrotate = Vector2.Angle(new Vector2(armFacingVector.x,armFacingVector.z), new Vector2(holdingAngle.x,holdingAngle.z));
-            //Debug.Log(holdingrotate);
+     
             Vector3 cross = Vector3.Cross(new Vector2(armFacingVector.x, armFacingVector.z), new Vector2(holdingAngle.x, holdingAngle.z));
             if (cross.z < 0) { holdingrotate = 360 - holdingrotate; }
             
@@ -124,39 +126,6 @@ public class Player : MonoBehaviour {
 
         }
 
-
-        if (Input.GetAxis("PickUp" + inputbonus) < 0 || Input.GetAxis("PickUp" + inputbonus) > 0)
-        {
-            if (holding == null)
-            {
-                RaycastHit[] hits = Physics.BoxCastAll(center, new Vector3(0.1f, 0.1f, 0.1f), armFacingVector, Quaternion.identity, reach);
-                for (int i = 0; i < hits.Length; i++)
-                {
-                    Pickup temp = hits[i].transform.GetComponent<Pickup>();
-                    if (temp != null)
-                    {
-                        animTop.SetBool("Pickup", true);
-                        animBot.SetBool("Pickup", true);
-                        temp.OnPickedUp();
-                        holding = temp;
-                        holding.transform.position = center + armFacingVector * (reach + holding.GetSize());
-                        holdingAngle = (holding.transform.position - transform.position).normalized;
-                        holdingrotate = 0;
-                    }
-                }
-
-
-
-            }
-        }
-
-        else {
-            if (holding != null) { holding.OnPutDown(); holding = null;
-            animTop.SetBool("Pickup", false);
-            animBot.SetBool("Pickup", false);
-            }
-        }
-
         if (Input.GetAxis("PickUp" + inputbonus) < 0 || Input.GetAxis("PickUp" + inputbonus) > 0)
         {
             if (holding == null)
@@ -169,115 +138,76 @@ public class Player : MonoBehaviour {
                     {
                         temp.OnPickedUp();
                         holding = temp;
-                        holding.transform.position = center + armFacingVector * (reach + holding.GetSize());
+                        holding.transform.position = (center + armFacingVector * (reach + holding.GetSize()));
                         holdingAngle = (holding.transform.position - transform.position).normalized;
                         holdingrotate = 0;
+                        pickUpStartTime = Time.time + 0.25f;
+                        animTop.SetBool("pickingUp", true);
+                        GetComponent<Weight>().AddWeight(holding.gameObject.GetComponent<Weight>().GetWeight());
                     }
+                    if (hits[i].transform.GetComponent<Button>() != null && !isPressing)
+                    {
+                        //play button sounds
+                        //play button press anim
+                        hits[i].transform.GetComponent<Button>().Hit();
+                        isPressing = true;
+                    }
+
                 }
 
 
 
             }
         }
-        else {
-            if (holding != null) { holding.OnPutDown(); holding = null;
-            animTop.SetBool("Pickup", false);
-            animBot.SetBool("Pickup", false);
+        else 
+        {
+            if (holding != null) {
+                GetComponent<Weight>().RemoveWeight(holding.gameObject.GetComponent<Weight>().GetWeight());
+                holding.OnPutDown(); holding = null;
+                animTop.SetBool("pickingUp", false);
             }
+            isPressing = false;
         }
 
 
     }
 
     void OnTriggerStay(Collider other) {
-        if (other.GetComponent<Button>())
-        {
-            if (pressState == 1)
-            {
-                pressState = 2;
-                other.GetComponent<Button>().Hit();
-            }
+        if (other.GetComponent<Button>()&&Input.GetButtonDown("PickUp")){
+            other.GetComponent<Button>().Hit();
         }
     }
+
 
 
     void Movement() {
-        float speedMult = GetSpeedMult();
-        float speed = moveSpeed * speedMult * Time.deltaTime;
 
-
-        animBot.SetFloat("move", Mathf.Abs(speed));
-        animTop.SetFloat("move", Mathf.Abs(speed));
-
-        Vector3 dirvector = facingVector;
-        bool ok = true;
-        //bool check = false;
-        //if (holding != null) { check = Physics.CheckSphere(holding.transform.position+(facingVector* speed), holding.GetSize()); }
-        //if (!check)
-        //{
-            //if (Physics.CheckSphere(center + (facingVector * speed), 0.5f))
-
-            if(WallCheck(facingVector*speed))
-            {
-                ok = false;
-                for (var i = 0; i < 60; i += 5)
-                {
-                    dirvector = Quaternion.AngleAxis(facingAngle + i, Vector3.up) * Vector3.right;
-                    if (!WallCheck(dirvector* speed)) { ok = true; break; }
-                    dirvector = Quaternion.AngleAxis(facingAngle - i, Vector3.up) * Vector3.right;
-                    if (!WallCheck(dirvector * speed)) { ok = true; break; }
-                }
-
-            }
-            if (ok)
-            {
-                transform.Translate(dirvector * speed);
-            }
-        //}
-    }
-
-    void Gravity()
-    {
-
-        RaycastHit[] hits;
-        hits = Physics.BoxCastAll(center, new Vector3(0.3f, 0.3f, 0.3f), Vector3.down, Quaternion.identity, fallspeed * Time.deltaTime+0.5f,1,QueryTriggerInteraction.Ignore);
-       
-        if (hits.Length > 0)
+        float xAxis = Mathf.Abs( Input.GetAxis("Horizontal" + inputbonus));
+        if (xAxis < 0.1f)
         {
-            fallspeed = 0f;
-            float lowesty = 1000f;
-            for (var i = 0; i < hits.Length; i++) {
-                if (hits[i].distance < lowesty) { lowesty = hits[i].distance; }
-            }
-            transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f - lowesty, transform.position.z);
-
-        }
-        else {
-            fallspeed = Mathf.Min(fallspeed + gravity * Time.deltaTime, maxFallSpeed);
+            xAxis = 0f;
         }
 
-        transform.Translate(new Vector3(0f, -fallspeed*Time.deltaTime,0f));
-    }
-
-
-    float GetSpeedMult() {
-        Vector2 v1 = new Vector2(facingVector.x, facingVector.z).normalized;
-        Vector2 v2 = new Vector2(input.x, input.z).normalized;
-
-        if (v2 != Vector2.zero)
+        float yAxis = Mathf.Abs(Input.GetAxis("Vertical" + inputbonus));
+        if (yAxis < 0.1f)
         {
-            float f = Vector2.Dot(v1, v2);
-            f = Mathf.Clamp(f, -1, 1);//just in case.
-            f = f / 2 + 0.5f; //make it a number between 0 and 1
-           // Debug.Log(f);
-            return f;
+            yAxis = 0f;
         }
-        else {
-            return 0f;
-        }
+
+        float[] move = new float[] { xAxis, yAxis };
+        Vector3 dirvector = new Vector3(facingVector.x, 1f, facingVector.z) * moveSpeed * Mathf.Max( move) * Time.deltaTime;
+
+        rb.velocity = new Vector3(dirvector.x, rb.velocity.y, dirvector.z);
+        
+        animBot.SetFloat("move", Mathf.Max(move));
+        animTop.SetFloat("move", Mathf.Max(move));
 
 
     }
+
+    
+
+
 
     void LegRotate() {
         
@@ -289,7 +219,7 @@ public class Player : MonoBehaviour {
 
         if (Mathf.Abs(f) < Mathf.Abs(Mathf.DeltaAngle(facingAngle, inputangle))) { facingAngle += f; }
         else { facingAngle = inputangle; }        
-        //Debug.Log(facingangle.ToString() + " " + inputangle.ToString());
+        
     }
 
     void ArmRotate()
@@ -312,38 +242,66 @@ public class Player : MonoBehaviour {
             if (Physics.CheckSphere(center+armFacingVector*(reach+holding.GetSize()), holding.GetSize(),1, QueryTriggerInteraction.Ignore)) { armFacingAngle = oldFacingAngle; }
         }
 
-        //Debug.Log(facingangle.ToString() + " " + inputangle.ToString());
+       
     }
 
-    bool WallCheck(Vector3 offset) {
-        
-        if (holding != null) { if( Physics.CheckSphere(holding.transform.position + offset, holding.GetSize(),1,QueryTriggerInteraction.Ignore)){ return true; } }
-        if (Physics.CheckSphere(center + offset, 0.5f, 1, QueryTriggerInteraction.Ignore)){ return true; }
-        return false;
-        
-    }
+
     #region Leos New junk
 
-    public void Death(Vector3 respawnPOS)
+    public void Death()
     {
         //Play anims
         //Play sounds
-        isDying = true;
-         StartCoroutine(DeathDelay(respawnPOS));
+        hasControl = false;
+        rb.velocity = new Vector3(0f,0f,0f);
+        rb.isKinematic = true;
+        StartCoroutine(DeathAnimation());
     }
 
-    IEnumerator DeathDelay(Vector3 respawnPOS)
+    IEnumerator DeathAnimation()
     {
-        yield return new WaitForSeconds(3f);
+        
+        yield return new WaitForSeconds(deathAnimDuration);
+        StartCoroutine(GameController.Instance.TryRespawnPlayer(player2, deathAnimDuration));
+        
+    }
 
-        transform.position = respawnPOS;
-        isDying = false;
+    public void RespawnPlayer()
+    {
+        //play anim
+        //play revive sound
+        StartCoroutine(RespawnAnimation());
+    }
+
+    IEnumerator RespawnAnimation() 
+    {
+       
+        yield return new WaitForSeconds(reviveAnimDuration);
+    
+        rb.isKinematic = false;
+        hasControl = true;
+    }
+
+    public bool HasControl() 
+    {
+        return hasControl;
     }
 
     public bool IsPlayerTwo()
     {
         return player2;
     }
+
+    public void SetPlayerControl(bool playerHasControl) 
+    {
+        hasControl = playerHasControl;
+    }
+
+    public void ZeroVelocity() 
+    {
+        rb.velocity = new Vector3(0f,0f,0f);
+    }
+
     #endregion
 
 }

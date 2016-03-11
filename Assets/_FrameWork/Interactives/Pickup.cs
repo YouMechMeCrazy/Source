@@ -10,55 +10,32 @@ public class Pickup : MonoBehaviour {
     float maxFallSpeed;
 
     bool isHold;
+    Rigidbody rb;
+    float maxVelocity = 5f;
+
 
     // Use this for initialization
-    void Start () {
-	
+    void Start () 
+    {
+        rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
-	protected virtual void Update () {
-        if (!isHold) { Gravity(); }
+	void Update () 
+    {
+        rb.velocity = Vector3.ClampMagnitude(rb.velocity, 10f);
 	}
 
-   protected virtual void Gravity() {
-        RaycastHit[] hits;
-        hits = Physics.BoxCastAll(transform.position, new Vector3(0.3f, 0.3f, 0.3f), Vector3.down, Quaternion.identity, fallspeed * Time.deltaTime + 0.5f,1,QueryTriggerInteraction.Ignore);
-        bool ok = false;
-        if (hits.Length > 0)
-        {
-            
-            for (int i = 0; i < hits.Length; i++) {
-                if (hits[i].transform != transform) { ok = true; }
-            }
 
-            if (ok)
-            {
-                fallspeed = 0f;
-                float lowesty = 1000f;
-                for (var i = 0; i < hits.Length; i++)
-                {
-                    if (hits[i].distance < lowesty && hits[i].transform!= transform) { lowesty = hits[i].distance; }
-                }
-                transform.position = new Vector3(transform.position.x, transform.position.y + 0.5f - lowesty, transform.position.z);
-            }
-
-        }
-        if(!ok) {
-            fallspeed = Mathf.Min(fallspeed + gravity * Time.deltaTime, maxFallSpeed);
-        }
-
-        transform.Translate(new Vector3(0f, -fallspeed * Time.deltaTime, 0f));
-    }
 
     public virtual void OnPickedUp() {
-        GetComponent<Collider>().enabled = false;
+        
         isHold = true;
-        fallspeed = 0f;
+        
     }
 
     public virtual void OnPutDown() {
-        GetComponent<Collider>().enabled = true;
+        
         isHold = false;
     }
 

@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_FrameWork\Controllers\CTR_LevelSelection.cs">
+    <Files>
+      <File FileName="Assets\_FrameWork\Player\PlayerController\Player.cs" Line="181" Column="1" />
+      <File FileName="Assets\_FrameWork\Controllers\CTR_LevelSelection.cs" Line="3" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

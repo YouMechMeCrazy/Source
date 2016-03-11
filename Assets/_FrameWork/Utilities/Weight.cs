@@ -14,4 +14,12 @@ public class Weight : MonoBehaviour {
     {
         weight=newWeight;
     }
+    public void AddWeight(float addedWeight) 
+    {
+        weight += addedWeight;
+    }
+    public void RemoveWeight(float lostWeight) 
+    {
+        weight -= lostWeight;
+    }
 }
