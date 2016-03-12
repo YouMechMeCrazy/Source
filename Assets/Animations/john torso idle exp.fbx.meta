@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 620a1e5e8da1b6542b738207876e3aea
+timeCreated: 1457805420
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: blue_robot_rig:M_mech_blue
+    100002: blue_robot_rig:polySurface38
+    100004: blue_robot_rig:polySurface39
+    100006: blue_robot_rig:polySurface40
+    100008: blue_robot_rig:polySurface41
+    100010: blue_robot_rig:polySurface42
+    100012: blue_robot_rig:polySurface42 1
+    100014: blue_robot_rig:polySurface47
+    100016: blue_robot_rig:polySurface48
+    100018: blue_robot_rig:polySurface50
+    100020: blue_robot_rig:polySurface54
+    100022: blue_robot_rig:polySurface55
+    100024: blue_robot_rig:polySurface56
+    100026: blue_robot_rig:polySurface57
+    100028: blue_robot_rig:polySurface58
+    100030: blue_robot_rig:polySurface59
+    100032: blue_robot_rig:polySurface60
+    100034: blue_robot_rig:polySurface62
+    100036: blue_robot_rig:polySurface65
+    100038: blue_robot_rig:red_robot_hair_1
+    100040: blue_robot_rig:red_robot_hair_2
+    100042: blue_robot_rig:red_robot_hair_3
+    100044: blue_robot_rig:red_robot_hair_nobind
+    100046: blue_robot_rig:red_robot_l_arm
+    100048: blue_robot_rig:red_robot_l_index_1
+    100050: blue_robot_rig:red_robot_l_index_2
+    100052: blue_robot_rig:red_robot_l_index_nobind
+    100054: blue_robot_rig:red_robot_l_mid_nobind
+    100056: blue_robot_rig:red_robot_l_middle_1
+    100058: blue_robot_rig:red_robot_l_middle_2
+    100060: blue_robot_rig:red_robot_l_palm
+    100062: blue_robot_rig:red_robot_l_pinkey_1
+    100064: blue_robot_rig:red_robot_l_pinkey_2
+    100066: blue_robot_rig:red_robot_l_pinkey_nobind
+    100068: blue_robot_rig:red_robot_l_shoulder
+    100070: blue_robot_rig:red_robot_l_thumb_1
+    100072: blue_robot_rig:red_robot_l_thumb_nobind
+    100074: blue_robot_rig:red_robot_l_wrist
+    100076: blue_robot_rig:red_robot_r_arm
+    100078: blue_robot_rig:red_robot_r_index_1
+    100080: blue_robot_rig:red_robot_r_index_2
+    100082: blue_robot_rig:red_robot_r_index_nobind
+    100084: blue_robot_rig:red_robot_r_mid_nobind
+    100086: blue_robot_rig:red_robot_r_middle_1
+    100088: blue_robot_rig:red_robot_r_middle_2
+    100090: blue_robot_rig:red_robot_r_palm
+    100092: blue_robot_rig:red_robot_r_pinkey_1
+    100094: blue_robot_rig:red_robot_r_pinkey_2
+    100096: blue_robot_rig:red_robot_r_pinkey_nobind
+    100098: blue_robot_rig:red_robot_r_shoulder
+    100100: blue_robot_rig:red_robot_r_thumb_2
+    100102: blue_robot_rig:red_robot_r_thumb_nobind
+    100104: blue_robot_rig:red_robot_r_wrist
+    100106: blue_robot_rig:red_robot_spine
+    100108: blue_robot_rig:red_robot_thumb_1
+    100110: blue_robot_rig:red_robot_thumb_1 1
+    100112: blue_robot_rig:transform41
+    100114: blue_robot_rig:transform42
+    100116: blue_robot_rig:transform43
+    100118: blue_robot_rig:transform44
+    100120: blue_robot_rig:transform45
+    100122: blue_robot_rig:transform46
+    100124: blue_robot_rig:transform47
+    100126: blue_robot_rig:transform48
+    100128: blue_robot_rig:transform49
+    100130: blue_robot_rig:transform57
+    100132: blue_robot_rig:transform58
+    100134: blue_robot_rig:transform59
+    100136: blue_robot_rig:transform60
+    100138: blue_robot_rig:transform61
+    100140: blue_robot_rig:transform62
+    100142: blue_robot_rig:transform63
+    100144: blue_robot_rig:transform64
+    100146: //RootNode
+    400000: blue_robot_rig:M_mech_blue
+    400002: blue_robot_rig:polySurface38
+    400004: blue_robot_rig:polySurface39
+    400006: blue_robot_rig:polySurface40
+    400008: blue_robot_rig:polySurface41
+    400010: blue_robot_rig:polySurface42
+    400012: blue_robot_rig:polySurface42 1
+    400014: blue_robot_rig:polySurface47
+    400016: blue_robot_rig:polySurface48
+    400018: blue_robot_rig:polySurface50
+    400020: blue_robot_rig:polySurface54
+    400022: blue_robot_rig:polySurface55
+    400024: blue_robot_rig:polySurface56
+    400026: blue_robot_rig:polySurface57
+    400028: blue_robot_rig:polySurface58
+    400030: blue_robot_rig:polySurface59
+    400032: blue_robot_rig:polySurface60
+    400034: blue_robot_rig:polySurface62
+    400036: blue_robot_rig:polySurface65
+    400038: blue_robot_rig:red_robot_hair_1
+    400040: blue_robot_rig:red_robot_hair_2
+    400042: blue_robot_rig:red_robot_hair_3
+    400044: blue_robot_rig:red_robot_hair_nobind
+    400046: blue_robot_rig:red_robot_l_arm
+    400048: blue_robot_rig:red_robot_l_index_1
+    400050: blue_robot_rig:red_robot_l_index_2
+    400052: blue_robot_rig:red_robot_l_index_nobind
+    400054: blue_robot_rig:red_robot_l_mid_nobind
+    400056: blue_robot_rig:red_robot_l_middle_1
+    400058: blue_robot_rig:red_robot_l_middle_2
+    400060: blue_robot_rig:red_robot_l_palm
+    400062: blue_robot_rig:red_robot_l_pinkey_1
+    400064: blue_robot_rig:red_robot_l_pinkey_2
+    400066: blue_robot_rig:red_robot_l_pinkey_nobind
+    400068: blue_robot_rig:red_robot_l_shoulder
+    400070: blue_robot_rig:red_robot_l_thumb_1
+    400072: blue_robot_rig:red_robot_l_thumb_nobind
+    400074: blue_robot_rig:red_robot_l_wrist
+    400076: blue_robot_rig:red_robot_r_arm
+    400078: blue_robot_rig:red_robot_r_index_1
+    400080: blue_robot_rig:red_robot_r_index_2
+    400082: blue_robot_rig:red_robot_r_index_nobind
+    400084: blue_robot_rig:red_robot_r_mid_nobind
+    400086: blue_robot_rig:red_robot_r_middle_1
+    400088: blue_robot_rig:red_robot_r_middle_2
+    400090: blue_robot_rig:red_robot_r_palm
+    400092: blue_robot_rig:red_robot_r_pinkey_1
+    400094: blue_robot_rig:red_robot_r_pinkey_2
+    400096: blue_robot_rig:red_robot_r_pinkey_nobind
+    400098: blue_robot_rig:red_robot_r_shoulder
+    400100: blue_robot_rig:red_robot_r_thumb_2
+    400102: blue_robot_rig:red_robot_r_thumb_nobind
+    400104: blue_robot_rig:red_robot_r_wrist
+    400106: blue_robot_rig:red_robot_spine
+    400108: blue_robot_rig:red_robot_thumb_1
+    400110: blue_robot_rig:red_robot_thumb_1 1
+    400112: blue_robot_rig:transform41
+    400114: blue_robot_rig:transform42
+    400116: blue_robot_rig:transform43
+    400118: blue_robot_rig:transform44
+    400120: blue_robot_rig:transform45
+    400122: blue_robot_rig:transform46
+    400124: blue_robot_rig:transform47
+    400126: blue_robot_rig:transform48
+    400128: blue_robot_rig:transform49
+    400130: blue_robot_rig:transform57
+    400132: blue_robot_rig:transform58
+    400134: blue_robot_rig:transform59
+    400136: blue_robot_rig:transform60
+    400138: blue_robot_rig:transform61
+    400140: blue_robot_rig:transform62
+    400142: blue_robot_rig:transform63
+    400144: blue_robot_rig:transform64
+    400146: //RootNode
+    4300000: blue_robot_rig:polySurface38
+    4300002: blue_robot_rig:polySurface65
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: blue_robot_rig:polySurface38
+    13700002: blue_robot_rig:polySurface65
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

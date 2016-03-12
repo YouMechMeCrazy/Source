@@ -103,7 +103,7 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
                 if(i == 1)
                 {
                     fieldOfViewBounds[1] = hit.point.z;
-                    downB.position = hit.point;
+                    downB.position = new Vector3(hit.point.x, hit.point.y, hit.point.z -5f);
                 }
                 if (i == 2)
                 {
@@ -131,10 +131,10 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
        
     
 
-        topB.GetComponent<BoxCollider>().size = new Vector3((fieldOfViewBounds[2]-fieldOfViewBounds[3]), 8f, 3f);
-        downB.GetComponent<BoxCollider>().size = new Vector3((fieldOfViewBounds[2] - fieldOfViewBounds[3]), 8f, 3f);
-        rightB.GetComponent<BoxCollider>().size = new Vector3(3f, 8f, (fieldOfViewBounds[0] - fieldOfViewBounds[1]));
-        leftB.GetComponent<BoxCollider>().size = new Vector3(3f, 8f, (fieldOfViewBounds[0] - fieldOfViewBounds[1]));
+        topB.GetComponent<BoxCollider>().size = new Vector3((fieldOfViewBounds[2]-fieldOfViewBounds[3]), 40f, 3f);
+        downB.GetComponent<BoxCollider>().size = new Vector3((fieldOfViewBounds[2] - fieldOfViewBounds[3]), 40f, 3f);
+        rightB.GetComponent<BoxCollider>().size = new Vector3(3f, 40f, (fieldOfViewBounds[0] - fieldOfViewBounds[1]));
+        leftB.GetComponent<BoxCollider>().size = new Vector3(3f, 40f, (fieldOfViewBounds[0] - fieldOfViewBounds[1]));
         xColliderSizeRation = topB.GetComponent<BoxCollider>().size.x;
         zColliderSizeRation = leftB.GetComponent<BoxCollider>().size.z;
        
@@ -341,6 +341,8 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         float verticalFactor = 2f * Mathf.Abs(Vector3.Dot(p1, new Vector3(0f, 0f, 1f)) - Vector3.Dot(p2, new Vector3(0f, 0f, 1f)));
 
         float[] planeValues = new float[] { horizontalFactor, verticalFactor };
+
+      
         //We set the Y position by taking our biggest distance between X and Z and adding a small bonus base on the Y distance of our players.
         float yReturned = Mathf.Clamp(((Mathf.Max(planeValues) + (yMean * 2f)) * zoomFactor), minDistanceZoomedOut, maxDistanceZoomedOut);
 

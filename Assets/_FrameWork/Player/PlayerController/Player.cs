@@ -148,7 +148,8 @@ public class Player : MonoBehaviour {
                     if (hits[i].transform.GetComponent<Button>() != null && !isPressing)
                     {
                         //play button sounds
-                        //play button press anim
+                        Debug.Log("Button pressed");
+                        animTop.SetTrigger("pressingButton");
                         hits[i].transform.GetComponent<Button>().Hit();
                         isPressing = true;
                     }

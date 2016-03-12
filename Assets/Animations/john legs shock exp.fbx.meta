@@ -1,0 +1,145 @@
+fileFormatVersion: 2
+guid: 43e7f0020fd31ce4ab4452a0d1a10608
+timeCreated: 1457809548
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: blue_robot_rig:blue_robot_hips
+    100002: blue_robot_rig:blue_robot_l_foot
+    100004: blue_robot_rig:blue_robot_l_leg_1
+    100006: blue_robot_rig:blue_robot_l_leg_2
+    100008: blue_robot_rig:blue_robot_r_foot
+    100010: blue_robot_rig:blue_robot_r_leg_1
+    100012: blue_robot_rig:blue_robot_r_leg_2
+    100014: blue_robot_rig:M_mech_blue
+    100016: blue_robot_rig:polySurface43
+    100018: blue_robot_rig:polySurface44
+    100020: blue_robot_rig:polySurface45
+    100022: blue_robot_rig:polySurface46
+    100024: blue_robot_rig:polySurface46 1
+    100026: blue_robot_rig:polySurface49
+    100028: blue_robot_rig:polySurface51
+    100030: blue_robot_rig:polySurface51 1
+    100032: blue_robot_rig:polySurface52
+    100034: blue_robot_rig:polySurface53
+    100036: blue_robot_rig:polySurface61
+    100038: blue_robot_rig:polySurface63
+    100040: blue_robot_rig:polySurface64
+    100042: blue_robot_rig:transform41
+    100044: blue_robot_rig:transform50
+    100046: blue_robot_rig:transform51
+    100048: blue_robot_rig:transform52
+    100050: blue_robot_rig:transform53
+    100052: blue_robot_rig:transform54
+    100054: blue_robot_rig:transform55
+    100056: blue_robot_rig:transform56
+    100058: blue_robot_rig:transform65
+    100060: blue_robot_rig:transform66
+    100062: blue_robot_rig:transform67
+    100064: blue_robot_rig:transform68
+    100066: blue_robot_rig:transform69
+    100068: //RootNode
+    400000: blue_robot_rig:blue_robot_hips
+    400002: blue_robot_rig:blue_robot_l_foot
+    400004: blue_robot_rig:blue_robot_l_leg_1
+    400006: blue_robot_rig:blue_robot_l_leg_2
+    400008: blue_robot_rig:blue_robot_r_foot
+    400010: blue_robot_rig:blue_robot_r_leg_1
+    400012: blue_robot_rig:blue_robot_r_leg_2
+    400014: blue_robot_rig:M_mech_blue
+    400016: blue_robot_rig:polySurface43
+    400018: blue_robot_rig:polySurface44
+    400020: blue_robot_rig:polySurface45
+    400022: blue_robot_rig:polySurface46
+    400024: blue_robot_rig:polySurface46 1
+    400026: blue_robot_rig:polySurface49
+    400028: blue_robot_rig:polySurface51
+    400030: blue_robot_rig:polySurface51 1
+    400032: blue_robot_rig:polySurface52
+    400034: blue_robot_rig:polySurface53
+    400036: blue_robot_rig:polySurface61
+    400038: blue_robot_rig:polySurface63
+    400040: blue_robot_rig:polySurface64
+    400042: blue_robot_rig:transform41
+    400044: blue_robot_rig:transform50
+    400046: blue_robot_rig:transform51
+    400048: blue_robot_rig:transform52
+    400050: blue_robot_rig:transform53
+    400052: blue_robot_rig:transform54
+    400054: blue_robot_rig:transform55
+    400056: blue_robot_rig:transform56
+    400058: blue_robot_rig:transform65
+    400060: blue_robot_rig:transform66
+    400062: blue_robot_rig:transform67
+    400064: blue_robot_rig:transform68
+    400066: blue_robot_rig:transform69
+    400068: //RootNode
+    4300000: blue_robot_rig:polySurface46
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: blue_robot_rig:polySurface46
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

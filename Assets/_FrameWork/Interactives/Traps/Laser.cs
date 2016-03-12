@@ -26,7 +26,7 @@ public class Laser : InputObject {
 
         if (state == input._On) {
             Beam.GetComponent<Renderer>().enabled = true;
-            Beam.transform.localPosition = new Vector3(length / 2, 0f, 0f);
+            Beam.transform.localPosition = new Vector3(length / 2, Beam.transform.localPosition.y, 0f);
             Beam.transform.localScale = new Vector3(0.1f,length/2, 0.1f);
 
         }
