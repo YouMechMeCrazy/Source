@@ -38,10 +38,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="UnityEngine">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+      <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+      <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -74,6 +74,7 @@
      <Compile Include="Assets\_FrameWork\Interactives\Utility\Programable_Mover.cs" />
      <Compile Include="Assets\_FrameWork\Player\PlayerController\Player.cs" />
      <Compile Include="Assets\_FrameWork\Static\Statics.cs" />
+     <Compile Include="Assets\_FrameWork\TempFixes\SwapMaterialOnTrigger.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\Destructable.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\Rotation_Script.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\SpeachBubble\Speach_Bubble.cs" />
@@ -81,10 +82,10 @@
      <Compile Include="Assets\_FrameWork\Utilities\Weight.cs" />
      <None Include="Assets\Planets\shader\two_side_shader.shader" />
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
