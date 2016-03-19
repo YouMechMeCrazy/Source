@@ -73,7 +73,7 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Submit" + inputbonus) && GameController.Instance.TimeAtPause() < Time.time - 0.1f)
+        if (Input.GetButtonUp("Submit" + inputbonus) && GameController.Instance.TimeAtPause() < Time.time - 0.5f)
         {
             GameController.Instance.Pause();
         }
@@ -343,10 +343,6 @@ public class Player : MonoBehaviour {
             isBroken = false;
             arms.localPosition = new Vector3(0f, 0.84f, 0f);
         }
-        
-        Debug.Log(Vector3.Distance(arms.position, legs.position));
-        
-
 
     }
 

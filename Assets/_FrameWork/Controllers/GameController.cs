@@ -162,7 +162,6 @@ public class GameController : MonoBehaviour {
     {
         //playsound
         timeAtPause = Time.time;
-        Debug.Log(timeAtPause);
         isPaused = !isPaused;
         if (isPaused)
         {

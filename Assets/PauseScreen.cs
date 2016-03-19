@@ -29,6 +29,7 @@ public class PauseScreen : MonoBehaviour {
 
         if (isPaused)
         {
+            
             if (Input.GetAxis("Vertical") > 0.1 || Input.GetAxis("Vertical2") > 0.1)
             {
                 SetSelected(-1);
