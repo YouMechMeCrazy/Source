@@ -60,6 +60,7 @@
      <Compile Include="Assets\_FrameWork\Environment\AndGateLight.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\ButtonsAndTriggers\InteractiveButton.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\ButtonsAndTriggers\PressurePlate.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\Combiner.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\DebugBlock.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Doorway\Doorway.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Doorway\Doorway_Triggerzone.cs" />

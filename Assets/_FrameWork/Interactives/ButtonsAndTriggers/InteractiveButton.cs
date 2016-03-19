@@ -104,4 +104,9 @@ public class InteractiveButton : MonoBehaviour {
         isOnTimeDelay = false;
         
     }
+
+    public bool GetOnStatus()
+    {
+        return isOn;
+    }
 }

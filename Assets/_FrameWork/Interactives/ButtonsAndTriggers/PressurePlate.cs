@@ -24,16 +24,18 @@ public class PressurePlate : MonoBehaviour {
     [SerializeField]
     Input[] offInputs;
 
-
+    [SerializeField]
     public bool hasTimerDelay = false;
     [SerializeField]
     float timerDuration = 5f;
+
     bool isCountingDownTimer = false;
 
     bool on = false;
 
 	
-	void Start () {
+	void Start () 
+    {
         TriggerList = new List<Collider>();
 	}
 
@@ -54,7 +56,8 @@ public class PressurePlate : MonoBehaviour {
             }
         }
 
-        if (currweight >= weight && !on){
+        if (currweight >= weight && !on)
+        {
             on = true;
             for (int i = 0; i < onInputs.Length; i++)
             {
@@ -94,29 +97,34 @@ public class PressurePlate : MonoBehaviour {
     }
 
  //called when something enters the trigger
- void OnTriggerStay(Collider other)
- {
-     //Debug.Log("hello");
-     //if the object is not already in the list
-     if(!TriggerList.Contains(other))
+     void OnTriggerStay(Collider other)
      {
-         Debug.Log(other.name + "Added");
-         //add the object to the list
-         TriggerList.Add(other);
-     }
+         //Debug.Log("hello");
+         //if the object is not already in the list
+         if(!TriggerList.Contains(other))
+         {
+             Debug.Log(other.name + "Added");
+             //add the object to the list
+             TriggerList.Add(other);
+         }
     
- }
- 
- //called when something exits the trigger
- void OnTriggerExit(Collider other)
- {
-     Debug.Log(other.name + "Removed");
-     //if the object is in the list
-     if(TriggerList.Contains(other))
-     {
-         //remove it from the list
-         TriggerList.Remove(other);
      }
- }
+ 
+     //called when something exits the trigger
+     void OnTriggerExit(Collider other)
+     {
+         Debug.Log(other.name + "Removed");
+         //if the object is in the list
+         if(TriggerList.Contains(other))
+         {
+             //remove it from the list
+             TriggerList.Remove(other);
+         }
+     }
+
+     public bool GetOnStatus() 
+     {
+         return on;
+     }
 
 }

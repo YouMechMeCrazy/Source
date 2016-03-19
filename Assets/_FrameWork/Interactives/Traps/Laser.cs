@@ -9,7 +9,7 @@ public class Laser : InputObject {
     Transform Beam;
 
     [SerializeField]
-    bool defaultActive;
+    bool starOn;
 
     
     Transform RespawnLocation;
@@ -18,7 +18,7 @@ public class Laser : InputObject {
 	void Start () {
 
         Beam = transform.FindChild("LaserBeam");
-        if (defaultActive) { state = input._Off; } else { state = input._On; }
+        if (starOn) { state = input._Off; } else { state = input._On; }
 	}
 	
 	// Update is called once per frame
