@@ -47,6 +47,7 @@ public class Player : MonoBehaviour {
     private bool isPressing = false;
 
     private string inputbonus = "";
+    private bool isBroken = true;
 
     Rigidbody rb;
 
@@ -82,6 +83,7 @@ public class Player : MonoBehaviour {
             return;
         }
 
+       
 
         center = transform.position + new Vector3(0f, 1f, 0f);
 
@@ -102,12 +104,17 @@ public class Player : MonoBehaviour {
         }
 
         Movement();
- 
 
+        
         PickUp(inputbonus);
 
         legs.rotation = Quaternion.LookRotation(facingVector.normalized);
         arms.rotation = Quaternion.LookRotation(armFacingVector.normalized);
+
+        if (isBroken)
+        {
+            BrokenState();
+        }
 
     }
 
@@ -210,7 +217,9 @@ public class Player : MonoBehaviour {
 
         rb.velocity = new Vector3(dirvector.x, rb.velocity.y, dirvector.z);
 
+
         animBot.SetFloat("move", Mathf.Max(move));
+        if(!isBroken)
         animTop.SetFloat("move", Mathf.Max(move));
 
 
@@ -317,6 +326,30 @@ public class Player : MonoBehaviour {
     {
         rb.velocity = new Vector3(0f,0f,0f);
     }
+
+    void BrokenState() 
+    {
+        float xposTemp = 0f;
+        if (player2)
+        {
+            xposTemp = -15f;
+        }
+        arms.position = new Vector3(xposTemp, -12.45f, 7.76f);
+
+
+
+        if (Vector3.Distance(arms.position, legs.position) < 1.5f)
+        {
+            isBroken = false;
+            arms.localPosition = new Vector3(0f, 0.84f, 0f);
+        }
+        
+        Debug.Log(Vector3.Distance(arms.position, legs.position));
+        
+
+
+    }
+
 
     #endregion
 

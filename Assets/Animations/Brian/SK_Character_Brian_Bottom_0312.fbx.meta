@@ -201,7 +201,7 @@ ModelImporter:
       name: Brian_Bot_Idle
       takeName: Take 001
       firstFrame: 1
-      lastFrame: 120
+      lastFrame: 119
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
