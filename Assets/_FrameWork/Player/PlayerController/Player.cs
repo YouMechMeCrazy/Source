@@ -59,7 +59,8 @@ public class Player : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start() {
+    void Start() 
+    {
         facingVector = new Vector3(1f, 0f, 0f);
         legs = transform.FindChild("Legs");
         arms = transform.FindChild("Arms");
@@ -71,7 +72,7 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Submit" + inputbonus))
+        if (Input.GetButtonDown("Submit" + inputbonus) && GameController.Instance.TimeAtPause() < Time.time - 0.1f)
         {
             GameController.Instance.Pause();
         }
@@ -91,7 +92,8 @@ public class Player : MonoBehaviour {
         input = new Vector3(Input.GetAxis("Horizontal" + inputbonus), 0f, Input.GetAxis("Vertical" + inputbonus));
         arminput = new Vector3(Input.GetAxis("HorizontalArms" + inputbonus), 0f, Input.GetAxis("VerticalArms" + inputbonus));
 
-        if (input != Vector3.zero) {
+        if (input != Vector3.zero) 
+        {
             LegRotate();
         }
         if (arminput != Vector3.zero)
@@ -100,7 +102,7 @@ public class Player : MonoBehaviour {
         }
 
         Movement();
-
+ 
 
         PickUp(inputbonus);
 
@@ -112,15 +114,20 @@ public class Player : MonoBehaviour {
 
 
 
-    void PickUp(string inputbonus) {
+    void PickUp(string inputbonus) 
+    {
 
-        if (holding != null) {
+        if (holding != null) 
+        {
             holding.transform.position = center + armFacingVector * (reach + holding.GetSize()) + new Vector3(0f, Mathf.Clamp(playerHoldingHigth * ((Time.time - pickUpStartTime) * 10f), 0f, playerHoldingHigth), 0f);
 
             holdingrotate = Vector2.Angle(new Vector2(armFacingVector.x, armFacingVector.z), new Vector2(holdingAngle.x, holdingAngle.z));
 
             Vector3 cross = Vector3.Cross(new Vector2(armFacingVector.x, armFacingVector.z), new Vector2(holdingAngle.x, holdingAngle.z));
-            if (cross.z < 0) { holdingrotate = 360 - holdingrotate; }
+            if (cross.z < 0) 
+            { 
+                holdingrotate = 360 - holdingrotate; 
+            }
 
             holding.transform.rotation = Quaternion.LookRotation(Quaternion.AngleAxis(holdingrotate, Vector3.up) * Vector3.right);
 
@@ -145,12 +152,11 @@ public class Player : MonoBehaviour {
                         animTop.SetBool("pickingUp", true);
                         GetComponent<Weight>().AddWeight(holding.gameObject.GetComponent<Weight>().GetWeight());
                     }
-                    if (hits[i].transform.GetComponent<Button>() != null && !isPressing)
+                    if (hits[i].transform.GetComponent<InteractiveButton>() != null && !isPressing)
                     {
                         //play button sounds
-                        Debug.Log("Button pressed");
                         animTop.SetTrigger("pressingButton");
-                        hits[i].transform.GetComponent<Button>().Hit();
+                        hits[i].transform.GetComponent<InteractiveButton>().Hit();
                         isPressing = true;
                     }
 
@@ -162,7 +168,8 @@ public class Player : MonoBehaviour {
         }
         else
         {
-            if (holding != null) {
+            if (holding != null) 
+            {
                 GetComponent<Weight>().RemoveWeight(holding.gameObject.GetComponent<Weight>().GetWeight());
                 holding.OnPutDown(); holding = null;
                 animTop.SetBool("pickingUp", false);
@@ -173,15 +180,18 @@ public class Player : MonoBehaviour {
 
     }
 
-    void OnTriggerStay(Collider other) {
-        if (other.GetComponent<Button>() && Input.GetButtonDown("PickUp")) {
-            other.GetComponent<Button>().Hit();
+    void OnTriggerStay(Collider other) 
+    {
+        if (other.GetComponent<InteractiveButton>() && Input.GetButtonDown("PickUp")) 
+        {
+            other.GetComponent<InteractiveButton>().Hit();
         }
     }
 
 
 
-    void Movement() {
+    void Movement() 
+    {
 
         float xAxis = Mathf.Abs(Input.GetAxis("Horizontal" + inputbonus));
         if (xAxis < 0.1f)
@@ -210,7 +220,8 @@ public class Player : MonoBehaviour {
 
 
 
-    void LegRotate() {
+    void LegRotate() 
+    {
 
         float inputangle = Vector2.Angle(new Vector2(input.x, input.z), Vector2.right) + 0.01f;
         Vector3 cross = Vector3.Cross(new Vector2(input.x, input.z), Vector2.right);
@@ -252,7 +263,10 @@ public class Player : MonoBehaviour {
 
     public void Death()
     {
-        //Play anims
+        animBot.SetTrigger("shock");
+        animTop.SetTrigger("shock");
+        animBot.SetFloat("move", 0f);
+        animTop.SetFloat("move", 0f);
         //Play sounds
         hasControl = false;
         rb.velocity = new Vector3(0f,0f,0f);

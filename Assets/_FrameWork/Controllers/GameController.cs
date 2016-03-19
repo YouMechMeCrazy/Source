@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour {
     public GameObject p2;
 
     bool isPaused = false;
+    float timeAtPause = 0f;
 
     PauseScreen pauseScreen;
      
@@ -142,19 +143,26 @@ public class GameController : MonoBehaviour {
 
     public void Pause() 
     {
-        Debug.Log("pause");
         //playsound
-        //show UI
+        timeAtPause = Time.time;
+        Debug.Log(timeAtPause);
         isPaused = !isPaused;
         if (isPaused)
         {
             pauseScreen.Show();
+            pauseScreen.GetComponent<PauseScreen>().isPaused = true;
             Time.timeScale = 0f;
         }
         else 
         {
+            pauseScreen.GetComponent<PauseScreen>().isPaused = false;
             Time.timeScale = 1f;
             pauseScreen.Hide();
         }
+    }
+
+    public float TimeAtPause() 
+    {
+        return timeAtPause;
     }
 }

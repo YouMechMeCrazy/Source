@@ -12,7 +12,15 @@ public class YMMCCinematic : MonoBehaviour {
         ymmcMovie.Play();
         startCounting = true;
 	}
-	
+
+    void Update() 
+    {
+     if (Input.GetButtonDown("Submit2") || Input.GetButtonDown("Submit"))
+        {
+            Application.LoadLevel("WhiteBox");
+        }
+    }
+
 	// Update is called once per frame
 	void FixedUpdate () 
     {
@@ -22,7 +30,10 @@ public class YMMCCinematic : MonoBehaviour {
         }
         if(timePassed >= ymmcMovie.duration)
         {
-            Application.LoadLevel(1);
+            Application.LoadLevel("WhiteBox");
         }
+
+       
+
 	}
 }
