@@ -40,6 +40,7 @@ public class GameController : MonoBehaviour {
 	void Start ()
     {
         SetReferences();
+        SoundController.Instance.PlayMusic("BroJam");
 	}
 
 

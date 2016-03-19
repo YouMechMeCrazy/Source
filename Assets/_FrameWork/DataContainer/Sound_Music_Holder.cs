@@ -2,8 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
+public struct ClipData
+{
+    public AudioClip clip;
+    public float volume;
+    public string name;
 
-
+    public ClipData(AudioClip c, float v, string n) 
+    {
+        clip = c;
+        volume = v;
+        name = n;
+    }
+}
 
 public class Sound_Music_Holder : MonoBehaviour {
 
@@ -12,23 +23,26 @@ public class Sound_Music_Holder : MonoBehaviour {
     {
         public string name;
         public AudioClip clip;
+        public float volume;
     }
     [System.Serializable]
     public struct SoundFX
     {
         public string name;
         public AudioClip clip;
+        public float volume;
     }
 
     public static Sound_Music_Holder Instance { get; private set; }
 
 
-    public Dictionary<string, AudioClip> soundFXDic = new Dictionary<string, AudioClip>();
+    public Dictionary<string, ClipData> soundFXDic = new Dictionary<string, ClipData>();
 
-    public Dictionary<string, AudioClip> musicDic = new Dictionary<string, AudioClip>();
+    public Dictionary<string, ClipData> musicDic = new Dictionary<string, ClipData>();
 
     public Music[] musicClips;
     public SoundFX[] soundFXClips;
+
 
     private void Awake()
     {
@@ -52,7 +66,8 @@ public class Sound_Music_Holder : MonoBehaviour {
     {
         for (int i = 0; i < soundFXClips.Length; i++)
         {
-            soundFXDic.Add(soundFXClips[i].name, soundFXClips[i].clip);
+            ClipData newClipData = new ClipData(soundFXClips[i].clip,soundFXClips[i].volume , soundFXClips[i].name);
+            soundFXDic.Add(soundFXClips[i].name, newClipData);
         }
             
     }
@@ -61,7 +76,21 @@ public class Sound_Music_Holder : MonoBehaviour {
     {
         for (int i = 0; i < musicClips.Length; i++)
         {
-            musicDic.Add(musicClips[i].name, musicClips[i].clip);
+            ClipData newClipData = new ClipData(musicClips[i].clip, musicClips[i].volume, musicClips[i].name);
+            musicDic.Add(musicClips[i].name, newClipData);
+        }
+    }
+
+    public float GetClipDuration(string clip, bool isSoundFX) 
+    {
+        if (isSoundFX)
+        {
+
+            return soundFXDic[clip].clip.length;
+        }
+        else
+        {
+            return musicDic[clip].clip.length;
         }
     }
 

@@ -11,6 +11,7 @@ public class YMMCCinematic : MonoBehaviour {
         GetComponent<Renderer>().material.mainTexture = ymmcMovie;
         ymmcMovie.Play();
         startCounting = true;
+        SoundController.Instance.Stop();
 	}
 
     void Update() 

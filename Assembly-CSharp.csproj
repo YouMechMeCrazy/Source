@@ -81,6 +81,7 @@
      <Compile Include="Assets\_FrameWork\Utilities\Rotation_Script.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\SpeachBubble\Speach_Bubble.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\SpeachBubble\Trigger_Bubble.cs" />
+     <Compile Include="Assets\_FrameWork\Utilities\Ui_Rotate.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\Weight.cs" />
      <None Include="Assets\Planets\shader\two_side_shader.shader" />
  <Reference Include="UnityEngine.UI">

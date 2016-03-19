@@ -196,7 +196,9 @@ public class Player : MonoBehaviour {
     }
 
 
-
+    //audio componenet of movement.
+    float walkTimer = 0f;
+    float walkClipDuration = 0f;
     void Movement() 
     {
 
@@ -217,6 +219,19 @@ public class Player : MonoBehaviour {
 
         rb.velocity = new Vector3(dirvector.x, rb.velocity.y, dirvector.z);
 
+        if (Mathf.Max(move) != 0 && walkTimer < Time.time )
+        {
+            if (!player2)
+            {
+                walkClipDuration = SoundController.Instance.PlayFX("Player1_Walk");
+            }
+            else
+            {
+                walkClipDuration = SoundController.Instance.PlayFX("Player2_Walk");
+            }
+            walkTimer = Time.time + walkClipDuration;
+                
+        }
 
         animBot.SetFloat("move", Mathf.Max(move));
         if(!isBroken)

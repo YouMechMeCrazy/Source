@@ -14,7 +14,8 @@ public class MainMenu : MonoBehaviour {
 
    bool Abutton;
     // Use this for initialization
-    void Start () {
+    void Start () 
+    {
         StartingButtons[0].GetComponent<Selectable>().Select();
         myEventSystem = GetComponent<EventSystem>();
         Submenus = new GameObject[3];
@@ -22,6 +23,8 @@ public class MainMenu : MonoBehaviour {
         Submenus[1] = transform.FindChild("LevelSelect").gameObject;
         Submenus[2] = transform.FindChild("Credits").gameObject;
 
+
+        SoundController.Instance.PlayMusic("RoboParty");
 
 	}
 	

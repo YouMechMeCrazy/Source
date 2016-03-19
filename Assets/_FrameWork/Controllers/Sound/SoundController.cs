@@ -26,23 +26,26 @@ public class SoundController : MonoBehaviour {
     }
 
 
-    public void PlayFX(string fx) 
+    public float PlayFX(string fx) 
     {
-        if (soundDB.soundFXDic[fx] != null)
+        if (soundDB.soundFXDic[fx].clip != null)
         {
-            aud.PlayOneShot(soundDB.soundFXDic[fx]);
+            aud.PlayOneShot(soundDB.soundFXDic[fx].clip, soundDB.soundFXDic[fx].volume);
+            return soundDB.soundFXDic[fx].clip.length;
         }
         else 
         {
             Debug.LogError("Can't load resource: Sound FX " + fx);
         }
-        
+
+        return 0f;
     }
     public void PlayMusic(string music)
     {
-        if (soundDB.musicDic[music] != null)
+        if (soundDB.musicDic[music].clip != null)
         {
-            aud.clip = soundDB.musicDic[music];
+            aud.clip = soundDB.musicDic[music].clip;
+            aud.volume = soundDB.musicDic[music].volume;
             aud.Play();
         }
         else 
