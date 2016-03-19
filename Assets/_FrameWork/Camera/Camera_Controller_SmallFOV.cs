@@ -314,11 +314,11 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         Vector3 p1 = play1.position;
         Vector3 p2 = play2.position;
 
-        if (!play1.gameObject.activeSelf)
+        if (!play1.FindChild("Arms").gameObject.activeSelf)
         {
             p1 = p2;
         }
-        else if (!play2.gameObject.activeSelf)
+        else if (!play2.FindChild("Arms").gameObject.activeSelf)
         {
             p2 = p1;
         }

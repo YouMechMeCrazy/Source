@@ -13,6 +13,9 @@ public class GameController : MonoBehaviour {
     public GameObject p1;
     public GameObject p2;
 
+    bool isP1Dead = false;
+    bool isP2Dead = false;
+
     bool isPaused = false;
     float timeAtPause = 0f;
 
@@ -61,18 +64,21 @@ public class GameController : MonoBehaviour {
 
     public void KillPlayer(bool isPlayerTwo) 
     {
-        if (!isPlayerTwo)
+        if (!isPlayerTwo && !isP1Dead)
         {
+            isP1Dead = true;
             player1Script.Death();
+            
         }
-        else
+        else if (isPlayerTwo && !isP2Dead)
         {
+            isP2Dead = true;
             player2Script.Death();
         }
         
     }
    
-    public IEnumerator TryRespawnPlayer(bool isPlayerTwo, float waitTime = 1f) 
+    public void TryRespawnPlayer(bool isPlayerTwo, float waitTime = 1f) 
     {
         if (!isPlayerTwo && p1.activeSelf)
         {
@@ -85,23 +91,25 @@ public class GameController : MonoBehaviour {
             p2.transform.FindChild("Arms").gameObject.SetActive(false);
         }
 
-        yield return new WaitForSeconds(waitTime);
+        
 
         if (!Camera.main.GetComponent<Camera_Controller_SmallFOV>().IsSpawnPointInView())
         {
-            Debug.LogError("ReTrying");
-            StartCoroutine(TryRespawnPlayer(isPlayerTwo, 0.1f));
+            Debug.LogError("not in view");
+            
+            StartCoroutine(Delay(isPlayerTwo, 1f));
         }
         else 
         {
             
             if (!isPlayerTwo)
             {
-                if (!player2Script.HasControl() && activeSpawnPoint.GetComponent<SpawnPointOccupationZone>().IsOccupied())
+                if ( activeSpawnPoint.GetComponent<SpawnPointOccupationZone>().IsOccupied())
                 {
                     p1.transform.position = activeSpawnPoint.FindChild("Alternate").position;
                     p1.transform.FindChild("Legs").gameObject.SetActive(true);
                     p1.transform.FindChild("Arms").gameObject.SetActive(true);
+                    isP1Dead = false;
                     player1Script.RespawnPlayer();
                 }
                 else
@@ -109,17 +117,19 @@ public class GameController : MonoBehaviour {
                     p1.transform.position = activeSpawnPoint.position;
                     p1.transform.FindChild("Legs").gameObject.SetActive(true);
                     p1.transform.FindChild("Arms").gameObject.SetActive(true);
+                    isP1Dead = false;
                     player1Script.RespawnPlayer();
                 }
 
             }
             if (isPlayerTwo)
             {
-                if (!player1Script.HasControl() && activeSpawnPoint.GetComponent<SpawnPointOccupationZone>().IsOccupied())
+                if ( activeSpawnPoint.GetComponent<SpawnPointOccupationZone>().IsOccupied())
                 {
                     p2.transform.position = activeSpawnPoint.FindChild("Alternate").position;
                     p2.transform.FindChild("Legs").gameObject.SetActive(true);
                     p2.transform.FindChild("Arms").gameObject.SetActive(true);
+                    isP2Dead = false;
                     player2Script.RespawnPlayer();
                 }
                 else
@@ -127,6 +137,7 @@ public class GameController : MonoBehaviour {
                     p2.transform.position = activeSpawnPoint.position;
                     p2.transform.FindChild("Legs").gameObject.SetActive(true);
                     p2.transform.FindChild("Arms").gameObject.SetActive(true);
+                    isP2Dead = false;
                     player2Script.RespawnPlayer();
                 }
 
@@ -134,6 +145,12 @@ public class GameController : MonoBehaviour {
         }
 
        
+    }
+
+    IEnumerator Delay(bool isP2, float waitTime) 
+    {
+        yield return new WaitForSeconds(3f);     
+        TryRespawnPlayer(isP2, waitTime);
     }
 
     public Vector3 GetactiveSpawnPoint() 

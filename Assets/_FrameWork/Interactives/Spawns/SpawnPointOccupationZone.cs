@@ -10,7 +10,7 @@ public class SpawnPointOccupationZone : MonoBehaviour {
         return isOccupied;
     }
 
-    void OnTriggerEnter(Collider other) 
+    void OnTriggerStay(Collider other) 
     {
         if (other.gameObject.tag == "Player")
         {

@@ -278,7 +278,7 @@ public class Player : MonoBehaviour {
     {
         
         yield return new WaitForSeconds(deathAnimDuration);
-        StartCoroutine(GameController.Instance.TryRespawnPlayer(player2, deathAnimDuration));
+        GameController.Instance.TryRespawnPlayer(player2, deathAnimDuration);
         
     }
 
