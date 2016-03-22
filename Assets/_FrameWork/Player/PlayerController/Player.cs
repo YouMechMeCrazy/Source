@@ -41,6 +41,9 @@ public class Player : MonoBehaviour {
     [SerializeField]
     float playerHoldingHigth = 2.4f;
 
+    [SerializeField]
+    Transform armsStartingLocation;
+
 
     private bool hasControl = true;
     private float pickUpStartTime = 0f;
@@ -216,7 +219,10 @@ public class Player : MonoBehaviour {
 
         float[] move = new float[] { xAxis, yAxis };
         Vector3 dirvector = new Vector3(facingVector.x, 1f, facingVector.z) * moveSpeed * Mathf.Max(move) * Time.deltaTime;
-
+        if(!player2)
+        Debug.Log(dirvector);
+        if (!player2)
+        Debug.Log(Time.deltaTime);
         rb.velocity = new Vector3(dirvector.x, rb.velocity.y, dirvector.z);
 
         if (Mathf.Max(move) != 0 && walkTimer < Time.time )
@@ -344,12 +350,7 @@ public class Player : MonoBehaviour {
 
     void BrokenState() 
     {
-        float xposTemp = 0f;
-        if (player2)
-        {
-            xposTemp = -15f;
-        }
-        arms.position = new Vector3(xposTemp, -12.45f, 7.76f);
+        arms.position = armsStartingLocation.position;
 
 
 
