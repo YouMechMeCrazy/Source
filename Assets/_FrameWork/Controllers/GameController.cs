@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour {
 
@@ -98,7 +99,7 @@ public class GameController : MonoBehaviour {
         {
             Debug.LogError("not in view");
             
-            StartCoroutine(Delay(isPlayerTwo, 1f));
+            StartCoroutine(DelayTryRespawn(isPlayerTwo, 1f));
         }
         else 
         {
@@ -148,7 +149,7 @@ public class GameController : MonoBehaviour {
        
     }
 
-    IEnumerator Delay(bool isP2, float waitTime) 
+    IEnumerator DelayTryRespawn(bool isP2, float waitTime) 
     {
         yield return new WaitForSeconds(3f);     
         TryRespawnPlayer(isP2, waitTime);
@@ -182,4 +183,28 @@ public class GameController : MonoBehaviour {
     {
         return timeAtPause;
     }
+
+    public void LevelOver()
+    {
+        player1Script.SetPlayerControl(false);
+        player2Script.SetPlayerControl(false);
+        player1Script.EndOfLevel();
+        player2Script.EndOfLevel();
+        // Play music
+        if (Camera.main.GetComponent<Cam_Cinematic>() != null)
+        {
+            Camera.main.GetComponent<Camera_Controller_SmallFOV>().PlayOutro();
+            StartCoroutine(DelayLevelOver(Camera.main.GetComponent<Cam_Cinematic>().GetDuration(Cinematic_Type.OUTRO)));
+        }
+
+    }
+
+    IEnumerator DelayLevelOver(float delay) 
+    {
+        yield return new WaitForSeconds(delay);
+
+
+        SceneManager.LoadScene("MainMenuScene");
+    }
+
 }

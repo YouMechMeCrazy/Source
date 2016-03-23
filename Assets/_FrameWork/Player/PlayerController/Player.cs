@@ -286,9 +286,6 @@ public class Player : MonoBehaviour {
     }
 
 
-
-    #region Leos New junk
-
     public void Death()
     {
         animBot.SetTrigger("shock");
@@ -360,9 +357,12 @@ public class Player : MonoBehaviour {
 
     }
 
-
-    #endregion
-
+    public void EndOfLevel() 
+    {
+        animBot.SetFloat("move", 0f);
+        animTop.SetFloat("move", 0f);
+        //play winning animation
+    }
 
 
 }

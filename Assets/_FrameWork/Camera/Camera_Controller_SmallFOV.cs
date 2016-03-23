@@ -40,7 +40,7 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
     [SerializeField]
     Cam_Cinematic levelCinematic;
 
-    delegate void CinematicDelegate();
+    delegate void CinematicDelegate(Cinematic_Type type);
     CinematicDelegate dCin;
 
 
@@ -66,6 +66,8 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
      float prevXLeftcolliderSize = 17.92398f; 
      float prevXRightcolliderSize = 17.92398f;
 
+     private Cinematic_Type currrentCinematicType;
+
     void Awake()
     {
         topB = transform.FindChild("Top");
@@ -73,19 +75,32 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         rightB = transform.FindChild("Right");
         leftB = transform.FindChild("Left");
 
-        if (levelCinematic != null)
+      
+    }
+
+    public void PlayOutro() 
+    {
+        if (levelCinematic != null && levelCinematic.stepsOutro.Count > 0)
         {
-            player1.GetComponent<Player>().SetPlayerControl(false);
-            player2.GetComponent<Player>().SetPlayerControl(false);
+            //player control handled by gamecontroller
+            levelCinematic.Reset();
             dCin += levelCinematic.Cinematic;
-            StartCoroutine(WaitForCinematicCamera(levelCinematic.GetDuration()));
+            currrentCinematicType = Cinematic_Type.OUTRO;
+            
         }
     }
 
     // Use this for initialization
     void Start () 
     {
-	    
+        if (levelCinematic != null && levelCinematic.stepsIntro.Count > 0)
+        {
+            player1.GetComponent<Player>().SetPlayerControl(false);
+            player2.GetComponent<Player>().SetPlayerControl(false);
+            dCin += levelCinematic.Cinematic;
+            currrentCinematicType = Cinematic_Type.INTRO;
+            StartCoroutine(WaitForCinematicCamera(levelCinematic.GetDuration(Cinematic_Type.INTRO)));
+        }
 	}
 	
 	// Update is called once per frame
@@ -93,7 +108,7 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
     {
         if (dCin != null)
         {
-            dCin();
+            dCin(currrentCinematicType);
         }
         else
         {

@@ -2,19 +2,28 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
+public enum Cinematic_Type{ INTRO = 0, OUTRO = 1, INTERLUDE = 2, STORY  = 3 ,COUNT = 4}
 //Add the public function Cinematic to a delegate on the camera object to add the movements.
 public class Cam_Cinematic : MonoBehaviour {
 
-    //List of all movements.
-    public List<Camera_Move> steps = new List<Camera_Move>();
+    //List of all movements for the intro.
+    public List<Camera_Move> stepsIntro = new List<Camera_Move>();
 
-    
+    //List of all movements for the end.
+    public List<Camera_Move> stepsOutro = new List<Camera_Move>();
+
+
+    private List<List<Camera_Move>> sceneCinematics = new List<List<Camera_Move>>();
 
     delegate void mDelegate();
     mDelegate mDel;
 
     int currentStep = 0;
     bool hasStarted = false;
+
+    
+
     //Variables used during camera work.
     private Vector3 stepStartPOS;
     private Vector3 stepEndPOS;
@@ -22,13 +31,18 @@ public class Cam_Cinematic : MonoBehaviour {
     private float movementDuration;
     private Quaternion endRotation;
 
-
-    public void Cinematic() 
+    void Awake() 
     {
-        
+        sceneCinematics.Add(stepsIntro);
+        sceneCinematics.Add(stepsOutro);
+    }
+
+    public void Cinematic(Cinematic_Type type) 
+    {
+        Debug.Log(type.ToString());
         if (!hasStarted)
         {
-            AddNextStep();
+            AddNextStep(type);
             hasStarted = true;
         }
 
@@ -38,21 +52,28 @@ public class Cam_Cinematic : MonoBehaviour {
         }
 
     }
+
+    public void Reset() 
+    {
+        hasStarted = false;
+        currentStep = 0;
+    }
+
     //calls the next step after previous step is over.
-    IEnumerator Clock(float delay) 
+    IEnumerator Clock(float delay, Cinematic_Type type) 
     {
         yield return new WaitForSeconds(delay);
 
-        AddNextStep();
+        AddNextStep(type);
     }
 
-    void AddNextStep() 
+    void AddNextStep(Cinematic_Type type) 
     {
 
         //Removes the previous step.
         if (currentStep > 0)
         {
-            switch (steps[currentStep - 1].type)
+            switch (sceneCinematics[(int)type][currentStep - 1].type)
             {
                 case Movement_Type.WAIT:
                     mDel -= Wait;
@@ -73,11 +94,11 @@ public class Cam_Cinematic : MonoBehaviour {
                     break;
             }
         }
-        if (currentStep >= steps.Count)
+        if (currentStep >= stepsIntro.Count)
         {
             return;
         }
-        Camera_Move nextStep = steps[currentStep];
+        Camera_Move nextStep = sceneCinematics[(int)type][currentStep];
 
         //Select the next step to add.
         switch (nextStep.type) 
@@ -114,7 +135,7 @@ public class Cam_Cinematic : MonoBehaviour {
 
         currentStep++;
         //Delay the next step by current step duration.
-        StartCoroutine(Clock(nextStep.duration));
+        StartCoroutine(Clock(nextStep.duration, type));
 
         
 
@@ -158,10 +179,10 @@ public class Cam_Cinematic : MonoBehaviour {
     }
 
     //returns the entire duration of the camera movement.
-    public float GetDuration()
+    public float GetDuration(Cinematic_Type type)
     {
         float dur = 0f;
-        foreach (Camera_Move cMove in steps)
+        foreach (Camera_Move cMove in sceneCinematics[(int)type])
         {
             dur += cMove.duration;
         }

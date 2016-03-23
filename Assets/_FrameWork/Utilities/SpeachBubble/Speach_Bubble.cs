@@ -4,7 +4,7 @@ using System.Collections;
 public class Speach_Bubble : MonoBehaviour
 {
 
-    public GameObject cameraTarget;
+    GameObject cameraTarget;
     [SerializeField][Tooltip("Message to be displayed. The public function ChangeMessage() cant be used to change the content via script.")]
     string textbubble;
     [SerializeField][Tooltip("Makes the bubble appear straight instead of sligthly sweked if the camera is not facing the bubble directly.")]
@@ -34,7 +34,10 @@ public class Speach_Bubble : MonoBehaviour
     private bool hasOverReachedX = false;
     private bool hasOverReachedY = false;
 
-    
+    void Awake() 
+    {
+        cameraTarget = Camera.main.gameObject;
+    }
 
     void Start() 
     {

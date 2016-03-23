@@ -84,6 +84,7 @@
      <Compile Include="Assets\_FrameWork\Interactives\DebugBlock.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Doorway\Doorway.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Doorway\Doorway_Triggerzone.cs" />
+     <Compile Include="Assets\_FrameWork\Interactives\EndLevel_Zone\EndLevel_Zone.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\ForceField\ForceField.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\ObjectSpawner\Object_Spawner.cs" />
      <Compile Include="Assets\_FrameWork\Interactives\Pickup.cs" />
