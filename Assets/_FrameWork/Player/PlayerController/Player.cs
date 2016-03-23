@@ -80,6 +80,10 @@ public class Player : MonoBehaviour {
         {
             GameController.Instance.Pause();
         }
+        if (isBroken)
+        {
+            BrokenState();
+        }
 
         if (!hasControl)
         {
@@ -114,10 +118,7 @@ public class Player : MonoBehaviour {
         legs.rotation = Quaternion.LookRotation(facingVector.normalized);
         arms.rotation = Quaternion.LookRotation(armFacingVector.normalized);
 
-        if (isBroken)
-        {
-            BrokenState();
-        }
+       
 
     }
 
@@ -219,10 +220,7 @@ public class Player : MonoBehaviour {
 
         float[] move = new float[] { xAxis, yAxis };
         Vector3 dirvector = new Vector3(facingVector.x, 1f, facingVector.z) * moveSpeed * Mathf.Max(move) * Time.deltaTime;
-        if(!player2)
-        Debug.Log(dirvector);
-        if (!player2)
-        Debug.Log(Time.deltaTime);
+       
         rb.velocity = new Vector3(dirvector.x, rb.velocity.y, dirvector.z);
 
         if (Mathf.Max(move) != 0 && walkTimer < Time.time )

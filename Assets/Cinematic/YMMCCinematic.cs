@@ -16,7 +16,7 @@ public class YMMCCinematic : MonoBehaviour {
 
     void Update() 
     {
-     if (Input.GetButtonDown("Submit2") || Input.GetButtonDown("Submit"))
+        if (Input.GetButtonDown("Submit2") || Input.GetButtonDown("Submit") || Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2"))
         {
             Application.LoadLevel("WhiteBox");
         }

@@ -31,12 +31,20 @@ public class Pickup : MonoBehaviour {
     public virtual void OnPickedUp() {
         
         isHold = true;
+        if (gameObject.GetComponent<BoxCollider>() != null)
+        {
+            gameObject.GetComponent<BoxCollider>().isTrigger = true;
+        }
         
     }
 
     public virtual void OnPutDown() {
         
         isHold = false;
+        if (gameObject.GetComponent<BoxCollider>() != null)
+        {
+            gameObject.GetComponent<BoxCollider>().isTrigger = false;
+        }
     }
 
     public virtual float GetSize() {

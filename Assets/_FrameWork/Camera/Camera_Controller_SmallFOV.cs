@@ -37,6 +37,13 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
     [SerializeField]
     float minDistanceZoomedOut = 150f;
 
+    [SerializeField]
+    Cam_Cinematic levelCinematic;
+
+    delegate void CinematicDelegate();
+    CinematicDelegate dCin;
+
+
     Ray[] cameraBounds = new Ray[4];//Quad rays that delimit the camera view. (top, bot, right, left)
     float[] fieldOfViewBounds = new float[4];
     bool[] boundTouching = new bool[4] { false, false, false, false};
@@ -65,19 +72,45 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         downB = transform.FindChild("Down");
         rightB = transform.FindChild("Right");
         leftB = transform.FindChild("Left");
+
+        if (levelCinematic != null)
+        {
+            player1.GetComponent<Player>().SetPlayerControl(false);
+            player2.GetComponent<Player>().SetPlayerControl(false);
+            dCin += levelCinematic.Cinematic;
+            StartCoroutine(WaitForCinematicCamera(levelCinematic.GetDuration()));
+        }
     }
 
     // Use this for initialization
-    void Start () {
-	
+    void Start () 
+    {
+	    
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        CameraRayCasting();
+        if (dCin != null)
+        {
+            dCin();
+        }
+        else
+        {
+            CameraRayCasting();
+        }
+       
         
     }
+
+    IEnumerator WaitForCinematicCamera(float delay) 
+    {
+        yield return new WaitForSeconds(delay);
+        dCin -= levelCinematic.Cinematic;
+        player1.GetComponent<Player>().SetPlayerControl(true);
+        player2.GetComponent<Player>().SetPlayerControl(true);
+    }
+
     Vector3 previousPOS = new Vector3(0f,0f,0f);
    
     void CameraRayCasting()
