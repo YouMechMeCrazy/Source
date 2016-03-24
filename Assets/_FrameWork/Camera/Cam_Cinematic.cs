@@ -31,6 +31,54 @@ public class Cam_Cinematic : MonoBehaviour {
     private float movementDuration;
     private Quaternion endRotation;
 
+    //For editor Functions---------//
+    public void SaveFrame(Cinematic_Type listType, int selected, Movement_Type type, float dur, bool isNew)
+    {
+        Camera_Move newStep = new Camera_Move();
+        newStep.position = transform.position;
+        newStep.rotation = transform.rotation;
+        newStep.duration = dur;
+        newStep.type = type;
+
+        if (listType == Cinematic_Type.INTRO)
+        {
+            if (isNew)
+            {
+                stepsIntro.Add(newStep);
+            }
+            else
+            {
+                stepsIntro[selected] = newStep;
+            }
+            
+        }
+        else if (listType == Cinematic_Type.OUTRO)
+        {
+            if (isNew)
+            {
+                stepsOutro.Add(newStep);
+            }
+            else
+            {
+                stepsOutro[selected] = newStep;
+            }
+        }
+
+    }
+
+    public void RemoveStep(Cinematic_Type listType, int loc)
+    {
+        if (listType == Cinematic_Type.INTRO)
+        {
+            stepsIntro.RemoveAt(loc);
+        }
+        else if (listType == Cinematic_Type.OUTRO)
+        {
+            stepsOutro.RemoveAt(loc);
+        }
+    }
+    //-----------------------------//
+
     void Awake() 
     {
         sceneCinematics.Add(stepsIntro);
