@@ -68,14 +68,21 @@ public class Player : MonoBehaviour {
         facingVector = new Vector3(1f, 0f, 0f);
         legs = transform.FindChild("Legs");
         arms = transform.FindChild("Arms");
-
-
+        if (player2)
+        {
+            facingAngle = 45f;
+        }    
+        else
+        {
+            facingAngle = 135f;
+        }
         if (player2) { inputbonus = "2"; }
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         if (Input.GetButtonUp("Submit" + inputbonus) && GameController.Instance.TimeAtPause() < Time.time - 0.5f)
         {
             GameController.Instance.Pause();
@@ -89,7 +96,7 @@ public class Player : MonoBehaviour {
         {
             return;
         }
-
+   
        
 
         center = transform.position + new Vector3(0f, 1f, 0f);
