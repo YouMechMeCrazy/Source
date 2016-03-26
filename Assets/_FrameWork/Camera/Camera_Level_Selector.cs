@@ -33,7 +33,7 @@ public class Camera_Level_Selector : MonoBehaviour {
     Transform target;
     Vector3 startPOS;
 
-    public float speedRatio = 2f;
+    public float speedRatio = 1f;
     float speed = 1f;
     private float startTime;
     private float journeyLength;
@@ -47,18 +47,53 @@ public class Camera_Level_Selector : MonoBehaviour {
     float fadingTime = 3f;
     float fadingStartTime = 0f;
 
+    Transform targetPlanet;
+
     delegate void UpdateDelegate();
     UpdateDelegate updateDelegate;
+
+    [SerializeField]
+    GameObject p1;
+    [SerializeField]
+    GameObject p2;
+    [SerializeField]
+    GameObject p3;
+    [SerializeField]
+    GameObject p4;
+    [SerializeField]
+    GameObject p5;
+    [SerializeField]
+    GameObject p6;
+    [SerializeField]
+    GameObject p7;
+
+    GameObject[] planets = new GameObject[7];
+
+    int planetSelected = 1;
+
+    float inputDelay = 0.5f;
+    float inputDelayTimer;
 
     void Awake() 
     {
         levelSelectionScript = GameObject.Find("Controller_LevelSelection").GetComponent<CTR_WorldSelection>();
-       
+        targetPlanet = p1.transform;
+        p1.transform.FindChild("Outline").gameObject.SetActive(true);
+
+        planets[0] = p1;
+        planets[1] = p2;
+        planets[2] = p3;
+        planets[3] = p4;
+        planets[4] = p5;
+        planets[5] = p6;
+        planets[6] = p7;
     }
 
     void Start() 
     {
+        inputDelayTimer = Time.time;
         updateDelegate += PlayerInput;
+        updateDelegate += RotatePlanet;
     }
 
 	// Update is called once per frame
@@ -70,9 +105,65 @@ public class Camera_Level_Selector : MonoBehaviour {
             updateDelegate();
         }
 
+        /*if (Time.time > inputDelayTimer + inputDelay)
+        {
+            ViewInput();
+        }
+        */
     }
 
-    
+    void PlayerInput()
+    {
+
+        if (Input.GetAxis("Horizontal") > 0.5f && Time.time > inputDelayTimer + inputDelay)
+        {
+            inputDelayTimer = Time.time;
+            int previous = planetSelected;
+            planetSelected++;
+          
+            if (planetSelected > 7)
+            {
+                planetSelected = 1;
+            }
+            targetPlanet = planets[planetSelected - 1].transform;
+
+            target = targetPlanet;
+            transform.SetParent(targetPlanet);
+
+            planets[previous-1].transform.FindChild("Outline").gameObject.SetActive(false);
+            targetPlanet.transform.FindChild("Outline").gameObject.SetActive(true);
+
+            SelectNewDestination();
+
+        }
+        else if (Input.GetAxis("Horizontal") < -0.5f && Time.time > inputDelayTimer + inputDelay)
+        {
+            inputDelayTimer = Time.time;
+            int previous = planetSelected;
+            planetSelected--;
+            if (planetSelected < 1)
+            {
+                planetSelected = 7;
+            }
+            targetPlanet = planets[planetSelected - 1].transform;
+
+
+            target = targetPlanet;
+            transform.SetParent(targetPlanet);
+
+            planets[previous - 1].transform.FindChild("Outline").gameObject.SetActive(false);
+            targetPlanet.transform.FindChild("Outline").gameObject.SetActive(true);
+
+            SelectNewDestination();
+
+        }
+        
+        
+
+        
+    }
+
+    /*
     #region PlayerInputs
     void PlayerInput() 
     {
@@ -130,20 +221,64 @@ public class Camera_Level_Selector : MonoBehaviour {
         }
     }
     #endregion
+    */
+
+  /*  void ViewInput()
+    {
+
+        if (axes == RotationAxes.MouseXAndY)
+        {
+            float rotationX = transform.localEulerAngles.y + Input.GetAxis("viewLookH") * sensitivityX;
+
+            rotationY += Input.GetAxis("viewLookV") * sensitivityY;
+            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
+
+            transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
+        }
+        else if (axes == RotationAxes.MouseX)
+        {
+            transform.Rotate(0, Input.GetAxis("viewLookH") * sensitivityX, 0);
+        }
+        else
+        {
+            rotationY += Input.GetAxis("viewLookV") * sensitivityY;
+            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
+
+            transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
+        }
+    }*/
+
     #region CameraMovement
     void Move()
     {
         float distCovered = (Time.time - startTime) * speed;
         float fracJourney = distCovered / journeyLength;
         transform.localPosition = Vector3.Lerp(startPOS, baseCameraPosition, fracJourney);
-        transform.LookAt(transform.parent.position);
+        //transform.LookAt(transform.parent.position);
+        
 
         if (Vector3.Distance(transform.localPosition, baseCameraPosition) < 0.5f)
         {
             rotationY = -transform.localEulerAngles.x;
             updateDelegate -= Move;
             updateDelegate += PlayerInput;
+            
         }
+    }
+
+    void RotatePlanet()
+    {
+        //////////////////////////
+        Vector3 targetDir = targetPlanet.position - transform.position;
+
+        float step = 20f * Time.deltaTime;
+        Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
+       
+
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(newDir), step);
+
+        ///////////////////////////
     }
 
     void SelectNewDestination()
@@ -154,12 +289,15 @@ public class Camera_Level_Selector : MonoBehaviour {
         journeyLength = Vector3.Distance(startPOS, baseCameraPosition);
         speed = journeyLength / speedRatio;
 
+        //updateDelegate += RotatePlanet;
         updateDelegate += Move;
         updateDelegate -= PlayerInput;
         //Changes the currently selected world in our controller.
         levelSelectionScript.SetCurrentWorld(transform.parent.name);
     }
     #endregion
+
+
     #region Utilities
     IEnumerator DelaySceneLoad()
     {

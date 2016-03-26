@@ -64,6 +64,14 @@ public class PressurePlate : MonoBehaviour {
                 onInputs[i].target.Input(onInputs[i].input);
             }
         }
+        if (currweight >= weight && on)
+        {
+            on = true;
+            for (int i = 0; i < onInputs.Length; i++)
+            {
+                onInputs[i].target.Input(onInputs[i].input);
+            }
+        }
         if (currweight < weight && on) 
         {
             if (!hasTimerDelay)
@@ -99,7 +107,7 @@ public class PressurePlate : MonoBehaviour {
  //called when something enters the trigger
      void OnTriggerStay(Collider other)
      {
-         //Debug.Log("hello");
+         
          //if the object is not already in the list
          if(!TriggerList.Contains(other))
          {

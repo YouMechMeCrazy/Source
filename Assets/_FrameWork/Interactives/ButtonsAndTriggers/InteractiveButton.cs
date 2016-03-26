@@ -32,6 +32,7 @@ public class InteractiveButton : MonoBehaviour {
 
     public void Hit() 
     {
+        transform.FindChild("Button").GetComponent<Animator>().SetTrigger("buttonPress"); ;
         if (!hasTimerDelay)
         {
             if (!isOn)

@@ -1,0 +1,1587 @@
+fileFormatVersion: 2
+guid: b68e85c905aaaaf479ec881e1c2eedd5
+timeCreated: 1459016883
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: brian_robot_rig_032516:M_robot_red
+    100002: brian_robot_rig_032516:polySurface25
+    100004: brian_robot_rig_032516:polySurface25 1
+    100006: brian_robot_rig_032516:polySurface26
+    100008: brian_robot_rig_032516:polySurface27
+    100010: brian_robot_rig_032516:polySurface28
+    100012: brian_robot_rig_032516:polySurface29
+    100014: brian_robot_rig_032516:polySurface30
+    100016: brian_robot_rig_032516:polySurface36
+    100018: brian_robot_rig_032516:polySurface37
+    100020: brian_robot_rig_032516:polySurface38
+    100022: brian_robot_rig_032516:polySurface39
+    100024: brian_robot_rig_032516:polySurface40
+    100026: brian_robot_rig_032516:polySurface41
+    100028: brian_robot_rig_032516:polySurface42
+    100030: brian_robot_rig_032516:polySurface43
+    100032: brian_robot_rig_032516:polySurface44
+    100034: brian_robot_rig_032516:polySurface45
+    100036: brian_robot_rig_032516:polySurface46
+    100038: brian_robot_rig_032516:polySurface47
+    100040: brian_robot_rig_032516:polySurface48
+    100042: brian_robot_rig_032516:polySurface49
+    100044: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+    100046: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+    100048: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+    100050: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+    100052: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+    100054: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+    100056: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+    100058: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+    100060: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+    100062: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+    100064: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+    100066: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+    100068: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+    100070: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+    100072: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+    100074: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+    100076: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+    100078: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+    100080: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+    100082: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+    100084: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+    100086: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+    100088: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+    100090: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+    100092: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+    100094: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+    100096: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+    100098: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+    100100: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+    100102: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+    100104: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+    100106: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+    100108: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+    100110: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+    100112: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+    100114: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+    100116: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+    100118: brian_robot_rig_032516:transform15
+    100120: brian_robot_rig_032516:transform16
+    100122: brian_robot_rig_032516:transform17
+    100124: brian_robot_rig_032516:transform18
+    100126: brian_robot_rig_032516:transform19
+    100128: brian_robot_rig_032516:transform20
+    100130: brian_robot_rig_032516:transform21
+    100132: brian_robot_rig_032516:transform22
+    100134: brian_robot_rig_032516:transform23
+    100136: brian_robot_rig_032516:transform24
+    100138: brian_robot_rig_032516:transform25
+    100140: brian_robot_rig_032516:transform26
+    100142: brian_robot_rig_032516:transform27
+    100144: brian_robot_rig_032516:transform28
+    100146: brian_robot_rig_032516:transform29
+    100148: brian_robot_rig_032516:transform30
+    100150: brian_robot_rig_032516:transform31
+    100152: brian_robot_rig_032516:transform32
+    100154: brian_robot_rig_032516:transform33
+    100156: brian_robot_rig_032516:transform34
+    100158: brian_robot_rig_032516:transform5
+    100160: //RootNode
+    400000: brian_robot_rig_032516:M_robot_red
+    400002: brian_robot_rig_032516:polySurface25
+    400004: brian_robot_rig_032516:polySurface25 1
+    400006: brian_robot_rig_032516:polySurface26
+    400008: brian_robot_rig_032516:polySurface27
+    400010: brian_robot_rig_032516:polySurface28
+    400012: brian_robot_rig_032516:polySurface29
+    400014: brian_robot_rig_032516:polySurface30
+    400016: brian_robot_rig_032516:polySurface36
+    400018: brian_robot_rig_032516:polySurface37
+    400020: brian_robot_rig_032516:polySurface38
+    400022: brian_robot_rig_032516:polySurface39
+    400024: brian_robot_rig_032516:polySurface40
+    400026: brian_robot_rig_032516:polySurface41
+    400028: brian_robot_rig_032516:polySurface42
+    400030: brian_robot_rig_032516:polySurface43
+    400032: brian_robot_rig_032516:polySurface44
+    400034: brian_robot_rig_032516:polySurface45
+    400036: brian_robot_rig_032516:polySurface46
+    400038: brian_robot_rig_032516:polySurface47
+    400040: brian_robot_rig_032516:polySurface48
+    400042: brian_robot_rig_032516:polySurface49
+    400044: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+    400046: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+    400048: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+    400050: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+    400052: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+    400054: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+    400056: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+    400058: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+    400060: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+    400062: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+    400064: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+    400066: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+    400068: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+    400070: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+    400072: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+    400074: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+    400076: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+    400078: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+    400080: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+    400082: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+    400084: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+    400086: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+    400088: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+    400090: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+    400092: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+    400094: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+    400096: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+    400098: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+    400100: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+    400102: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+    400104: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+    400106: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+    400108: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+    400110: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+    400112: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+    400114: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+    400116: brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+    400118: brian_robot_rig_032516:transform15
+    400120: brian_robot_rig_032516:transform16
+    400122: brian_robot_rig_032516:transform17
+    400124: brian_robot_rig_032516:transform18
+    400126: brian_robot_rig_032516:transform19
+    400128: brian_robot_rig_032516:transform20
+    400130: brian_robot_rig_032516:transform21
+    400132: brian_robot_rig_032516:transform22
+    400134: brian_robot_rig_032516:transform23
+    400136: brian_robot_rig_032516:transform24
+    400138: brian_robot_rig_032516:transform25
+    400140: brian_robot_rig_032516:transform26
+    400142: brian_robot_rig_032516:transform27
+    400144: brian_robot_rig_032516:transform28
+    400146: brian_robot_rig_032516:transform29
+    400148: brian_robot_rig_032516:transform30
+    400150: brian_robot_rig_032516:transform31
+    400152: brian_robot_rig_032516:transform32
+    400154: brian_robot_rig_032516:transform33
+    400156: brian_robot_rig_032516:transform34
+    400158: brian_robot_rig_032516:transform5
+    400160: //RootNode
+    4300000: brian_robot_rig_032516:polySurface43
+    7400000: brian_Top_Button
+    7400002: brian_Top_Idle
+    7400004: brian_Top_Walk
+    7400006: brian_Top_Pickup
+    7400008: Take 001
+    7400010: brian_Top_Shock
+    7400012: brian_Top_PutDown
+    9500000: //RootNode
+    13700000: brian_robot_rig_032516:polySurface43
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: brian_Top_Button
+      takeName: Take 001
+      firstFrame: 183
+      lastFrame: 214
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface43
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform34
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: brian_Top_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface43
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform34
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: brian_Top_Walk
+      takeName: Take 001
+      firstFrame: 122
+      lastFrame: 181
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface43
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform34
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: brian_Top_Pickup
+      takeName: Take 001
+      firstFrame: 216
+      lastFrame: 241
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface43
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform34
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 372
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface43
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform34
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: brian_Top_PutDown
+      takeName: Take 001
+      firstFrame: 243
+      lastFrame: 274
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface43
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform34
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: brian_Top_Shock
+      takeName: Take 001
+      firstFrame: 276
+      lastFrame: 371
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+          1/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface43
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform34
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_palm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_arm_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_wrist_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_palm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_upper_hips_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_shoulder_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_arm_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_wrist_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_2_jnt/brian_robot_rig_032516:Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

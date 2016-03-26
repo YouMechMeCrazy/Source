@@ -123,11 +123,13 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         yield return new WaitForSeconds(delay);
         dCin -= levelCinematic.Cinematic;
 
-        player1.transform.rotation = Quaternion.identity;
-        player2.transform.rotation = Quaternion.identity;
+      
  
         player1.GetComponent<Player>().SetPlayerControl(true);
         player2.GetComponent<Player>().SetPlayerControl(true);
+
+        player1.transform.rotation = Quaternion.identity;
+        player2.transform.rotation = Quaternion.identity;
     }
 
     Vector3 previousPOS = new Vector3(0f,0f,0f);

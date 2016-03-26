@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 4dcaa35eda18d9744a01f5b50a0a97ca
+timeCreated: 1459016882
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: doob_talk:brian_rig:Cube.003
+    100002: doob_talk:brian_rig:joint1
+    100004: doob_talk:brian_rig:joint2
+    100006: doob_talk:brian_rig:joint3
+    100008: doob_talk:brian_rig:joint4
+    100010: doob_talk:brian_rig:joint5
+    100012: doob_talk:brian_rig:red_doob_head_jnt
+    100014: doob_talk:brian_rig:red_doob_head_top_jnt
+    100016: doob_talk:brian_rig:red_doob_hips_jnt
+    100018: doob_talk:brian_rig:red_doob_l_ankle_jnt
+    100020: doob_talk:brian_rig:red_doob_l_arm_jnt
+    100022: doob_talk:brian_rig:red_doob_l_fingers_jnt
+    100024: doob_talk:brian_rig:red_doob_l_index_1_jnt
+    100026: doob_talk:brian_rig:red_doob_l_index_2_jnt
+    100028: doob_talk:brian_rig:red_doob_l_index_3_jnt
+    100030: doob_talk:brian_rig:red_doob_l_leg_1_jnt
+    100032: doob_talk:brian_rig:red_doob_l_leg_2_jnt
+    100034: doob_talk:brian_rig:red_doob_l_mid1_jnt
+    100036: doob_talk:brian_rig:red_doob_l_mid2_jnt
+    100038: doob_talk:brian_rig:red_doob_l_mid_3_jnt
+    100040: doob_talk:brian_rig:red_doob_l_pinkey_1_jnt
+    100042: doob_talk:brian_rig:red_doob_l_pinkey_2_jnt
+    100044: doob_talk:brian_rig:red_doob_l_pinkey_3_jnt
+    100046: doob_talk:brian_rig:red_doob_l_shoulder_jnt
+    100048: doob_talk:brian_rig:red_doob_l_thumb_2_jnt
+    100050: doob_talk:brian_rig:red_doob_l_thumb_jnt
+    100052: doob_talk:brian_rig:red_doob_l_thumb_nobind_jnt
+    100054: doob_talk:brian_rig:red_doob_l_toe_jnt
+    100056: doob_talk:brian_rig:red_doob_l_toetip_jnt
+    100058: doob_talk:brian_rig:red_doob_l_wrist_jnt
+    100060: doob_talk:brian_rig:red_doob_r_ankle_jnt
+    100062: doob_talk:brian_rig:red_doob_r_arm_jnt
+    100064: doob_talk:brian_rig:red_doob_r_fingers_jnt
+    100066: doob_talk:brian_rig:red_doob_r_index_1_jnt
+    100068: doob_talk:brian_rig:red_doob_r_index_2_jnt
+    100070: doob_talk:brian_rig:red_doob_r_index_3_jnt
+    100072: doob_talk:brian_rig:red_doob_r_leg_1_jnt
+    100074: doob_talk:brian_rig:red_doob_r_leg_2_jnt
+    100076: doob_talk:brian_rig:red_doob_r_mid1_jnt
+    100078: doob_talk:brian_rig:red_doob_r_mid2_jnt
+    100080: doob_talk:brian_rig:red_doob_r_mid_3_jnt
+    100082: doob_talk:brian_rig:red_doob_r_pinkey_1_jnt
+    100084: doob_talk:brian_rig:red_doob_r_pinkey_2_jnt
+    100086: doob_talk:brian_rig:red_doob_r_pinkey_3_jnt
+    100088: doob_talk:brian_rig:red_doob_r_shoulder_jnt
+    100090: doob_talk:brian_rig:red_doob_r_thumb_2_jnt
+    100092: doob_talk:brian_rig:red_doob_r_thumb_jnt
+    100094: doob_talk:brian_rig:red_doob_r_thumb_nobind_jnt
+    100096: doob_talk:brian_rig:red_doob_r_toe_jnt
+    100098: doob_talk:brian_rig:red_doob_r_toetip_jnt
+    100100: doob_talk:brian_rig:red_doob_r_wrist_jnt
+    100102: //RootNode
+    400000: doob_talk:brian_rig:Cube.003
+    400002: doob_talk:brian_rig:joint1
+    400004: doob_talk:brian_rig:joint2
+    400006: doob_talk:brian_rig:joint3
+    400008: doob_talk:brian_rig:joint4
+    400010: doob_talk:brian_rig:joint5
+    400012: doob_talk:brian_rig:red_doob_head_jnt
+    400014: doob_talk:brian_rig:red_doob_head_top_jnt
+    400016: doob_talk:brian_rig:red_doob_hips_jnt
+    400018: doob_talk:brian_rig:red_doob_l_ankle_jnt
+    400020: doob_talk:brian_rig:red_doob_l_arm_jnt
+    400022: doob_talk:brian_rig:red_doob_l_fingers_jnt
+    400024: doob_talk:brian_rig:red_doob_l_index_1_jnt
+    400026: doob_talk:brian_rig:red_doob_l_index_2_jnt
+    400028: doob_talk:brian_rig:red_doob_l_index_3_jnt
+    400030: doob_talk:brian_rig:red_doob_l_leg_1_jnt
+    400032: doob_talk:brian_rig:red_doob_l_leg_2_jnt
+    400034: doob_talk:brian_rig:red_doob_l_mid1_jnt
+    400036: doob_talk:brian_rig:red_doob_l_mid2_jnt
+    400038: doob_talk:brian_rig:red_doob_l_mid_3_jnt
+    400040: doob_talk:brian_rig:red_doob_l_pinkey_1_jnt
+    400042: doob_talk:brian_rig:red_doob_l_pinkey_2_jnt
+    400044: doob_talk:brian_rig:red_doob_l_pinkey_3_jnt
+    400046: doob_talk:brian_rig:red_doob_l_shoulder_jnt
+    400048: doob_talk:brian_rig:red_doob_l_thumb_2_jnt
+    400050: doob_talk:brian_rig:red_doob_l_thumb_jnt
+    400052: doob_talk:brian_rig:red_doob_l_thumb_nobind_jnt
+    400054: doob_talk:brian_rig:red_doob_l_toe_jnt
+    400056: doob_talk:brian_rig:red_doob_l_toetip_jnt
+    400058: doob_talk:brian_rig:red_doob_l_wrist_jnt
+    400060: doob_talk:brian_rig:red_doob_r_ankle_jnt
+    400062: doob_talk:brian_rig:red_doob_r_arm_jnt
+    400064: doob_talk:brian_rig:red_doob_r_fingers_jnt
+    400066: doob_talk:brian_rig:red_doob_r_index_1_jnt
+    400068: doob_talk:brian_rig:red_doob_r_index_2_jnt
+    400070: doob_talk:brian_rig:red_doob_r_index_3_jnt
+    400072: doob_talk:brian_rig:red_doob_r_leg_1_jnt
+    400074: doob_talk:brian_rig:red_doob_r_leg_2_jnt
+    400076: doob_talk:brian_rig:red_doob_r_mid1_jnt
+    400078: doob_talk:brian_rig:red_doob_r_mid2_jnt
+    400080: doob_talk:brian_rig:red_doob_r_mid_3_jnt
+    400082: doob_talk:brian_rig:red_doob_r_pinkey_1_jnt
+    400084: doob_talk:brian_rig:red_doob_r_pinkey_2_jnt
+    400086: doob_talk:brian_rig:red_doob_r_pinkey_3_jnt
+    400088: doob_talk:brian_rig:red_doob_r_shoulder_jnt
+    400090: doob_talk:brian_rig:red_doob_r_thumb_2_jnt
+    400092: doob_talk:brian_rig:red_doob_r_thumb_jnt
+    400094: doob_talk:brian_rig:red_doob_r_thumb_nobind_jnt
+    400096: doob_talk:brian_rig:red_doob_r_toe_jnt
+    400098: doob_talk:brian_rig:red_doob_r_toetip_jnt
+    400100: doob_talk:brian_rig:red_doob_r_wrist_jnt
+    400102: //RootNode
+    4300000: doob_talk:brian_rig:Cube.003
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: doob_talk:brian_rig:Cube.003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

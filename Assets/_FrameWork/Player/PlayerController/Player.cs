@@ -68,6 +68,10 @@ public class Player : MonoBehaviour {
         facingVector = new Vector3(1f, 0f, 0f);
         legs = transform.FindChild("Legs");
         arms = transform.FindChild("Arms");
+        //if broken
+        GetComponent<CapsuleCollider>().center = new Vector3(0f, 1.7f, 0f);
+        GetComponent<CapsuleCollider>().height = 2.5f;
+
         if (player2)
         {
             facingAngle = 45f;
@@ -247,8 +251,7 @@ public class Player : MonoBehaviour {
         animBot.SetFloat("move", Mathf.Max(move));
         if(!isBroken)
         animTop.SetFloat("move", Mathf.Max(move));
-
-
+      
     }
 
 
@@ -360,6 +363,10 @@ public class Player : MonoBehaviour {
         {
             isBroken = false;
             arms.localPosition = new Vector3(0f, 0.84f, 0f);
+            GetComponent<CapsuleCollider>().height = 3.5f;
+
+            GetComponent<CapsuleCollider>().center = new Vector3(0f, 2.17f, 0f);
+
         }
 
     }
