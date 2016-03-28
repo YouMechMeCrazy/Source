@@ -96,7 +96,7 @@
     <Compile Include="Assets\MarvelousTechniques\Scripts\Splasher.cs" />
     <Compile Include="Assets\MarvelousTechniques\Scripts\UVLayoutGenerator.cs" />
     <Compile Include="Assets\PauseScreen.cs" />
-    <Compile Include="Assets\RandomStartingFrame.cs" />
+    <Compile Include="Assets\SkyAnimations\RandomStartingFrame.cs" />
     <Compile Include="Assets\_FrameWork\Camera\Cam_Cinematic.cs" />
     <Compile Include="Assets\_FrameWork\Camera\Camera_Controller.cs" />
     <Compile Include="Assets\_FrameWork\Camera\Camera_Controller_SmallFOV.cs" />

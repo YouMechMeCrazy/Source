@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: e4da8221b5465b6449eef1498465189e
+timeCreated: 1458685054
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Wind2_0
+    21300002: Wind2_1
+    21300004: Wind2_2
+    21300006: Wind2_3
+    21300008: Wind2_4
+    21300010: Wind2_5
+    21300012: Wind2_6
+    21300014: Wind2_7
+    21300016: Wind2_8
+    21300018: Wind2_9
+    21300020: Wind2_10
+    21300022: Wind2_11
+    21300024: Wind2_12
+    21300026: Wind2_13
+    21300028: Wind2_14
+    21300030: Wind2_15
+    21300032: Wind2_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Wind2_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 413
+        width: 245
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27.5}
+        - {x: -122.5, y: -27.5}
+        - {x: 122.5, y: -27.5}
+        - {x: 122.5, y: 27.5}
+    - name: Wind2_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 414
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_2
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 414
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 341
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_4
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 341
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_5
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 341
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_6
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 268
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_7
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 268
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_8
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 268
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_9
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 198
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_10
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 198
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_11
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 198
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_12
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 124
+        width: 245
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 28}
+        - {x: -122.5, y: -28}
+        - {x: 122.5, y: -28}
+        - {x: 122.5, y: 28}
+    - name: Wind2_13
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 125
+        width: 246
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -123, y: 27.5}
+        - {x: -123, y: -27.5}
+        - {x: 123, y: -27.5}
+        - {x: 123, y: 27.5}
+    - name: Wind2_14
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 125
+        width: 245
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27.5}
+        - {x: -122.5, y: -27.5}
+        - {x: 122.5, y: -27.5}
+        - {x: 122.5, y: 27.5}
+    - name: Wind2_15
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 43
+        width: 245
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -122.5, y: 27}
+        - {x: -122.5, y: -27}
+        - {x: 122.5, y: -27}
+        - {x: 122.5, y: 27}
+    - name: Wind2_16
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 47
+        width: 245
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
