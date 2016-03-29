@@ -1,0 +1,1006 @@
+fileFormatVersion: 2
+guid: 3eec8d0729f7760439789326d0db19f6
+timeCreated: 1459276626
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: brian_robot_rig_032516:M_robot_red
+    100002: brian_robot_rig_032516:polySurface25
+    100004: brian_robot_rig_032516:polySurface26
+    100006: brian_robot_rig_032516:polySurface27
+    100008: brian_robot_rig_032516:polySurface28
+    100010: brian_robot_rig_032516:polySurface29
+    100012: brian_robot_rig_032516:polySurface30
+    100014: brian_robot_rig_032516:polySurface36
+    100016: brian_robot_rig_032516:polySurface37
+    100018: brian_robot_rig_032516:polySurface38
+    100020: brian_robot_rig_032516:polySurface39
+    100022: brian_robot_rig_032516:polySurface40
+    100024: brian_robot_rig_032516:polySurface41
+    100026: brian_robot_rig_032516:polySurface42
+    100028: brian_robot_rig_032516:polySurface44
+    100030: brian_robot_rig_032516:polySurface45
+    100032: brian_robot_rig_032516:polySurface46
+    100034: brian_robot_rig_032516:polySurface47
+    100036: brian_robot_rig_032516:polySurface48
+    100038: brian_robot_rig_032516:polySurface49
+    100040: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+    100042: brian_robot_rig_032516:transform15
+    100044: brian_robot_rig_032516:transform16
+    100046: brian_robot_rig_032516:transform17
+    100048: brian_robot_rig_032516:transform18
+    100050: brian_robot_rig_032516:transform19
+    100052: brian_robot_rig_032516:transform20
+    100054: brian_robot_rig_032516:transform21
+    100056: brian_robot_rig_032516:transform22
+    100058: brian_robot_rig_032516:transform23
+    100060: brian_robot_rig_032516:transform24
+    100062: brian_robot_rig_032516:transform25
+    100064: brian_robot_rig_032516:transform26
+    100066: brian_robot_rig_032516:transform27
+    100068: brian_robot_rig_032516:transform28
+    100070: brian_robot_rig_032516:transform29
+    100072: brian_robot_rig_032516:transform30
+    100074: brian_robot_rig_032516:transform31
+    100076: brian_robot_rig_032516:transform32
+    100078: brian_robot_rig_032516:transform33
+    100080: brian_robot_rig_032516:transform5
+    100082: group1
+    100084: group2
+    100086: group3
+    100088: group4
+    100090: john_robot_rig_031516:blue_robot_hips
+    100092: john_robot_rig_031516:blue_robot_l_foot
+    100094: john_robot_rig_031516:blue_robot_l_leg_1
+    100096: john_robot_rig_031516:blue_robot_l_leg_2
+    100098: john_robot_rig_031516:blue_robot_r_foot
+    100100: john_robot_rig_031516:blue_robot_r_leg_1
+    100102: john_robot_rig_031516:blue_robot_r_leg_2
+    100104: john_robot_rig_031516:M_mech_blue
+    100106: john_robot_rig_031516:polySurface43
+    100108: john_robot_rig_031516:polySurface44
+    100110: john_robot_rig_031516:polySurface45
+    100112: john_robot_rig_031516:polySurface46
+    100114: john_robot_rig_031516:polySurface46 1
+    100116: john_robot_rig_031516:polySurface49
+    100118: john_robot_rig_031516:polySurface51
+    100120: john_robot_rig_031516:polySurface51 1
+    100122: john_robot_rig_031516:polySurface52
+    100124: john_robot_rig_031516:polySurface53
+    100126: john_robot_rig_031516:polySurface61
+    100128: john_robot_rig_031516:polySurface63
+    100130: john_robot_rig_031516:polySurface64
+    100132: john_robot_rig_031516:transform41
+    100134: john_robot_rig_031516:transform50
+    100136: john_robot_rig_031516:transform51
+    100138: john_robot_rig_031516:transform52
+    100140: john_robot_rig_031516:transform53
+    100142: john_robot_rig_031516:transform54
+    100144: john_robot_rig_031516:transform55
+    100146: john_robot_rig_031516:transform56
+    100148: john_robot_rig_031516:transform65
+    100150: john_robot_rig_031516:transform66
+    100152: john_robot_rig_031516:transform67
+    100154: john_robot_rig_031516:transform68
+    100156: john_robot_rig_031516:transform69
+    100158: //RootNode
+    400000: brian_robot_rig_032516:M_robot_red
+    400002: brian_robot_rig_032516:polySurface25
+    400004: brian_robot_rig_032516:polySurface26
+    400006: brian_robot_rig_032516:polySurface27
+    400008: brian_robot_rig_032516:polySurface28
+    400010: brian_robot_rig_032516:polySurface29
+    400012: brian_robot_rig_032516:polySurface30
+    400014: brian_robot_rig_032516:polySurface36
+    400016: brian_robot_rig_032516:polySurface37
+    400018: brian_robot_rig_032516:polySurface38
+    400020: brian_robot_rig_032516:polySurface39
+    400022: brian_robot_rig_032516:polySurface40
+    400024: brian_robot_rig_032516:polySurface41
+    400026: brian_robot_rig_032516:polySurface42
+    400028: brian_robot_rig_032516:polySurface44
+    400030: brian_robot_rig_032516:polySurface45
+    400032: brian_robot_rig_032516:polySurface46
+    400034: brian_robot_rig_032516:polySurface47
+    400036: brian_robot_rig_032516:polySurface48
+    400038: brian_robot_rig_032516:polySurface49
+    400040: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+    400042: brian_robot_rig_032516:transform15
+    400044: brian_robot_rig_032516:transform16
+    400046: brian_robot_rig_032516:transform17
+    400048: brian_robot_rig_032516:transform18
+    400050: brian_robot_rig_032516:transform19
+    400052: brian_robot_rig_032516:transform20
+    400054: brian_robot_rig_032516:transform21
+    400056: brian_robot_rig_032516:transform22
+    400058: brian_robot_rig_032516:transform23
+    400060: brian_robot_rig_032516:transform24
+    400062: brian_robot_rig_032516:transform25
+    400064: brian_robot_rig_032516:transform26
+    400066: brian_robot_rig_032516:transform27
+    400068: brian_robot_rig_032516:transform28
+    400070: brian_robot_rig_032516:transform29
+    400072: brian_robot_rig_032516:transform30
+    400074: brian_robot_rig_032516:transform31
+    400076: brian_robot_rig_032516:transform32
+    400078: brian_robot_rig_032516:transform33
+    400080: brian_robot_rig_032516:transform5
+    400082: group1
+    400084: group2
+    400086: group3
+    400088: group4
+    400090: john_robot_rig_031516:blue_robot_hips
+    400092: john_robot_rig_031516:blue_robot_l_foot
+    400094: john_robot_rig_031516:blue_robot_l_leg_1
+    400096: john_robot_rig_031516:blue_robot_l_leg_2
+    400098: john_robot_rig_031516:blue_robot_r_foot
+    400100: john_robot_rig_031516:blue_robot_r_leg_1
+    400102: john_robot_rig_031516:blue_robot_r_leg_2
+    400104: john_robot_rig_031516:M_mech_blue
+    400106: john_robot_rig_031516:polySurface43
+    400108: john_robot_rig_031516:polySurface44
+    400110: john_robot_rig_031516:polySurface45
+    400112: john_robot_rig_031516:polySurface46
+    400114: john_robot_rig_031516:polySurface46 1
+    400116: john_robot_rig_031516:polySurface49
+    400118: john_robot_rig_031516:polySurface51
+    400120: john_robot_rig_031516:polySurface51 1
+    400122: john_robot_rig_031516:polySurface52
+    400124: john_robot_rig_031516:polySurface53
+    400126: john_robot_rig_031516:polySurface61
+    400128: john_robot_rig_031516:polySurface63
+    400130: john_robot_rig_031516:polySurface64
+    400132: john_robot_rig_031516:transform41
+    400134: john_robot_rig_031516:transform50
+    400136: john_robot_rig_031516:transform51
+    400138: john_robot_rig_031516:transform52
+    400140: john_robot_rig_031516:transform53
+    400142: john_robot_rig_031516:transform54
+    400144: john_robot_rig_031516:transform55
+    400146: john_robot_rig_031516:transform56
+    400148: john_robot_rig_031516:transform65
+    400150: john_robot_rig_031516:transform66
+    400152: john_robot_rig_031516:transform67
+    400154: john_robot_rig_031516:transform68
+    400156: john_robot_rig_031516:transform69
+    400158: //RootNode
+    4300000: john_robot_rig_031516:polySurface46
+    7400000: Take 001
+    7400002: john_Legs_Idle
+    7400004: john_Legs_Walk
+    7400006: john_Legs_Shock
+    9500000: //RootNode
+    13700000: john_robot_rig_031516:polySurface46
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 426
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/group1
+        weight: 1
+      - path: group3
+        weight: 1
+      - path: group3/group4
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1/john_robot_rig_031516:blue_robot_l_leg_2
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1/john_robot_rig_031516:blue_robot_l_leg_2/john_robot_rig_031516:blue_robot_l_foot
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1/john_robot_rig_031516:blue_robot_r_leg_2
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1/john_robot_rig_031516:blue_robot_r_leg_2/john_robot_rig_031516:blue_robot_r_foot
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface43
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface43/john_robot_rig_031516:transform68
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface44
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface44/john_robot_rig_031516:transform67
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface45
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface45/john_robot_rig_031516:transform66
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface46
+          1
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface46
+          1/john_robot_rig_031516:transform69
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface49
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface49/john_robot_rig_031516:transform53
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface51
+          1
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface51
+          1/john_robot_rig_031516:transform56
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface52
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface52/john_robot_rig_031516:transform55
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface53
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface53/john_robot_rig_031516:transform50
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface61
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface61/john_robot_rig_031516:transform52
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface63
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface63/john_robot_rig_031516:transform54
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface64
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface64/john_robot_rig_031516:transform51
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:transform41
+        weight: 1
+      - path: john_robot_rig_031516:polySurface46
+        weight: 1
+      - path: john_robot_rig_031516:polySurface51
+        weight: 1
+      - path: john_robot_rig_031516:polySurface51/john_robot_rig_031516:transform65
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: john_Legs_Idle
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 121
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/group1
+        weight: 1
+      - path: group3
+        weight: 1
+      - path: group3/group4
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1/john_robot_rig_031516:blue_robot_l_leg_2
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1/john_robot_rig_031516:blue_robot_l_leg_2/john_robot_rig_031516:blue_robot_l_foot
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1/john_robot_rig_031516:blue_robot_r_leg_2
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1/john_robot_rig_031516:blue_robot_r_leg_2/john_robot_rig_031516:blue_robot_r_foot
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface43
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface43/john_robot_rig_031516:transform68
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface44
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface44/john_robot_rig_031516:transform67
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface45
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface45/john_robot_rig_031516:transform66
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface46
+          1
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface46
+          1/john_robot_rig_031516:transform69
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface49
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface49/john_robot_rig_031516:transform53
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface51
+          1
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface51
+          1/john_robot_rig_031516:transform56
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface52
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface52/john_robot_rig_031516:transform55
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface53
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface53/john_robot_rig_031516:transform50
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface61
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface61/john_robot_rig_031516:transform52
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface63
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface63/john_robot_rig_031516:transform54
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface64
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface64/john_robot_rig_031516:transform51
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:transform41
+        weight: 1
+      - path: john_robot_rig_031516:polySurface46
+        weight: 1
+      - path: john_robot_rig_031516:polySurface51
+        weight: 1
+      - path: john_robot_rig_031516:polySurface51/john_robot_rig_031516:transform65
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: john_Legs_Walk
+      takeName: Take 001
+      firstFrame: 123
+      lastFrame: 182
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/group1
+        weight: 1
+      - path: group3
+        weight: 1
+      - path: group3/group4
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1/john_robot_rig_031516:blue_robot_l_leg_2
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1/john_robot_rig_031516:blue_robot_l_leg_2/john_robot_rig_031516:blue_robot_l_foot
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1/john_robot_rig_031516:blue_robot_r_leg_2
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1/john_robot_rig_031516:blue_robot_r_leg_2/john_robot_rig_031516:blue_robot_r_foot
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface43
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface43/john_robot_rig_031516:transform68
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface44
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface44/john_robot_rig_031516:transform67
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface45
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface45/john_robot_rig_031516:transform66
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface46
+          1
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface46
+          1/john_robot_rig_031516:transform69
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface49
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface49/john_robot_rig_031516:transform53
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface51
+          1
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface51
+          1/john_robot_rig_031516:transform56
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface52
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface52/john_robot_rig_031516:transform55
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface53
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface53/john_robot_rig_031516:transform50
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface61
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface61/john_robot_rig_031516:transform52
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface63
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface63/john_robot_rig_031516:transform54
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface64
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface64/john_robot_rig_031516:transform51
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:transform41
+        weight: 1
+      - path: john_robot_rig_031516:polySurface46
+        weight: 1
+      - path: john_robot_rig_031516:polySurface51
+        weight: 1
+      - path: john_robot_rig_031516:polySurface51/john_robot_rig_031516:transform65
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: john_Legs_Shock
+      takeName: Take 001
+      firstFrame: 326
+      lastFrame: 426
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface25/brian_robot_rig_032516:transform33
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface26/brian_robot_rig_032516:transform32
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface27/brian_robot_rig_032516:transform31
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface28/brian_robot_rig_032516:transform30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface29/brian_robot_rig_032516:transform29
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface30/brian_robot_rig_032516:transform28
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface36/brian_robot_rig_032516:transform27
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface37/brian_robot_rig_032516:transform26
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface38/brian_robot_rig_032516:transform25
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface39/brian_robot_rig_032516:transform24
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface40/brian_robot_rig_032516:transform23
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface41/brian_robot_rig_032516:transform22
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface42/brian_robot_rig_032516:transform21
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface44/brian_robot_rig_032516:transform20
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface45/brian_robot_rig_032516:transform19
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface46/brian_robot_rig_032516:transform18
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface47/brian_robot_rig_032516:transform17
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface48/brian_robot_rig_032516:transform16
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:polySurface49/brian_robot_rig_032516:transform15
+        weight: 1
+      - path: brian_robot_rig_032516:M_robot_red/brian_robot_rig_032516:transform5
+        weight: 1
+      - path: brian_robot_rig_032516:Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: group2
+        weight: 1
+      - path: group2/group1
+        weight: 1
+      - path: group3
+        weight: 1
+      - path: group3/group4
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1/john_robot_rig_031516:blue_robot_l_leg_2
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_l_leg_1/john_robot_rig_031516:blue_robot_l_leg_2/john_robot_rig_031516:blue_robot_l_foot
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1/john_robot_rig_031516:blue_robot_r_leg_2
+        weight: 1
+      - path: john_robot_rig_031516:blue_robot_hips/john_robot_rig_031516:blue_robot_r_leg_1/john_robot_rig_031516:blue_robot_r_leg_2/john_robot_rig_031516:blue_robot_r_foot
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface43
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface43/john_robot_rig_031516:transform68
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface44
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface44/john_robot_rig_031516:transform67
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface45
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface45/john_robot_rig_031516:transform66
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface46
+          1
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface46
+          1/john_robot_rig_031516:transform69
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface49
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface49/john_robot_rig_031516:transform53
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface51
+          1
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface51
+          1/john_robot_rig_031516:transform56
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface52
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface52/john_robot_rig_031516:transform55
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface53
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface53/john_robot_rig_031516:transform50
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface61
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface61/john_robot_rig_031516:transform52
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface63
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface63/john_robot_rig_031516:transform54
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface64
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:polySurface64/john_robot_rig_031516:transform51
+        weight: 1
+      - path: john_robot_rig_031516:M_mech_blue/john_robot_rig_031516:transform41
+        weight: 1
+      - path: john_robot_rig_031516:polySurface46
+        weight: 1
+      - path: john_robot_rig_031516:polySurface51
+        weight: 1
+      - path: john_robot_rig_031516:polySurface51/john_robot_rig_031516:transform65
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

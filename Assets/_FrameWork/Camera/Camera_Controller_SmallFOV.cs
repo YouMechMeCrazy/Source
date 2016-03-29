@@ -157,7 +157,7 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
                 if(i == 1)
                 {
                     fieldOfViewBounds[1] = hit.point.z;
-                    downB.position = new Vector3(hit.point.x, hit.point.y, hit.point.z -5f);
+                    downB.position = hit.point;
                 }
                 if (i == 2)
                 {
@@ -185,7 +185,7 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
        
     
 
-        topB.GetComponent<BoxCollider>().size = new Vector3((fieldOfViewBounds[2]-fieldOfViewBounds[3]), 40f, 3f);
+        topB.GetComponent<BoxCollider>().size = new Vector3((fieldOfViewBounds[2] - fieldOfViewBounds[3]), 40f, 3f);
         downB.GetComponent<BoxCollider>().size = new Vector3((fieldOfViewBounds[2] - fieldOfViewBounds[3]), 40f, 3f);
         rightB.GetComponent<BoxCollider>().size = new Vector3(3f, 40f, (fieldOfViewBounds[0] - fieldOfViewBounds[1]));
         leftB.GetComponent<BoxCollider>().size = new Vector3(3f, 40f, (fieldOfViewBounds[0] - fieldOfViewBounds[1]));
