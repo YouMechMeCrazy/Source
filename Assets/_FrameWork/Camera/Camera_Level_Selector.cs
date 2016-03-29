@@ -23,7 +23,7 @@ public class Camera_Level_Selector : MonoBehaviour {
     [SerializeField]
     float maximumY = 60F;
 
-    float rotationY = 0F;
+    float rotationY = 0f;
 
     [SerializeField]
     Vector3 baseCameraPosition;
@@ -271,7 +271,7 @@ public class Camera_Level_Selector : MonoBehaviour {
         //////////////////////////
         Vector3 targetDir = targetPlanet.position - transform.position;
 
-        float step = 20f * Time.deltaTime;
+        float step = 15f * Time.deltaTime;
         Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
        
 

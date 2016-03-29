@@ -117,6 +117,7 @@
      <None Include="Assets\MarvelousTechniques\Shaders\CustomLightingHardFog.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ConvertDepth.shader" />
      <None Include="Assets\Shaders\Outlined_Diffuse_Bumped.shader" />
+     <None Include="Assets\TSF\Shaders\TSFOutline.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurvesSimple.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderYUV.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\Transparent.shader" />
@@ -127,6 +128,7 @@
      <None Include="Assets\MarvelousTechniques\Shaders\LinearGradientBG.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\OceanOpaque.shader" />
+     <None Include="Assets\TSF\Shaders\TSF.shader" />
      <None Include="Assets\MarvelousTechniques\Shaders\TransparentAdditiveFG.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\GlobalFog.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonLitOutline.shader" />
