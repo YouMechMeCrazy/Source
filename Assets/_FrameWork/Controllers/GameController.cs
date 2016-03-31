@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour {
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         Time.timeScale = 1f;
     }
 

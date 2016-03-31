@@ -38,7 +38,7 @@ public class PauseScreen : MonoBehaviour {
             {
                 SetSelected(1);
             }
-            if (Input.GetButtonDown("Submit2") || Input.GetButtonDown("Submit"))
+            if (Input.GetButtonDown("Fire1"))
             {
                 
                 if (selected == 0)
@@ -49,6 +49,10 @@ public class PauseScreen : MonoBehaviour {
                 {
                     MainMenu();
                 }
+            }
+            if (Input.GetButtonDown("Fire2"))
+            {
+                Resume();
             }
         }
 
@@ -77,22 +81,27 @@ public class PauseScreen : MonoBehaviour {
         
     }
 
-    public void MainMenu() {
+    public void MainMenu() 
+    {
         SceneManager.LoadScene("MainMenuScene");
     }
 
-    public void Resume() {
+    public void Resume() 
+    {
         GameController.Instance.Pause();
     }
 
-    public void Restart() {
+    public void Restart() 
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void Show() {
+    public void Show() 
+    {
         canvas.SetActive(true);
     }
-    public void Hide() {
+    public void Hide() 
+    {
         canvas.SetActive(false);
     }
 }

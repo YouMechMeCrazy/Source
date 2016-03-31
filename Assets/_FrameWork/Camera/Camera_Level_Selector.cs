@@ -239,7 +239,7 @@ public class Camera_Level_Selector : MonoBehaviour {
 
     void FadeToBack() 
     {
-        SoundController.Instance.Volume(-0.01f);
+        SoundController.Instance.Volume(-0.005f);
         fadeScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, (Time.time - fadingStartTime) / fadingTime);
         fadeScreen.transform.FindChild("Text").GetComponent<Text>().color = new Color(1f, 1f, 1f, (Time.time - fadingStartTime) / fadingTime);
     }

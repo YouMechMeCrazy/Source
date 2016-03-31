@@ -43,7 +43,8 @@ public class Player : MonoBehaviour {
 
     [SerializeField]
     Transform armsStartingLocation;
-
+    [SerializeField]
+    float walkSpeedAnimation = 2f;
 
     private bool hasControl = true;
     private float pickUpStartTime = 0f;
@@ -254,9 +255,9 @@ public class Player : MonoBehaviour {
         }
 
 
-        animBot.SetFloat("move", Mathf.Max(move) * 2f);
+        animBot.SetFloat("move", Mathf.Max(move) * walkSpeedAnimation);
         if(!isBroken)
-            animTop.SetFloat("move", Mathf.Max(move) * 2f);
+            animTop.SetFloat("move", Mathf.Max(move) * walkSpeedAnimation);
       
     }
 
