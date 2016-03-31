@@ -21,6 +21,13 @@ public class MainMenu : MonoBehaviour {
 
     int selected = 0;
 
+    public GameObject fadeScreen;
+
+    bool isFading = false;
+    float fadingStartTime;
+    [SerializeField]
+    float fadingTime;
+
     void Start () 
     {
         SoundController.Instance.PlayMusic("RoboParty");
@@ -32,7 +39,14 @@ public class MainMenu : MonoBehaviour {
 	// Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Horizontal2") > 0f)
+
+        if (isFading)
+        {
+            FadeToBack();
+            return;
+        }
+
+        if (Input.GetAxis("Vertical") < -0.5f || Input.GetAxis("Vertical2") < -0.5f)
         {
             selected++;
             if (selected > 1)
@@ -40,7 +54,7 @@ public class MainMenu : MonoBehaviour {
                 selected = 1;
             }
         }
-        if (Input.GetAxis("Horizontal") < 0f || Input.GetAxis("Horizontal2") < 0f)
+        if (Input.GetAxis("Vertical") > 0.5f || Input.GetAxis("Vertical2") > 0.5f)
         {
             selected--;
             if (selected < 0)
@@ -66,6 +80,11 @@ public class MainMenu : MonoBehaviour {
             inCredits = false;
             DisplayCredits();
             titleScreen.Play();
+            credits.GetComponent<Animator>().SetBool("isPressed", false);
+            start.GetComponent<Animator>().SetBool("isPressed", false);
+
+         
+
             foreach (AnimationState state in titleScreen)
             {
                 state.time = 0f;
@@ -76,14 +95,18 @@ public class MainMenu : MonoBehaviour {
 
         if (selected == 0)
         {
-            start.transform.FindChild("Text").GetComponent<Text>().color = cSelected;
-            credits.transform.FindChild("Text").GetComponent<Text>().color = unSelected;
+
+            start.GetComponent<Animator>().SetBool("isSelected", true);
+            credits.GetComponent<Animator>().SetBool("isSelected", false);
         }
         else 
         {
-            start.transform.FindChild("Text").GetComponent<Text>().color = unSelected;
-            credits.transform.FindChild("Text").GetComponent<Text>().color = cSelected;
+            start.GetComponent<Animator>().SetBool("isSelected", false);
+            credits.GetComponent<Animator>().SetBool("isSelected", true);
         }
+
+
+       
 
     }
 
@@ -92,6 +115,10 @@ public class MainMenu : MonoBehaviour {
         inCredits = true;
         Invoke("DisplayCredits", 1f);
         titleScreen.Play();
+
+        credits.GetComponent<Animator>().SetBool("isPressed", true);
+        start.GetComponent<Animator>().SetBool("isPressed", true);
+
         foreach (AnimationState state in titleScreen)
         {
             state.time = state.length;
@@ -110,6 +137,24 @@ public class MainMenu : MonoBehaviour {
 
     public void LoadLevel() 
     {
+        StartCoroutine(DelaySceneLoad());
+        isFading = true;
+        fadingStartTime = Time.time;
+    }
+
+
+    IEnumerator DelaySceneLoad()
+    {
+        yield return new WaitForSeconds(fadingTime);
+        isFading = false;
         SceneManager.LoadScene("World_Selection");
     }
+
+    void FadeToBack()
+    {
+        SoundController.Instance.Volume(-0.005f);
+        fadeScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, (Time.time - fadingStartTime) / fadingTime);
+       
+    }
+
 }

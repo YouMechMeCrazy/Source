@@ -4,7 +4,7 @@ using System.Collections;
 //Starts the animator on this at a random frame
 public class RandomStartingFrame : MonoBehaviour 
 {
-    int fDelay = 10;
+    int fDelay = 25;
     int cFrame = 0;
 
     bool reset = false;

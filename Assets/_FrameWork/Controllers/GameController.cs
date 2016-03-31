@@ -82,6 +82,9 @@ public class GameController : MonoBehaviour {
    
     public void TryRespawnPlayer(bool isPlayerTwo, float waitTime = 1f) 
     {
+    
+
+
         if (!isPlayerTwo && p1.activeSelf)
         {
             p1.transform.FindChild("Legs").gameObject.SetActive(false);
@@ -147,6 +150,7 @@ public class GameController : MonoBehaviour {
         }
 
        
+
     }
 
     IEnumerator DelayTryRespawn(bool isP2, float waitTime) 
@@ -198,6 +202,8 @@ public class GameController : MonoBehaviour {
         }
 
     }
+
+
 
     IEnumerator DelayLevelOver(float delay) 
     {

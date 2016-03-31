@@ -70,7 +70,7 @@ public class Player : MonoBehaviour {
         legs = transform.FindChild("Legs");
         arms = transform.FindChild("Arms");
         //if broken
-        GetComponent<CapsuleCollider>().center = new Vector3(0f, 1.7f, 0f);
+        GetComponent<CapsuleCollider>().center = new Vector3(0f, 1.5f, 0f);
         GetComponent<CapsuleCollider>().height = 2.5f;
 
         if (player2)
@@ -373,7 +373,7 @@ public class Player : MonoBehaviour {
             GetComponent<CapsuleCollider>().height = 3.5f;
 
             GetComponent<CapsuleCollider>().center = new Vector3(0f, 2.17f, 0f);
-
+            
         }
 
     }

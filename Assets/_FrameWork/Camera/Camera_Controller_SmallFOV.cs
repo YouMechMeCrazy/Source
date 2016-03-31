@@ -368,6 +368,8 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         Vector3 p1 = play1.position;
         Vector3 p2 = play2.position;
 
+
+
         if (!play1.FindChild("Legs").gameObject.activeSelf)
         {
             p1 = p2;
@@ -375,6 +377,13 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         else if (!play2.FindChild("Legs").gameObject.activeSelf)
         {
             p2 = p1;
+        }
+
+        //if both players are dead.
+        if (!play1.FindChild("Legs").gameObject.activeSelf && !play2.FindChild("Legs").gameObject.activeSelf)
+        {
+            p1 = GameController.Instance.GetactiveSpawnPoint();
+            p2 = GameController.Instance.GetactiveSpawnPoint();
         }
 
         
@@ -406,6 +415,8 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
 
 
         Vector3 toReturn = new Vector3(xReturned, yReturned, zReturned + zMeanOffset);
+     
+
 
         return toReturn;
     }

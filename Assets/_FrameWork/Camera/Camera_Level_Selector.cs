@@ -73,6 +73,7 @@ public class Camera_Level_Selector : MonoBehaviour {
 
     float inputDelay = 0.5f;
     float inputDelayTimer;
+    float fadeInStartTime;
 
     void Awake() 
     {
@@ -91,9 +92,11 @@ public class Camera_Level_Selector : MonoBehaviour {
 
     void Start() 
     {
+        fadeInStartTime = Time.time;
         inputDelayTimer = Time.time;
-        updateDelegate += PlayerInput;
+        updateDelegate += FadeIn;
         updateDelegate += RotatePlanet;
+        StartCoroutine(DelayOnLoad());
     }
 
 	// Update is called once per frame
@@ -229,6 +232,14 @@ public class Camera_Level_Selector : MonoBehaviour {
 
 
     #region Utilities
+
+    IEnumerator DelayOnLoad() 
+    {
+        yield return new WaitForSeconds(fadingTime);
+        updateDelegate += PlayerInput;
+        updateDelegate -= FadeIn;
+    }
+
     IEnumerator DelaySceneLoad()
     {
         yield return new WaitForSeconds(fadingTime);
@@ -242,6 +253,11 @@ public class Camera_Level_Selector : MonoBehaviour {
         SoundController.Instance.Volume(-0.005f);
         fadeScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, (Time.time - fadingStartTime) / fadingTime);
         fadeScreen.transform.FindChild("Text").GetComponent<Text>().color = new Color(1f, 1f, 1f, (Time.time - fadingStartTime) / fadingTime);
+    }
+
+    void FadeIn() 
+    {
+        fadeScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, 1f-( ( Time.time - fadeInStartTime) / fadingTime) );
     }
 
     #endregion
