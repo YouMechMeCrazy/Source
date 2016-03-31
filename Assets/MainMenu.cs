@@ -6,64 +6,110 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
 
-    GameObject[] Submenus;
-    int activeMenu = 0;
-    EventSystem myEventSystem;
-    [SerializeField]
-    GameObject[] StartingButtons;
 
-   bool Abutton;
-    // Use this for initialization
+    public Button start;
+    public Button credits;
+
+    public Color unSelected;
+    public Color cSelected;
+
+    public Animation titleScreen;
+
+    public GameObject creditPanel;
+
+    bool inCredits = false;
+
+    int selected = 0;
+
     void Start () 
     {
-        StartingButtons[0].GetComponent<Selectable>().Select();
-        myEventSystem = GetComponent<EventSystem>();
-        Submenus = new GameObject[3];
-        Submenus[0] = transform.FindChild("MainMenu").gameObject;
-        Submenus[1] = transform.FindChild("LevelSelect").gameObject;
-        Submenus[2] = transform.FindChild("Credits").gameObject;
-
-
         SoundController.Instance.PlayMusic("RoboParty");
 
+        bool worked = titleScreen.Play();
+        Debug.Log(worked);
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
-        for (int i = 0; i < 3; i++) {
-            if (activeMenu == i) { Submenus[i].SetActive(true); }
-            else { Submenus[i].SetActive(false); }
-        }
-
-        
-        if (Input.GetMouseButtonDown(1) || Input.GetAxis("Fire2") > 0) {
-            SwitchToMenu(0);
-        }
-
-
-
-        if(activeMenu == 2)
+    void Update()
+    {
+        if (Input.GetAxis("Horizontal") > 0f || Input.GetAxis("Horizontal2") > 0f)
         {
-            if (Input.GetAxis("Fire1") == 0) { Abutton = true; }
-            if (Input.GetAxis("Fire1") > 0 && Abutton) { SwitchToMenu(0); }
-            
+            selected++;
+            if (selected > 1)
+            {
+                selected = 1;
+            }
         }
-        else { Abutton = false; }
+        if (Input.GetAxis("Horizontal") < 0f || Input.GetAxis("Horizontal2") < 0f)
+        {
+            selected--;
+            if (selected < 0)
+            {
+                selected = 0;
+            }
+        }
+
+        if (Input.GetButtonDown("Fire1") )
+        {
+            if (selected == 0)
+            {
+                LoadLevel();
+            }
+            else if(!inCredits)
+            {
+                Credits();
+            }
+        }
+
+        if (Input.GetButtonDown("Fire2") && inCredits)
+        {
+            inCredits = false;
+            DisplayCredits();
+            titleScreen.Play();
+            foreach (AnimationState state in titleScreen)
+            {
+                state.time = 0f;
+                state.speed = 1F;
+            }
+        }
 
 
+        if (selected == 0)
+        {
+            start.transform.FindChild("Text").GetComponent<Text>().color = cSelected;
+            credits.transform.FindChild("Text").GetComponent<Text>().color = unSelected;
+        }
+        else 
+        {
+            start.transform.FindChild("Text").GetComponent<Text>().color = unSelected;
+            credits.transform.FindChild("Text").GetComponent<Text>().color = cSelected;
+        }
 
-	}
-
-    public void SwitchToMenu(int menu) {
-        activeMenu = menu;
-        Submenus[menu].SetActive(true);
-        myEventSystem.SetSelectedGameObject(StartingButtons[menu]);
-        StartingButtons[menu].GetComponent<Selectable>().Select();
     }
 
-    public void LoadLevel(string levelToLoad) {
-        SceneManager.LoadScene(levelToLoad);
-        
+    public void Credits() 
+    {
+        inCredits = true;
+        Invoke("DisplayCredits", 1f);
+        titleScreen.Play();
+        foreach (AnimationState state in titleScreen)
+        {
+            state.time = state.length;
+            state.speed = -1F;
+        }
+    }
+
+    void DisplayCredits() 
+    {
+        if (inCredits)
+            creditPanel.GetComponent<Text>().color = unSelected;
+        else
+            creditPanel.GetComponent<Text>().color = new Color(0f,0f,0f,0f);
+    }
+
+
+    public void LoadLevel() 
+    {
+        SceneManager.LoadScene("World_Selection");
     }
 }

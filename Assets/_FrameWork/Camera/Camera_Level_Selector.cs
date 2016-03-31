@@ -105,148 +105,78 @@ public class Camera_Level_Selector : MonoBehaviour {
             updateDelegate();
         }
 
-        /*if (Time.time > inputDelayTimer + inputDelay)
-        {
-            ViewInput();
-        }
-        */
     }
 
     void PlayerInput()
     {
-
-        if (Input.GetAxis("Horizontal") > 0.5f && Time.time > inputDelayTimer + inputDelay)
+        if(Time.time > inputDelayTimer + inputDelay)
         {
-            inputDelayTimer = Time.time;
-            int previous = planetSelected;
-            planetSelected++;
+            if (Input.GetAxis("Horizontal") > 0.5f || Input.GetAxis("Horizontal2") > 0.5f)
+            {
+                inputDelayTimer = Time.time;
+                int previous = planetSelected;
+                planetSelected++;
           
-            if (planetSelected > 7)
-            {
-                planetSelected = 1;
-            }
-            targetPlanet = planets[planetSelected - 1].transform;
-
-            target = targetPlanet;
-            transform.SetParent(targetPlanet);
-
-            planets[previous-1].transform.FindChild("Outline").gameObject.SetActive(false);
-            targetPlanet.transform.FindChild("Outline").gameObject.SetActive(true);
-
-            SelectNewDestination();
-
-        }
-        else if (Input.GetAxis("Horizontal") < -0.5f && Time.time > inputDelayTimer + inputDelay)
-        {
-            inputDelayTimer = Time.time;
-            int previous = planetSelected;
-            planetSelected--;
-            if (planetSelected < 1)
-            {
-                planetSelected = 7;
-            }
-            targetPlanet = planets[planetSelected - 1].transform;
-
-
-            target = targetPlanet;
-            transform.SetParent(targetPlanet);
-
-            planets[previous - 1].transform.FindChild("Outline").gameObject.SetActive(false);
-            targetPlanet.transform.FindChild("Outline").gameObject.SetActive(true);
-
-            SelectNewDestination();
-
-        }
-        
-        
-
-        
-    }
-
-    /*
-    #region PlayerInputs
-    void PlayerInput() 
-    {
-        ViewInput();
-        if (Input.GetAxis("Fire1") != 0)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0f));
-            RaycastHit hit;
-            Debug.Log("Shot");
-            if (Physics.Raycast(ray, out hit, 10000f, clickable))
-            {
-                if (hit.collider.gameObject.name != transform.parent.name)
+                if (planetSelected > 7)
                 {
-                    target = hit.collider.transform;
-                    transform.SetParent(hit.collider.transform);
-                    SelectNewDestination();
+                    planetSelected = 1;
                 }
+                targetPlanet = planets[planetSelected - 1].transform;
+
+                target = targetPlanet;
+                transform.SetParent(targetPlanet);
+
+                planets[previous-1].transform.FindChild("Outline").gameObject.SetActive(false);
+                targetPlanet.transform.FindChild("Outline").gameObject.SetActive(true);
+
+                SelectNewDestination();
+
+            }
+            else if (Input.GetAxis("Horizontal") < -0.5f || Input.GetAxis("Horizontal2") < -0.5f)
+            {
+                inputDelayTimer = Time.time;
+                int previous = planetSelected;
+                planetSelected--;
+                if (planetSelected < 1)
+                {
+                    planetSelected = 7;
+                }
+                targetPlanet = planets[planetSelected - 1].transform;
+
+
+                target = targetPlanet;
+                transform.SetParent(targetPlanet);
+
+                planets[previous - 1].transform.FindChild("Outline").gameObject.SetActive(false);
+                targetPlanet.transform.FindChild("Outline").gameObject.SetActive(true);
+
+                SelectNewDestination();
+
             }
         }
 
-        if (Input.GetAxis("Submit") == 1)
+        if (Input.GetButtonDown("Fire1"))
         {
-            updateDelegate -= PlayerInput;
-            updateDelegate += FadeToBack;
+            if (levelSelectionScript.GetCurrentWorld() == 0)
+            {
+                updateDelegate -= PlayerInput;
+                updateDelegate += FadeToBack;
 
-            fadingStartTime = Time.time;
-            fadeScreen.transform.FindChild("Text").GetComponent<Text>().text = "Loading " + transform.parent.name;
-            StartCoroutine(DelaySceneLoad());
-            
+                fadingStartTime = Time.time;
+                fadeScreen.transform.FindChild("Text").GetComponent<Text>().text = "Loading " + transform.parent.name;
+                StartCoroutine(DelaySceneLoad());
+            }
+            else 
+            {
+                Debug.LogError("Level does not exist yet.");
+            }
+
         }
-    }
 
-    void ViewInput() 
-    {
         
-        if (axes == RotationAxes.MouseXAndY)
-        {
-            float rotationX = transform.localEulerAngles.y + Input.GetAxis("Horizontal") * sensitivityX;
-
-            rotationY += Input.GetAxis("Vertical") * sensitivityY;
-            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
-
-            transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
-        }
-        else if (axes == RotationAxes.MouseX)
-        {
-            transform.Rotate(0, Input.GetAxis("Horizontal") * sensitivityX, 0);
-        }
-        else
-        {
-            rotationY += Input.GetAxis("Vertical") * sensitivityY;
-            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
-
-            transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
-        }
     }
-    #endregion
-    */
 
-  /*  void ViewInput()
-    {
-
-        if (axes == RotationAxes.MouseXAndY)
-        {
-            float rotationX = transform.localEulerAngles.y + Input.GetAxis("viewLookH") * sensitivityX;
-
-            rotationY += Input.GetAxis("viewLookV") * sensitivityY;
-            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
-
-            transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
-        }
-        else if (axes == RotationAxes.MouseX)
-        {
-            transform.Rotate(0, Input.GetAxis("viewLookH") * sensitivityX, 0);
-        }
-        else
-        {
-            rotationY += Input.GetAxis("viewLookV") * sensitivityY;
-            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
-
-            transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
-        }
-    }*/
+   
 
     #region CameraMovement
     void Move()
@@ -309,6 +239,7 @@ public class Camera_Level_Selector : MonoBehaviour {
 
     void FadeToBack() 
     {
+        SoundController.Instance.Volume(-0.01f);
         fadeScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, (Time.time - fadingStartTime) / fadingTime);
         fadeScreen.transform.FindChild("Text").GetComponent<Text>().color = new Color(1f, 1f, 1f, (Time.time - fadingStartTime) / fadingTime);
     }

@@ -66,6 +66,11 @@ public class SoundController : MonoBehaviour {
         aud.clip = null;
     }
 
+    public void Volume(float amount) 
+    {
+        aud.volume += amount;
+    }
+
     public SoundController() 
     {
         

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class YMMCCinematic : MonoBehaviour {
     public MovieTexture ymmcMovie;
@@ -18,7 +19,8 @@ public class YMMCCinematic : MonoBehaviour {
     {
         if (Input.GetButtonDown("Submit2") || Input.GetButtonDown("Submit") || Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2"))
         {
-            Application.LoadLevel("WhiteBox");
+            SceneManager.LoadScene("LEVEL1");
+            
         }
     }
 
@@ -31,7 +33,7 @@ public class YMMCCinematic : MonoBehaviour {
         }
         if(timePassed >= ymmcMovie.duration)
         {
-            Application.LoadLevel("WhiteBox");
+            SceneManager.LoadScene("LEVEL1");
         }
 
        

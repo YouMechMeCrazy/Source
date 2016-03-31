@@ -30,7 +30,7 @@ public class CTR_LevelSelection : MonoBehaviour {
     float fadingStartTime;
 
     //gets the info from the gameController/manager
-    GameWorld currentWorld = GameWorld.JUNKYARD;
+    GameWorld currentWorld = GameWorld.LEVEL1;
 
     public int numberOfLevels = 1;
 

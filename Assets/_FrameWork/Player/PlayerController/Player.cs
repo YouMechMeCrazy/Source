@@ -214,6 +214,7 @@ public class Player : MonoBehaviour {
     //audio componenet of movement.
     float walkTimer = 0f;
     float walkClipDuration = 0f;
+
     void Movement() 
     {
 
@@ -230,6 +231,9 @@ public class Player : MonoBehaviour {
         }
 
         float[] move = new float[] { xAxis, yAxis };
+
+       
+
         Vector3 dirvector = new Vector3(facingVector.x, 1f, facingVector.z) * moveSpeed * Mathf.Max(move) * Time.deltaTime;
        
         rb.velocity = new Vector3(dirvector.x, rb.velocity.y, dirvector.z);
@@ -239,6 +243,7 @@ public class Player : MonoBehaviour {
             if (!player2)
             {
                 walkClipDuration = SoundController.Instance.PlayFX("Player1_Walk");
+
             }
             else
             {
@@ -248,9 +253,10 @@ public class Player : MonoBehaviour {
                 
         }
 
-        animBot.SetFloat("move", Mathf.Max(move));
+
+        animBot.SetFloat("move", Mathf.Max(move) * 2f);
         if(!isBroken)
-        animTop.SetFloat("move", Mathf.Max(move));
+            animTop.SetFloat("move", Mathf.Max(move) * 2f);
       
     }
 
