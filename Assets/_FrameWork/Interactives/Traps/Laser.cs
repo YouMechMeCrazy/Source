@@ -18,23 +18,35 @@ public class Laser : InputObject {
 	void Start () {
 
         Beam = transform.FindChild("LaserBeam");
-        if (starOn) { state = input._Off; } else { state = input._On; }
+        if (starOn) 
+        { 
+            state = input._Off; 
+        } 
+        else 
+        { 
+            state = input._On; 
+        }
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+    {
 
-        if (state == input._On) {
+        if (state == input._On) 
+        {
             Beam.GetComponent<Renderer>().enabled = true;
             Beam.transform.localPosition = new Vector3(length / 2, Beam.transform.localPosition.y, 0f);
             Beam.transform.localScale = new Vector3(0.1f,length/2, 0.1f);
 
         }
-        if (state == input._Off) {
+        if (state == input._Off) 
+        {
             Beam.GetComponent<Renderer>().enabled = false;
         }
 
 	}
+
+
 
     void OnTriggerStay(Collider other)
     {

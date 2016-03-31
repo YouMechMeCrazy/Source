@@ -25,15 +25,19 @@ public class PressurePlate : MonoBehaviour {
     Input[] offInputs;
 
     [SerializeField]
+    PressurePlate[] otherTriggers;
+
+    [SerializeField]
     public bool hasTimerDelay = false;
     [SerializeField]
     float timerDuration = 5f;
 
     bool isCountingDownTimer = false;
 
-    bool on = false;
+    bool isOn = false;
 
-	
+    float currentWeight = 0;
+
 	void Start () 
     {
         TriggerList = new List<Collider>();
@@ -46,37 +50,53 @@ public class PressurePlate : MonoBehaviour {
             return;
         }
 
-        float currweight = 0;
+        currentWeight = 0;
         
         foreach (Collider collider in TriggerList)
         {
             Weight tWeight = collider.GetComponent<Weight>();
-            if (tWeight) {
-                currweight += tWeight.GetWeight();
+            if (tWeight) 
+            {
+                currentWeight += tWeight.GetWeight();
             }
         }
 
-        if (currweight >= weight && !on)
+
+        //triggering and is not on.
+        if (currentWeight >= weight && !isOn)
         {
-            on = true;
+            isOn = true;
             for (int i = 0; i < onInputs.Length; i++)
             {
                 onInputs[i].target.Input(onInputs[i].input);
             }
         }
-        if (currweight >= weight && on)
+        //triggering but is already on.
+        if (currentWeight >= weight && isOn)
         {
-            on = true;
+            isOn = true;
             for (int i = 0; i < onInputs.Length; i++)
             {
                 onInputs[i].target.Input(onInputs[i].input);
             }
         }
-        if (currweight < weight && on) 
+
+        //not triggering and is on.
+        if (currentWeight < weight && isOn) 
         {
+            if (otherTriggers.Length > 0)
+            {
+                for (int i = 0; i < otherTriggers.Length; i++)
+                {
+                    if (otherTriggers[i].GetWeightStatus())
+                    {
+                        return;
+                    }
+                }
+            }
             if (!hasTimerDelay)
             {
-                on = false;
+                isOn = false;
                 for (int i = 0; i < offInputs.Length; i++)
                 {
                     offInputs[i].target.Input(offInputs[i].input);
@@ -96,7 +116,7 @@ public class PressurePlate : MonoBehaviour {
     IEnumerator DelayTimer() 
     {
         yield return new WaitForSeconds(timerDuration);
-        on = false;
+        isOn = false;
         for (int i = 0; i < offInputs.Length; i++)
         {
             offInputs[i].target.Input(offInputs[i].input);
@@ -132,7 +152,12 @@ public class PressurePlate : MonoBehaviour {
 
      public bool GetOnStatus() 
      {
-         return on;
+        
+         return isOn;
+     }
+     public bool GetWeightStatus() 
+     {
+         return currentWeight >= weight; 
      }
 
 }
