@@ -28,6 +28,8 @@ public class MainMenu : MonoBehaviour {
     [SerializeField]
     float fadingTime;
 
+   
+
     void Start () 
     {
         SoundController.Instance.PlayMusic("RoboParty");
@@ -147,8 +149,9 @@ public class MainMenu : MonoBehaviour {
     {
         yield return new WaitForSeconds(fadingTime);
         isFading = false;
-        SceneManager.LoadScene("World_Selection");
+        SceneManager.LoadSceneAsync("World_Selection");
     }
+
 
     void FadeToBack()
     {

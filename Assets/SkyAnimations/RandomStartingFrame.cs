@@ -12,8 +12,6 @@ public class RandomStartingFrame : MonoBehaviour
             return;
      
         GetComponent<Animator>().Play("StarAnim", -1, Random.Range(0f, 1f));
-
-       
 	}   
 
 }
