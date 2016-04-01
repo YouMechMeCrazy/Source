@@ -12,16 +12,19 @@ public class PauseScreen : MonoBehaviour {
 
     public Button unpause;
     public Button mainMenu;
-    
-    
+
+    public float normalScale;
+    public float selectedScale;
+    public Color unSelected;
+    public Color CSelected;
 
 
 	// Use this for initialization
 	void Start () {
         canvas = transform.FindChild("PauseScreenCanvas").gameObject;
         canvas.SetActive(false);
-        
 
+        SetSelected(0);
 	}
 	
 	// Update is called once per frame
@@ -70,13 +73,20 @@ public class PauseScreen : MonoBehaviour {
         }
         if (selected == 0)
         {
-            unpause.GetComponent<Image>().color = new Color(1f,0f,0f,1f);
-            mainMenu.GetComponent<Image>().color = new Color(0f, 1f, 1f, 1f);
+            unpause.GetComponent<Image>().color = CSelected;
+            unpause.transform.localScale = new Vector3(selectedScale, selectedScale, selectedScale);
+
+            mainMenu.GetComponent<Image>().color = unSelected;
+            mainMenu.transform.localScale = new Vector3(normalScale, normalScale, normalScale);
+
         }
         if (selected == 1)
         {
-            mainMenu.GetComponent<Image>().color = new Color(1f, 0f, 0f, 1f);
-            unpause.GetComponent<Image>().color = new Color(0f, 1f, 1f, 1f);
+            mainMenu.GetComponent<Image>().color = CSelected;
+            mainMenu.transform.localScale = new Vector3(selectedScale, selectedScale, selectedScale);
+
+            unpause.GetComponent<Image>().color = unSelected;
+            unpause.transform.localScale = new Vector3(normalScale, normalScale, normalScale);
         }
         
     }
