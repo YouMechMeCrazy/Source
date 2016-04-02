@@ -87,7 +87,7 @@ public class Cam_Cinematic : MonoBehaviour {
 
     public void Cinematic(Cinematic_Type type) 
     {
-        Debug.Log(type.ToString());
+       
         if (!hasStarted)
         {
             AddNextStep(type);

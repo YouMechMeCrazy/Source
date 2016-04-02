@@ -33,16 +33,20 @@ public class Sound_Music_Holder : MonoBehaviour {
         public float volume;
     }
 
+
+
     public static Sound_Music_Holder Instance { get; private set; }
 
 
     public Dictionary<string, ClipData> soundFXDic = new Dictionary<string, ClipData>();
 
+    public Dictionary<string, ClipData> voDIC = new Dictionary<string, ClipData>();
+
     public Dictionary<string, ClipData> musicDic = new Dictionary<string, ClipData>();
 
     public Music[] musicClips;
     public SoundFX[] soundFXClips;
-
+    public SoundFX[] voiceOverClips;
 
     private void Awake()
     {
@@ -58,6 +62,9 @@ public class Sound_Music_Holder : MonoBehaviour {
 
         Load_Music();
         Load_SoundFX();
+        Load_VoiceOver();
+
+        
     }
 
   
@@ -72,6 +79,16 @@ public class Sound_Music_Holder : MonoBehaviour {
             
     }
 
+    void Load_VoiceOver()
+    {
+        for (int i = 0; i < voiceOverClips.Length; i++)
+        {
+            ClipData newClipData = new ClipData(voiceOverClips[i].clip, voiceOverClips[i].volume, voiceOverClips[i].name);
+            voDIC.Add(voiceOverClips[i].name, newClipData);
+        }
+
+    }
+
     void Load_Music()
     {
         for (int i = 0; i < musicClips.Length; i++)
@@ -81,8 +98,12 @@ public class Sound_Music_Holder : MonoBehaviour {
         }
     }
 
-    public float GetClipDuration(string clip, bool isSoundFX) 
+    public float GetClipDuration(string clip, bool isSoundFX, bool isVoiceOver = false) 
     {
+        if (isVoiceOver)
+        {
+            return voDIC[clip].clip.length;
+        }
         if (isSoundFX)
         {
 

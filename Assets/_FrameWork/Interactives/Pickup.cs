@@ -38,8 +38,9 @@ public class Pickup : MonoBehaviour {
         
     }
 
-    public virtual void OnPutDown() {
-        
+    public virtual void OnPutDown() 
+    {
+        SoundController.Instance.PlayFX("Box_Drop_Metal", transform.position);
         isHold = false;
         if (gameObject.GetComponent<BoxCollider>() != null)
         {

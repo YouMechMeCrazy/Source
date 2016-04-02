@@ -7,21 +7,7 @@ public class Camera_Level_Selector : MonoBehaviour {
     [SerializeField]
     LayerMask clickable;
 
-    public enum RotationAxes { MouseXAndY = 0, MouseX = 1, MouseY = 2 }
-    public RotationAxes axes = RotationAxes.MouseXAndY;
-    [SerializeField]
-    float sensitivityX = 15F;
-    [SerializeField]
-    float sensitivityY = 15F;
 
-
-    float minimumX = -360F;
-    float maximumX = 360F;
-
-    [SerializeField]
-    float minimumY = -60F;
-    [SerializeField]
-    float maximumY = 60F;
 
     float rotationY = 0f;
 
@@ -165,6 +151,8 @@ public class Camera_Level_Selector : MonoBehaviour {
                 updateDelegate -= PlayerInput;
                 updateDelegate += FadeToBack;
 
+                SoundController.Instance.PlayFX("Menu_Select", new Vector3(0f, -999f, 0f));
+
                 fadingStartTime = Time.time;
                 fadeScreen.transform.FindChild("Text").GetComponent<Text>().text = "Loading " + transform.parent.name;
                 StartCoroutine(DelaySceneLoad());
@@ -227,6 +215,8 @@ public class Camera_Level_Selector : MonoBehaviour {
         updateDelegate -= PlayerInput;
         //Changes the currently selected world in our controller.
         levelSelectionScript.SetCurrentWorld(transform.parent.name);
+
+        SoundController.Instance.PlayFX("Menu_Move", new Vector3(0f, -999f, 0f));
     }
     #endregion
 

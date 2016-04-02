@@ -19,6 +19,7 @@ public class SpawnPoint : MonoBehaviour {
         if (!isActive)
         { 
             isActive = true;
+            SoundController.Instance.PlayFX("SpawnPoint_Activate", transform.position);
             transform.FindChild("Visual_Active").gameObject.SetActive(true);
             GameController.Instance.SetActiveSpawnPoint(transform.FindChild("SpawnPoint"));
         }
@@ -29,6 +30,12 @@ public class SpawnPoint : MonoBehaviour {
     {
         isActive = false;
         transform.FindChild("Visual_Active").gameObject.SetActive(false);
+    }
+
+    public void SpawnPlayer() 
+    {
+        //play anim
+        SoundController.Instance.PlayFX("SpawnPoint_HatchOpens", transform.position);
     }
 
     

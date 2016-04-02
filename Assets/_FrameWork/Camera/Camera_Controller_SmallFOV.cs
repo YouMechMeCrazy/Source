@@ -44,6 +44,8 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
     CinematicDelegate dCin;
 
 
+    GameObject listener;
+
     Ray[] cameraBounds = new Ray[4];//Quad rays that delimit the camera view. (top, bot, right, left)
     float[] fieldOfViewBounds = new float[4];
     bool[] boundTouching = new bool[4] { false, false, false, false};
@@ -74,7 +76,7 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         downB = transform.FindChild("Down");
         rightB = transform.FindChild("Right");
         leftB = transform.FindChild("Left");
-
+        listener = transform.FindChild("Listener").gameObject;
       
     }
 
@@ -114,8 +116,7 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
 
             CameraRayCasting();
         }
-       
-        
+
     }
 
     IEnumerator WaitForCinematicCamera(float delay) 
@@ -142,6 +143,13 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         cameraBounds[1] = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, 0, 0));//bot
         cameraBounds[2] = Camera.main.ScreenPointToRay(new Vector3(Screen.width, Screen.height / 2f, 0));//right
         cameraBounds[3] = Camera.main.ScreenPointToRay(new Vector3(0, Screen.height / 2f, 0));//left
+        
+        RaycastHit hitAudio;
+        
+        if(Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0)), out hitAudio, 1000f, ground))
+        {
+            listener.transform.position = new Vector3( hitAudio.point.x, hitAudio.point.y + 10f, hitAudio.point.z);
+        }
 
         for (int i = 0; i < 4; i++)
         {

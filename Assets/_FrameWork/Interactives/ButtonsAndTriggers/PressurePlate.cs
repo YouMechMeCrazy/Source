@@ -65,6 +65,7 @@ public class PressurePlate : MonoBehaviour {
         //triggering and is not on.
         if (currentWeight >= weight && !isOn)
         {
+            SoundController.Instance.PlayFX("FloorPanel_Pressed", transform.position);
             isOn = true;
             for (int i = 0; i < onInputs.Length; i++)
             {
@@ -84,6 +85,7 @@ public class PressurePlate : MonoBehaviour {
         //not triggering and is on.
         if (currentWeight < weight && isOn) 
         {
+            SoundController.Instance.PlayFX("FloorPanel_Released", transform.position);
             if (otherTriggers.Length > 0)
             {
                 for (int i = 0; i < otherTriggers.Length; i++)

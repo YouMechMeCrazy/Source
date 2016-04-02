@@ -21,7 +21,8 @@ public class GameController : MonoBehaviour {
     float timeAtPause = 0f;
 
     PauseScreen pauseScreen;
-     
+
+    float mainVolume = 1f;
 
     void Awake()
     {
@@ -41,7 +42,7 @@ public class GameController : MonoBehaviour {
 	void Start ()
     {
         SetReferences();
-        SoundController.Instance.PlayMusic("BroJam");
+        SoundController.Instance.PlayMusic("Level_1", true);
 	}
 
 
@@ -147,6 +148,8 @@ public class GameController : MonoBehaviour {
                 }
 
             }
+            //this plays the animation and sound fx.
+            activeSpawnPoint.transform.parent.GetComponent<SpawnPoint>().SpawnPlayer();
         }
 
        
@@ -171,12 +174,14 @@ public class GameController : MonoBehaviour {
         isPaused = !isPaused;
         if (isPaused)
         {
+            mainVolume = SoundController.Instance.Volume(0.25f, true);
             pauseScreen.Show();
             pauseScreen.GetComponent<PauseScreen>().isPaused = true;
             Time.timeScale = 0f;
         }
         else 
         {
+            SoundController.Instance.Volume(mainVolume, true);
             pauseScreen.GetComponent<PauseScreen>().isPaused = false;
             Time.timeScale = 1f;
             pauseScreen.Hide();
@@ -194,7 +199,9 @@ public class GameController : MonoBehaviour {
         player2Script.SetPlayerControl(false);
         player1Script.EndOfLevel();
         player2Script.EndOfLevel();
-        // Play music
+
+        SoundController.Instance.PlayMusic("Level_Completed", true);
+
         if (Camera.main.GetComponent<Cam_Cinematic>() != null)
         {
             Camera.main.GetComponent<Camera_Controller_SmallFOV>().PlayOutro();

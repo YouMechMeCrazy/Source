@@ -21,7 +21,7 @@ public class CTR_WorldSelection : MonoBehaviour {
 
     void Start() 
     {
-        SoundController.Instance.PlayMusic("SpaceAdventure");
+        SoundController.Instance.PlayMusic("Level_Selection");
     }
 
     public void SetCurrentWorld(string world)

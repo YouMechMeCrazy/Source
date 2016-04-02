@@ -32,7 +32,8 @@ public class InteractiveButton : MonoBehaviour {
 
     public void Hit() 
     {
-        transform.FindChild("Button").GetComponent<Animator>().SetTrigger("buttonPress"); ;
+        transform.FindChild("Button").GetComponent<Animator>().SetTrigger("buttonPress");
+        SoundController.Instance.PlayFX("Button_Pressed", transform.position);
         if (!hasTimerDelay)
         {
             if (!isOn)

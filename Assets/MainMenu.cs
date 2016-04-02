@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour {
     bool isFading = false;
     float fadingStartTime;
     [SerializeField]
-    float fadingTime;
+    float fadingTime = 1f;
 
    
 
@@ -34,8 +34,8 @@ public class MainMenu : MonoBehaviour {
     {
         SoundController.Instance.PlayMusic("Title_Screen");
         Time.timeScale = 1f;
-        bool worked = titleScreen.Play();
-        Debug.Log(worked);
+        titleScreen.Play();
+        
 	}
 	
 	// Update is called once per frame
@@ -50,6 +50,10 @@ public class MainMenu : MonoBehaviour {
 
         if (Input.GetAxis("Vertical") < -0.5f || Input.GetAxis("Vertical2") < -0.5f)
         {
+            if (selected == 0)
+            {
+                SoundController.Instance.PlayFX("Menu_Move", new Vector3(0f, -999f, 0f));
+            }
             selected++;
             if (selected > 1)
             {
@@ -58,6 +62,10 @@ public class MainMenu : MonoBehaviour {
         }
         if (Input.GetAxis("Vertical") > 0.5f || Input.GetAxis("Vertical2") > 0.5f)
         {
+            if (selected == 1)
+            {
+                SoundController.Instance.PlayFX("Menu_Move", new Vector3(0f, -999f, 0f));
+            }
             selected--;
             if (selected < 0)
             {
@@ -69,10 +77,14 @@ public class MainMenu : MonoBehaviour {
         {
             if (selected == 0)
             {
+             
+                SoundController.Instance.PlayFX("Menu_Select", new Vector3(0f, -999f, 0f));
+              
                 LoadLevel();
             }
             else if(!inCredits)
             {
+                SoundController.Instance.PlayFX("Menu_Select", new Vector3(0f, -999f, 0f));
                 Credits();
             }
         }
@@ -84,7 +96,7 @@ public class MainMenu : MonoBehaviour {
             titleScreen.Play();
             credits.GetComponent<Animator>().SetBool("isPressed", false);
             start.GetComponent<Animator>().SetBool("isPressed", false);
-
+            SoundController.Instance.PlayFX("Menu_Back", new Vector3(0f,-999f,0f));
          
 
             foreach (AnimationState state in titleScreen)

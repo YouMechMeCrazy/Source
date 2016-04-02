@@ -166,6 +166,8 @@ public class Player : MonoBehaviour {
                     Pickup temp = hits[i].transform.GetComponent<Pickup>();
                     if (temp != null)
                     {
+                        SoundController.Instance.PlayFX("Mech_PickUp", transform.position);
+
                         temp.OnPickedUp();
                         holding = temp;
                         holding.transform.position = (center + armFacingVector * (reach + holding.GetSize()));
@@ -177,7 +179,8 @@ public class Player : MonoBehaviour {
                     }
                     if (hits[i].transform.GetComponent<InteractiveButton>() != null && !isPressing)
                     {
-                        //play button sounds
+                        SoundController.Instance.PlayFX("Mech_Press_Button", transform.position);
+
                         animTop.SetTrigger("pressingButton");
                         hits[i].transform.GetComponent<InteractiveButton>().Hit();
                         isPressing = true;
@@ -196,6 +199,8 @@ public class Player : MonoBehaviour {
                 GetComponent<Weight>().RemoveWeight(holding.gameObject.GetComponent<Weight>().GetWeight());
                 holding.OnPutDown(); holding = null;
                 animTop.SetBool("pickingUp", false);
+
+                SoundController.Instance.PlayFX("Mech_Release", transform.position);
             }
             isPressing = false;
         }
@@ -235,20 +240,21 @@ public class Player : MonoBehaviour {
 
        
 
-        Vector3 dirvector = new Vector3(facingVector.x, 1f, facingVector.z) * moveSpeed * Mathf.Max(move) * Time.deltaTime;
-       
+        Vector3 dirvector = new Vector3(facingVector.x, 1f, facingVector.z) * moveSpeed * Mathf.Max(move) * Mathf.Clamp(Time.deltaTime, 0f, 0.02f);
+
+
         rb.velocity = new Vector3(dirvector.x, rb.velocity.y, dirvector.z);
 
         if (Mathf.Max(move) != 0 && walkTimer < Time.time )
         {
             if (!player2)
             {
-                walkClipDuration = SoundController.Instance.PlayFX("Player1_Walk");
+                walkClipDuration = SoundController.Instance.PlayFX("Player1_Walk", transform.position);
 
             }
             else
             {
-                walkClipDuration = SoundController.Instance.PlayFX("Player2_Walk");
+                walkClipDuration = SoundController.Instance.PlayFX("Player2_Walk", transform.position);
             }
             walkTimer = Time.time + walkClipDuration;
                 
@@ -309,7 +315,11 @@ public class Player : MonoBehaviour {
         animTop.SetTrigger("shock");
         animBot.SetFloat("move", 0f);
         animTop.SetFloat("move", 0f);
-        //Play sounds
+
+        SoundController.Instance.PlayFX("Mech_Laser_Death", transform.position);
+
+        GetComponent<CapsuleCollider>().isTrigger = true;
+
         hasControl = false;
         rb.velocity = new Vector3(0f,0f,0f);
         rb.isKinematic = true;
@@ -327,7 +337,8 @@ public class Player : MonoBehaviour {
     public void RespawnPlayer()
     {
         //play anim
-        //play revive sound
+        GetComponent<CapsuleCollider>().isTrigger = true;
+        SoundController.Instance.PlayFX("Mech_Respawn", transform.position);
         StartCoroutine(RespawnAnimation());
     }
 
