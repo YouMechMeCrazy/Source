@@ -132,7 +132,8 @@ public class SoundController : MonoBehaviour {
         tempGO.transform.position = pos; // set its position
         AudioSource aSource = tempGO.AddComponent<AudioSource>(); // add an audio source
         aSource.clip = clip; // define the clip
-        aSource.minDistance = minAudioRange;
+        aSource.rolloffMode = AudioRolloffMode.Linear;
+        aSource.spatialBlend = 1f;
         aSource.maxDistance = maxAudioRange;
         aSource.volume = aVolume;
         aSource.Play(); // start the sound
