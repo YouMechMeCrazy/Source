@@ -144,12 +144,7 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         cameraBounds[2] = Camera.main.ScreenPointToRay(new Vector3(Screen.width, Screen.height / 2f, 0));//right
         cameraBounds[3] = Camera.main.ScreenPointToRay(new Vector3(0, Screen.height / 2f, 0));//left
         
-        RaycastHit hitAudio;
-        
-        if(Physics.Raycast(Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0)), out hitAudio, 1000f, ground))
-        {
-            listener.transform.position = new Vector3( hitAudio.point.x, hitAudio.point.y + 10f, hitAudio.point.z);
-        }
+    
 
         for (int i = 0; i < 4; i++)
         {
@@ -423,8 +418,8 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
 
 
         Vector3 toReturn = new Vector3(xReturned, yReturned, zReturned + zMeanOffset);
-     
 
+        listener.transform.position = new Vector3(xMean, yMean, zMean);
 
         return toReturn;
     }
