@@ -111,6 +111,9 @@ ModelImporter:
     400102: //RootNode
     4300000: doob_talk:brian_rig:Cube.003
     7400000: Take 001
+    7400002: idle
+    7400004: talk
+    7400006: idleAlt
     9500000: //RootNode
     13700000: doob_talk:brian_rig:Cube.003
   materials:
@@ -133,7 +136,535 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 365
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: doob_talk:brian_rig:Cube.003
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint2
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint3
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint4
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint5
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_head_top_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt/doob_talk:brian_rig:red_doob_l_index_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt/doob_talk:brian_rig:red_doob_l_index_2_jnt/doob_talk:brian_rig:red_doob_l_index_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt/doob_talk:brian_rig:red_doob_l_mid2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt/doob_talk:brian_rig:red_doob_l_mid2_jnt/doob_talk:brian_rig:red_doob_l_mid_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt/doob_talk:brian_rig:red_doob_l_pinkey_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt/doob_talk:brian_rig:red_doob_l_pinkey_2_jnt/doob_talk:brian_rig:red_doob_l_pinkey_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt/doob_talk:brian_rig:red_doob_l_thumb_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt/doob_talk:brian_rig:red_doob_l_thumb_2_jnt/doob_talk:brian_rig:red_doob_l_thumb_nobind_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt/doob_talk:brian_rig:red_doob_r_index_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt/doob_talk:brian_rig:red_doob_r_index_2_jnt/doob_talk:brian_rig:red_doob_r_index_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt/doob_talk:brian_rig:red_doob_r_mid2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt/doob_talk:brian_rig:red_doob_r_mid2_jnt/doob_talk:brian_rig:red_doob_r_mid_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt/doob_talk:brian_rig:red_doob_r_pinkey_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt/doob_talk:brian_rig:red_doob_r_pinkey_2_jnt/doob_talk:brian_rig:red_doob_r_pinkey_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt/doob_talk:brian_rig:red_doob_r_thumb_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt/doob_talk:brian_rig:red_doob_r_thumb_2_jnt/doob_talk:brian_rig:red_doob_r_thumb_nobind_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt/doob_talk:brian_rig:red_doob_l_toe_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt/doob_talk:brian_rig:red_doob_l_toe_jnt/doob_talk:brian_rig:red_doob_l_toetip_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt/doob_talk:brian_rig:red_doob_r_toe_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt/doob_talk:brian_rig:red_doob_r_toe_jnt/doob_talk:brian_rig:red_doob_r_toetip_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 123
+      lastFrame: 242
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: doob_talk:brian_rig:Cube.003
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint2
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint3
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint4
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint5
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_head_top_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt/doob_talk:brian_rig:red_doob_l_index_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt/doob_talk:brian_rig:red_doob_l_index_2_jnt/doob_talk:brian_rig:red_doob_l_index_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt/doob_talk:brian_rig:red_doob_l_mid2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt/doob_talk:brian_rig:red_doob_l_mid2_jnt/doob_talk:brian_rig:red_doob_l_mid_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt/doob_talk:brian_rig:red_doob_l_pinkey_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt/doob_talk:brian_rig:red_doob_l_pinkey_2_jnt/doob_talk:brian_rig:red_doob_l_pinkey_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt/doob_talk:brian_rig:red_doob_l_thumb_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt/doob_talk:brian_rig:red_doob_l_thumb_2_jnt/doob_talk:brian_rig:red_doob_l_thumb_nobind_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt/doob_talk:brian_rig:red_doob_r_index_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt/doob_talk:brian_rig:red_doob_r_index_2_jnt/doob_talk:brian_rig:red_doob_r_index_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt/doob_talk:brian_rig:red_doob_r_mid2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt/doob_talk:brian_rig:red_doob_r_mid2_jnt/doob_talk:brian_rig:red_doob_r_mid_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt/doob_talk:brian_rig:red_doob_r_pinkey_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt/doob_talk:brian_rig:red_doob_r_pinkey_2_jnt/doob_talk:brian_rig:red_doob_r_pinkey_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt/doob_talk:brian_rig:red_doob_r_thumb_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt/doob_talk:brian_rig:red_doob_r_thumb_2_jnt/doob_talk:brian_rig:red_doob_r_thumb_nobind_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt/doob_talk:brian_rig:red_doob_l_toe_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt/doob_talk:brian_rig:red_doob_l_toe_jnt/doob_talk:brian_rig:red_doob_l_toetip_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt/doob_talk:brian_rig:red_doob_r_toe_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt/doob_talk:brian_rig:red_doob_r_toe_jnt/doob_talk:brian_rig:red_doob_r_toetip_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: talk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 121
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: doob_talk:brian_rig:Cube.003
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint2
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint3
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint4
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint5
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_head_top_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt/doob_talk:brian_rig:red_doob_l_index_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt/doob_talk:brian_rig:red_doob_l_index_2_jnt/doob_talk:brian_rig:red_doob_l_index_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt/doob_talk:brian_rig:red_doob_l_mid2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt/doob_talk:brian_rig:red_doob_l_mid2_jnt/doob_talk:brian_rig:red_doob_l_mid_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt/doob_talk:brian_rig:red_doob_l_pinkey_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt/doob_talk:brian_rig:red_doob_l_pinkey_2_jnt/doob_talk:brian_rig:red_doob_l_pinkey_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt/doob_talk:brian_rig:red_doob_l_thumb_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt/doob_talk:brian_rig:red_doob_l_thumb_2_jnt/doob_talk:brian_rig:red_doob_l_thumb_nobind_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt/doob_talk:brian_rig:red_doob_r_index_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt/doob_talk:brian_rig:red_doob_r_index_2_jnt/doob_talk:brian_rig:red_doob_r_index_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt/doob_talk:brian_rig:red_doob_r_mid2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt/doob_talk:brian_rig:red_doob_r_mid2_jnt/doob_talk:brian_rig:red_doob_r_mid_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt/doob_talk:brian_rig:red_doob_r_pinkey_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt/doob_talk:brian_rig:red_doob_r_pinkey_2_jnt/doob_talk:brian_rig:red_doob_r_pinkey_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt/doob_talk:brian_rig:red_doob_r_thumb_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt/doob_talk:brian_rig:red_doob_r_thumb_2_jnt/doob_talk:brian_rig:red_doob_r_thumb_nobind_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt/doob_talk:brian_rig:red_doob_l_toe_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt/doob_talk:brian_rig:red_doob_l_toe_jnt/doob_talk:brian_rig:red_doob_l_toetip_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt/doob_talk:brian_rig:red_doob_r_toe_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt/doob_talk:brian_rig:red_doob_r_toe_jnt/doob_talk:brian_rig:red_doob_r_toetip_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: idleAlt
+      takeName: Take 001
+      firstFrame: 244
+      lastFrame: 362
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: doob_talk:brian_rig:Cube.003
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint2
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint3
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint4
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:joint1/doob_talk:brian_rig:joint5
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_head_top_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt/doob_talk:brian_rig:red_doob_l_index_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_index_1_jnt/doob_talk:brian_rig:red_doob_l_index_2_jnt/doob_talk:brian_rig:red_doob_l_index_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt/doob_talk:brian_rig:red_doob_l_mid2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_mid1_jnt/doob_talk:brian_rig:red_doob_l_mid2_jnt/doob_talk:brian_rig:red_doob_l_mid_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt/doob_talk:brian_rig:red_doob_l_pinkey_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_fingers_jnt/doob_talk:brian_rig:red_doob_l_pinkey_1_jnt/doob_talk:brian_rig:red_doob_l_pinkey_2_jnt/doob_talk:brian_rig:red_doob_l_pinkey_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt/doob_talk:brian_rig:red_doob_l_thumb_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_l_shoulder_jnt/doob_talk:brian_rig:red_doob_l_arm_jnt/doob_talk:brian_rig:red_doob_l_wrist_jnt/doob_talk:brian_rig:red_doob_l_thumb_jnt/doob_talk:brian_rig:red_doob_l_thumb_2_jnt/doob_talk:brian_rig:red_doob_l_thumb_nobind_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt/doob_talk:brian_rig:red_doob_r_index_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_index_1_jnt/doob_talk:brian_rig:red_doob_r_index_2_jnt/doob_talk:brian_rig:red_doob_r_index_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt/doob_talk:brian_rig:red_doob_r_mid2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_mid1_jnt/doob_talk:brian_rig:red_doob_r_mid2_jnt/doob_talk:brian_rig:red_doob_r_mid_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt/doob_talk:brian_rig:red_doob_r_pinkey_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_fingers_jnt/doob_talk:brian_rig:red_doob_r_pinkey_1_jnt/doob_talk:brian_rig:red_doob_r_pinkey_2_jnt/doob_talk:brian_rig:red_doob_r_pinkey_3_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt/doob_talk:brian_rig:red_doob_r_thumb_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_head_jnt/doob_talk:brian_rig:red_doob_r_shoulder_jnt/doob_talk:brian_rig:red_doob_r_arm_jnt/doob_talk:brian_rig:red_doob_r_wrist_jnt/doob_talk:brian_rig:red_doob_r_thumb_jnt/doob_talk:brian_rig:red_doob_r_thumb_2_jnt/doob_talk:brian_rig:red_doob_r_thumb_nobind_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt/doob_talk:brian_rig:red_doob_l_toe_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_l_leg_1_jnt/doob_talk:brian_rig:red_doob_l_leg_2_jnt/doob_talk:brian_rig:red_doob_l_ankle_jnt/doob_talk:brian_rig:red_doob_l_toe_jnt/doob_talk:brian_rig:red_doob_l_toetip_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt/doob_talk:brian_rig:red_doob_r_toe_jnt
+        weight: 1
+      - path: doob_talk:brian_rig:red_doob_hips_jnt/doob_talk:brian_rig:red_doob_r_leg_1_jnt/doob_talk:brian_rig:red_doob_r_leg_2_jnt/doob_talk:brian_rig:red_doob_r_ankle_jnt/doob_talk:brian_rig:red_doob_r_toe_jnt/doob_talk:brian_rig:red_doob_r_toetip_jnt
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

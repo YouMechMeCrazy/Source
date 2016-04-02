@@ -22,8 +22,10 @@ public class Speach_Bubble : MonoBehaviour
     float defaultScaleUp = 1f;
     [SerializeField][Tooltip("This value represent the max scale the bubble will reach before scaling back down to the default value. Used to give a cheapo animation.")]
     float overShootScaleUp = 1.2f;
-
-
+    [SerializeField]
+    float cameraBasePosition = 15f;
+    [SerializeField]
+    float scalingRatio = 2f;
 
     private float startPopTime;
     private float xReachedTime;
@@ -56,7 +58,7 @@ public class Speach_Bubble : MonoBehaviour
             
            
         }
-        transform.FindChild("Background").localScale = new Vector3(transform.FindChild("Background").localScale.x, transform.FindChild("Background").localScale.y + numberOfLines, transform.FindChild("Background").localScale.z);
+        transform.FindChild("Background").localScale = new Vector3(transform.FindChild("Background").localScale.x, transform.FindChild("Background").localScale.y + numberOfLines/3f, transform.FindChild("Background").localScale.z);
         transform.FindChild("Text").GetComponent<TextMesh>().text = temp;
        
     }
@@ -81,7 +83,7 @@ public class Speach_Bubble : MonoBehaviour
     }
     void SetScale() 
     {
-        scale = startingScale + ((cameraTarget.transform.position.y - 250f) / 200f);
+        scale = startingScale + ((cameraTarget.transform.position.y - cameraBasePosition) / scalingRatio);
         transform.localScale = new Vector3(scale,scale,scale);
     }
 

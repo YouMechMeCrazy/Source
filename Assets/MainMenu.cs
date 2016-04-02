@@ -32,7 +32,7 @@ public class MainMenu : MonoBehaviour {
 
     void Start () 
     {
-        SoundController.Instance.PlayMusic("RoboParty");
+        SoundController.Instance.PlayMusic("Title_Screen");
         Time.timeScale = 1f;
         bool worked = titleScreen.Play();
         Debug.Log(worked);
