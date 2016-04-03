@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public enum Cinematic_Type{ INTRO = 0, OUTRO = 1, INTERLUDE = 2, STORY  = 3 ,COUNT = 4}
+public enum Cinematic_Type { INTRO = 0, OUTRO = 1, INTERLUDE = 2, STORY = 3, COUNT = 4 }
 //Add the public function Cinematic to a delegate on the camera object to add the movements.
-public class Cam_Cinematic : MonoBehaviour {
+public class Cam_Cinematic : MonoBehaviour
+{
 
     //List of all movements for the intro.
     public List<Camera_Move> stepsIntro = new List<Camera_Move>();
@@ -22,7 +23,7 @@ public class Cam_Cinematic : MonoBehaviour {
     int currentStep = 0;
     bool hasStarted = false;
 
-    
+
 
     //Variables used during camera work.
     private Vector3 stepStartPOS;
@@ -30,6 +31,7 @@ public class Cam_Cinematic : MonoBehaviour {
     private float startTime;
     private float movementDuration;
     private Quaternion endRotation;
+    private Quaternion startRotation;
 
     //For editor Functions---------//
     public void SaveFrame(Cinematic_Type listType, int selected, Movement_Type type, float dur, bool isNew)
@@ -50,7 +52,7 @@ public class Cam_Cinematic : MonoBehaviour {
             {
                 stepsIntro[selected] = newStep;
             }
-            
+
         }
         else if (listType == Cinematic_Type.OUTRO)
         {
@@ -77,17 +79,22 @@ public class Cam_Cinematic : MonoBehaviour {
             stepsOutro.RemoveAt(loc);
         }
     }
+
+
     //-----------------------------//
 
-    void Awake() 
+
+
+
+    void Awake()
     {
         sceneCinematics.Add(stepsIntro);
         sceneCinematics.Add(stepsOutro);
     }
 
-    public void Cinematic(Cinematic_Type type) 
+    public void Cinematic(Cinematic_Type type)
     {
-       
+
         if (!hasStarted)
         {
             AddNextStep(type);
@@ -101,21 +108,21 @@ public class Cam_Cinematic : MonoBehaviour {
 
     }
 
-    public void Reset() 
+    public void Reset()
     {
         hasStarted = false;
         currentStep = 0;
     }
 
     //calls the next step after previous step is over.
-    IEnumerator Clock(float delay, Cinematic_Type type) 
+    IEnumerator Clock(float delay, Cinematic_Type type)
     {
         yield return new WaitForSeconds(delay);
 
         AddNextStep(type);
     }
 
-    void AddNextStep(Cinematic_Type type) 
+    void AddNextStep(Cinematic_Type type)
     {
 
         //Removes the previous step.
@@ -149,7 +156,7 @@ public class Cam_Cinematic : MonoBehaviour {
         Camera_Move nextStep = sceneCinematics[(int)type][currentStep];
 
         //Select the next step to add.
-        switch (nextStep.type) 
+        switch (nextStep.type)
         {
             case Movement_Type.WAIT:
                 mDel += Wait;
@@ -159,14 +166,23 @@ public class Cam_Cinematic : MonoBehaviour {
                 movementDuration = nextStep.duration;
                 stepStartPOS = new Vector3(transform.position.x, transform.position.y, transform.position.z);
                 stepEndPOS = nextStep.position;
+                endRotation = nextStep.rotation;
+                startRotation = transform.rotation;
                 mDel += MoveLerp;
                 break;
             case Movement_Type.MOVESLERP:
+
+
                 startTime = Time.time;
                 movementDuration = nextStep.duration;
                 stepStartPOS = new Vector3(transform.position.x, transform.position.y, transform.position.z);
                 stepEndPOS = nextStep.position;
+                endRotation = nextStep.rotation;
+                startRotation = transform.rotation;
                 mDel += MoveSlerp;
+
+
+
                 break;
             case Movement_Type.SETPOSITION:
                 transform.position = nextStep.position;
@@ -185,22 +201,24 @@ public class Cam_Cinematic : MonoBehaviour {
         //Delay the next step by current step duration.
         StartCoroutine(Clock(nextStep.duration, type));
 
-        
+
 
     }
 
-    void Wait() 
+    void Wait()
     {
         //wait function is empty.
     }
 
-    void MoveLerp() 
+    void MoveLerp()
     {
         float fracJourney = (Time.time - startTime) / movementDuration;
         transform.position = Vector3.Lerp(stepStartPOS, stepEndPOS, fracJourney);
+
+        RotateCam();
     }
 
-    void MoveSlerp() 
+    void MoveSlerp()
     {
         Vector3 center = (stepStartPOS + stepEndPOS) * 0.5F;
         center -= new Vector3(0, 1, 0);
@@ -209,19 +227,36 @@ public class Cam_Cinematic : MonoBehaviour {
         float fracComplete = (Time.time - startTime) / movementDuration;
         transform.position = Vector3.Slerp(startRelCenter, endRelCenter, fracComplete);
         transform.position += center;
+
+        RotateCam();
     }
 
-    void SetPosition() 
+    void RotateCam()
     {
-       //empty
+        if (movementDuration > 0)
+        {
+            float step = (Time.time - startTime) / movementDuration;
+            transform.rotation = Quaternion.Lerp(startRotation, endRotation, step);
+        }
+        else
+        {
+            transform.rotation = endRotation;
+        }
+
     }
 
-    void SetRotation() 
+
+    void SetPosition()
     {
         //empty
     }
 
-    void End() 
+    void SetRotation()
+    {
+        //empty
+    }
+
+    void End()
     {
         //end is empty.
     }
@@ -236,12 +271,12 @@ public class Cam_Cinematic : MonoBehaviour {
         }
         return dur;
     }
-    
+
 }
 
 
 [System.Serializable]
-public class Camera_Move 
+public class Camera_Move
 {
     public Movement_Type type;
     public float duration;
@@ -249,7 +284,7 @@ public class Camera_Move
     public Quaternion rotation;
 }
 
-public enum Movement_Type 
+public enum Movement_Type
 {
     WAIT,
     MOVELERP,
