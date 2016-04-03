@@ -337,16 +337,14 @@ public class Player : MonoBehaviour {
     public void RespawnPlayer()
     {
         //play anim
-        GetComponent<CapsuleCollider>().isTrigger = true;
+        GetComponent<CapsuleCollider>().isTrigger = false;
         SoundController.Instance.PlayFX("Mech_Respawn", transform.position);
         StartCoroutine(RespawnAnimation());
     }
 
     IEnumerator RespawnAnimation() 
     {
-       
         yield return new WaitForSeconds(reviveAnimDuration);
-    
         rb.isKinematic = false;
         hasControl = true;
     }
