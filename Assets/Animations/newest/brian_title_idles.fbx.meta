@@ -1,0 +1,776 @@
+fileFormatVersion: 2
+guid: 8542d3f0db86e6c4dbba5e77e6e2acc5
+timeCreated: 1459660994
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group1
+    100004: group2
+    100006: group3
+    100008: john_robot_rig:blue_robot_god_ctrl
+    100010: john_robot_rig:blue_robot_hips
+    100012: john_robot_rig:blue_robot_hips_ctrl
+    100014: john_robot_rig:blue_robot_l_foot
+    100016: john_robot_rig:blue_robot_l_leg_1
+    100018: john_robot_rig:blue_robot_l_leg_2
+    100020: john_robot_rig:blue_robot_r_foot
+    100022: john_robot_rig:blue_robot_r_leg_1
+    100024: john_robot_rig:blue_robot_r_leg_2
+    100026: john_robot_rig:M_mech_blue
+    100028: john_robot_rig:polySurface43
+    100030: john_robot_rig:polySurface44
+    100032: john_robot_rig:polySurface45
+    100034: john_robot_rig:polySurface46
+    100036: john_robot_rig:polySurface46 1
+    100038: john_robot_rig:polySurface49
+    100040: john_robot_rig:polySurface51
+    100042: john_robot_rig:polySurface51 1
+    100044: john_robot_rig:polySurface52
+    100046: john_robot_rig:polySurface53
+    100048: john_robot_rig:polySurface61
+    100050: john_robot_rig:polySurface63
+    100052: john_robot_rig:polySurface64
+    100054: john_robot_rig:transform41
+    100056: john_robot_rig:transform50
+    100058: john_robot_rig:transform51
+    100060: john_robot_rig:transform52
+    100062: john_robot_rig:transform53
+    100064: john_robot_rig:transform54
+    100066: john_robot_rig:transform55
+    100068: john_robot_rig:transform56
+    100070: john_robot_rig:transform65
+    100072: john_robot_rig:transform66
+    100074: john_robot_rig:transform67
+    100076: john_robot_rig:transform68
+    100078: john_robot_rig:transform69
+    100080: joint1
+    100082: locator1
+    100084: M_robot_red
+    100086: nurbsCircle1
+    100088: polySurface25
+    100090: polySurface25 1
+    100092: polySurface26
+    100094: polySurface27
+    100096: polySurface28
+    100098: polySurface29
+    100100: polySurface30
+    100102: polySurface36
+    100104: polySurface37
+    100106: polySurface38
+    100108: polySurface39
+    100110: polySurface40
+    100112: polySurface41
+    100114: polySurface42
+    100116: polySurface43
+    100118: polySurface44
+    100120: polySurface45
+    100122: polySurface46
+    100124: polySurface47
+    100126: polySurface48
+    100128: polySurface49
+    100130: red_robot_head
+    100132: red_robot_head_CTRL
+    100134: red_robot_head_nobind
+    100136: red_robot_lower_lipsleft_CTRL
+    100138: red_robot_lower_lipsmiddle_CTRL
+    100140: red_robot_lower_lipsright_CTRL
+    100142: red_robot_lowerjaw_elbow
+    100144: red_robot_lowerjaw_shoulder
+    100146: red_robot_lowerleft
+    100148: red_robot_lowerleft_nobind
+    100150: red_robot_lowerleft_nobind 1
+    100152: red_robot_lowerlips
+    100154: red_robot_lowermiddle
+    100156: red_robot_lowermouth_CTRL
+    100158: red_robot_lowerright
+    100160: red_robot_lowerright_nobind
+    100162: Red_Robot_Rig_final:HIGH_JNT_GRP
+    100164: Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+    100166: Red_Robot_Rig_final:red_robot_jetpack_ctrl
+    100168: Red_Robot_Rig_final:red_robot_jetpack_jnt
+    100170: Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+    100172: Red_Robot_Rig_final:red_robot_l_arm_1_ctrl
+    100174: Red_Robot_Rig_final:red_robot_l_arm_2_ctrl
+    100176: Red_Robot_Rig_final:red_robot_l_arm_jnt1
+    100178: Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+    100180: Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+    100182: Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+    100184: Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+    100186: Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+    100188: Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+    100190: Red_Robot_Rig_final:red_robot_l_palm_jnt1
+    100192: Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+    100194: Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+    100196: Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+    100198: Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+    100200: Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+    100202: Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+    100204: Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+    100206: Red_Robot_Rig_final:red_robot_l_wrist_ctrl
+    100208: Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+    100210: Red_Robot_Rig_final:red_robot_r_arm_1_ctrl
+    100212: Red_Robot_Rig_final:red_robot_r_arm_2_ctrl
+    100214: Red_Robot_Rig_final:red_robot_r_arm_jnt
+    100216: Red_Robot_Rig_final:red_robot_r_index_1_jnt
+    100218: Red_Robot_Rig_final:red_robot_r_index_2_jnt
+    100220: Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+    100222: Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+    100224: Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+    100226: Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+    100228: Red_Robot_Rig_final:red_robot_r_palm_jnt
+    100230: Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+    100232: Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+    100234: Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+    100236: Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+    100238: Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+    100240: Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+    100242: Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+    100244: Red_Robot_Rig_final:red_robot_r_wrist_ctrl
+    100246: Red_Robot_Rig_final:red_robot_r_wrist_jnt
+    100248: Red_Robot_Rig_final:red_robot_upper_god_ctrl
+    100250: Red_Robot_Rig_final:red_robot_upper_hips_jnt
+    100252: red_robot_sideleft
+    100254: red_robot_sideleft_back
+    100256: red_robot_sideleft_CTRL
+    100258: red_robot_sideleft_nobind
+    100260: red_robot_sideright
+    100262: red_robot_sideright_back
+    100264: red_robot_sideright_CTRL
+    100266: red_robot_sideright_nobind
+    100268: red_robot_upper_lipsleft_CTRL
+    100270: red_robot_upper_lipsmiddle_CTRL
+    100272: red_robot_upper_lipsright_CTRL
+    100274: red_robot_upperjaw_elbow
+    100276: red_robot_upperjaw_shoulder
+    100278: red_robot_upperleft
+    100280: red_robot_upperleft_nobind
+    100282: red_robot_upperlips
+    100284: red_robot_uppermiddle
+    100286: red_robot_uppermiddle_nobind
+    100288: red_robot_uppermouth_CTRL
+    100290: red_robot_upperright
+    100292: red_robot_upperright_nobind
+    100294: transform15
+    100296: transform16
+    100298: transform17
+    100300: transform18
+    100302: transform19
+    100304: transform20
+    100306: transform21
+    100308: transform22
+    100310: transform23
+    100312: transform24
+    100314: transform25
+    100316: transform26
+    100318: transform27
+    100320: transform28
+    100322: transform29
+    100324: transform30
+    100326: transform31
+    100328: transform32
+    100330: transform33
+    100332: transform5
+    400000: //RootNode
+    400002: group1
+    400004: group2
+    400006: group3
+    400008: john_robot_rig:blue_robot_god_ctrl
+    400010: john_robot_rig:blue_robot_hips
+    400012: john_robot_rig:blue_robot_hips_ctrl
+    400014: john_robot_rig:blue_robot_l_foot
+    400016: john_robot_rig:blue_robot_l_leg_1
+    400018: john_robot_rig:blue_robot_l_leg_2
+    400020: john_robot_rig:blue_robot_r_foot
+    400022: john_robot_rig:blue_robot_r_leg_1
+    400024: john_robot_rig:blue_robot_r_leg_2
+    400026: john_robot_rig:M_mech_blue
+    400028: john_robot_rig:polySurface43
+    400030: john_robot_rig:polySurface44
+    400032: john_robot_rig:polySurface45
+    400034: john_robot_rig:polySurface46
+    400036: john_robot_rig:polySurface46 1
+    400038: john_robot_rig:polySurface49
+    400040: john_robot_rig:polySurface51
+    400042: john_robot_rig:polySurface51 1
+    400044: john_robot_rig:polySurface52
+    400046: john_robot_rig:polySurface53
+    400048: john_robot_rig:polySurface61
+    400050: john_robot_rig:polySurface63
+    400052: john_robot_rig:polySurface64
+    400054: john_robot_rig:transform41
+    400056: john_robot_rig:transform50
+    400058: john_robot_rig:transform51
+    400060: john_robot_rig:transform52
+    400062: john_robot_rig:transform53
+    400064: john_robot_rig:transform54
+    400066: john_robot_rig:transform55
+    400068: john_robot_rig:transform56
+    400070: john_robot_rig:transform65
+    400072: john_robot_rig:transform66
+    400074: john_robot_rig:transform67
+    400076: john_robot_rig:transform68
+    400078: john_robot_rig:transform69
+    400080: joint1
+    400082: locator1
+    400084: M_robot_red
+    400086: nurbsCircle1
+    400088: polySurface25
+    400090: polySurface25 1
+    400092: polySurface26
+    400094: polySurface27
+    400096: polySurface28
+    400098: polySurface29
+    400100: polySurface30
+    400102: polySurface36
+    400104: polySurface37
+    400106: polySurface38
+    400108: polySurface39
+    400110: polySurface40
+    400112: polySurface41
+    400114: polySurface42
+    400116: polySurface43
+    400118: polySurface44
+    400120: polySurface45
+    400122: polySurface46
+    400124: polySurface47
+    400126: polySurface48
+    400128: polySurface49
+    400130: red_robot_head
+    400132: red_robot_head_CTRL
+    400134: red_robot_head_nobind
+    400136: red_robot_lower_lipsleft_CTRL
+    400138: red_robot_lower_lipsmiddle_CTRL
+    400140: red_robot_lower_lipsright_CTRL
+    400142: red_robot_lowerjaw_elbow
+    400144: red_robot_lowerjaw_shoulder
+    400146: red_robot_lowerleft
+    400148: red_robot_lowerleft_nobind
+    400150: red_robot_lowerleft_nobind 1
+    400152: red_robot_lowerlips
+    400154: red_robot_lowermiddle
+    400156: red_robot_lowermouth_CTRL
+    400158: red_robot_lowerright
+    400160: red_robot_lowerright_nobind
+    400162: Red_Robot_Rig_final:HIGH_JNT_GRP
+    400164: Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+    400166: Red_Robot_Rig_final:red_robot_jetpack_ctrl
+    400168: Red_Robot_Rig_final:red_robot_jetpack_jnt
+    400170: Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+    400172: Red_Robot_Rig_final:red_robot_l_arm_1_ctrl
+    400174: Red_Robot_Rig_final:red_robot_l_arm_2_ctrl
+    400176: Red_Robot_Rig_final:red_robot_l_arm_jnt1
+    400178: Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+    400180: Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+    400182: Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+    400184: Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+    400186: Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+    400188: Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+    400190: Red_Robot_Rig_final:red_robot_l_palm_jnt1
+    400192: Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+    400194: Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+    400196: Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+    400198: Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+    400200: Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+    400202: Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+    400204: Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+    400206: Red_Robot_Rig_final:red_robot_l_wrist_ctrl
+    400208: Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+    400210: Red_Robot_Rig_final:red_robot_r_arm_1_ctrl
+    400212: Red_Robot_Rig_final:red_robot_r_arm_2_ctrl
+    400214: Red_Robot_Rig_final:red_robot_r_arm_jnt
+    400216: Red_Robot_Rig_final:red_robot_r_index_1_jnt
+    400218: Red_Robot_Rig_final:red_robot_r_index_2_jnt
+    400220: Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+    400222: Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+    400224: Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+    400226: Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+    400228: Red_Robot_Rig_final:red_robot_r_palm_jnt
+    400230: Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+    400232: Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+    400234: Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+    400236: Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+    400238: Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+    400240: Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+    400242: Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+    400244: Red_Robot_Rig_final:red_robot_r_wrist_ctrl
+    400246: Red_Robot_Rig_final:red_robot_r_wrist_jnt
+    400248: Red_Robot_Rig_final:red_robot_upper_god_ctrl
+    400250: Red_Robot_Rig_final:red_robot_upper_hips_jnt
+    400252: red_robot_sideleft
+    400254: red_robot_sideleft_back
+    400256: red_robot_sideleft_CTRL
+    400258: red_robot_sideleft_nobind
+    400260: red_robot_sideright
+    400262: red_robot_sideright_back
+    400264: red_robot_sideright_CTRL
+    400266: red_robot_sideright_nobind
+    400268: red_robot_upper_lipsleft_CTRL
+    400270: red_robot_upper_lipsmiddle_CTRL
+    400272: red_robot_upper_lipsright_CTRL
+    400274: red_robot_upperjaw_elbow
+    400276: red_robot_upperjaw_shoulder
+    400278: red_robot_upperleft
+    400280: red_robot_upperleft_nobind
+    400282: red_robot_upperlips
+    400284: red_robot_uppermiddle
+    400286: red_robot_uppermiddle_nobind
+    400288: red_robot_uppermouth_CTRL
+    400290: red_robot_upperright
+    400292: red_robot_upperright_nobind
+    400294: transform15
+    400296: transform16
+    400298: transform17
+    400300: transform18
+    400302: transform19
+    400304: transform20
+    400306: transform21
+    400308: transform22
+    400310: transform23
+    400312: transform24
+    400314: transform25
+    400316: transform26
+    400318: transform27
+    400320: transform28
+    400322: transform29
+    400324: transform30
+    400326: transform31
+    400328: transform32
+    400330: transform33
+    400332: transform5
+    4300000: polySurface43
+    4300002: polySurface25
+    4300004: john_robot_rig:polySurface46
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: john_robot_rig:polySurface46
+    13700002: polySurface25
+    13700004: polySurface43
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: john_robot_rig:blue_robot_god_ctrl
+        weight: 1
+      - path: john_robot_rig:blue_robot_god_ctrl/john_robot_rig:blue_robot_hips_ctrl
+        weight: 1
+      - path: john_robot_rig:blue_robot_hips
+        weight: 1
+      - path: john_robot_rig:blue_robot_hips/john_robot_rig:blue_robot_l_leg_1
+        weight: 1
+      - path: john_robot_rig:blue_robot_hips/john_robot_rig:blue_robot_l_leg_1/john_robot_rig:blue_robot_l_leg_2
+        weight: 1
+      - path: john_robot_rig:blue_robot_hips/john_robot_rig:blue_robot_l_leg_1/john_robot_rig:blue_robot_l_leg_2/john_robot_rig:blue_robot_l_foot
+        weight: 1
+      - path: john_robot_rig:blue_robot_hips/john_robot_rig:blue_robot_r_leg_1
+        weight: 1
+      - path: john_robot_rig:blue_robot_hips/john_robot_rig:blue_robot_r_leg_1/john_robot_rig:blue_robot_r_leg_2
+        weight: 1
+      - path: john_robot_rig:blue_robot_hips/john_robot_rig:blue_robot_r_leg_1/john_robot_rig:blue_robot_r_leg_2/john_robot_rig:blue_robot_r_foot
+        weight: 1
+      - path: john_robot_rig:M_mech_blue
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface43
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface43/john_robot_rig:transform68
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface44
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface44/john_robot_rig:transform67
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface45
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface45/john_robot_rig:transform66
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface46 1
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface46 1/john_robot_rig:transform69
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface49
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface49/john_robot_rig:transform53
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface51 1
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface51 1/john_robot_rig:transform56
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface52
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface52/john_robot_rig:transform55
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface53
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface53/john_robot_rig:transform50
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface61
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface61/john_robot_rig:transform52
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface63
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface63/john_robot_rig:transform54
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface64
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:polySurface64/john_robot_rig:transform51
+        weight: 1
+      - path: john_robot_rig:M_mech_blue/john_robot_rig:transform41
+        weight: 1
+      - path: john_robot_rig:polySurface46
+        weight: 1
+      - path: john_robot_rig:polySurface51
+        weight: 1
+      - path: john_robot_rig:polySurface51/john_robot_rig:transform65
+        weight: 1
+      - path: locator1
+        weight: 1
+      - path: locator1/group3
+        weight: 1
+      - path: locator1/group3/group2
+        weight: 1
+      - path: locator1/group3/group2/group1
+        weight: 1
+      - path: locator1/group3/group2/group1/nurbsCircle1
+        weight: 1
+      - path: locator1/group3/group2/group1/nurbsCircle1/joint1
+        weight: 1
+      - path: M_robot_red
+        weight: 1
+      - path: M_robot_red/polySurface25 1
+        weight: 1
+      - path: M_robot_red/polySurface25 1/transform33
+        weight: 1
+      - path: M_robot_red/polySurface26
+        weight: 1
+      - path: M_robot_red/polySurface26/transform32
+        weight: 1
+      - path: M_robot_red/polySurface27
+        weight: 1
+      - path: M_robot_red/polySurface27/transform31
+        weight: 1
+      - path: M_robot_red/polySurface28
+        weight: 1
+      - path: M_robot_red/polySurface28/transform30
+        weight: 1
+      - path: M_robot_red/polySurface29
+        weight: 1
+      - path: M_robot_red/polySurface29/transform29
+        weight: 1
+      - path: M_robot_red/polySurface30
+        weight: 1
+      - path: M_robot_red/polySurface30/transform28
+        weight: 1
+      - path: M_robot_red/polySurface36
+        weight: 1
+      - path: M_robot_red/polySurface36/transform27
+        weight: 1
+      - path: M_robot_red/polySurface37
+        weight: 1
+      - path: M_robot_red/polySurface37/transform26
+        weight: 1
+      - path: M_robot_red/polySurface38
+        weight: 1
+      - path: M_robot_red/polySurface38/transform25
+        weight: 1
+      - path: M_robot_red/polySurface39
+        weight: 1
+      - path: M_robot_red/polySurface39/transform24
+        weight: 1
+      - path: M_robot_red/polySurface40
+        weight: 1
+      - path: M_robot_red/polySurface40/transform23
+        weight: 1
+      - path: M_robot_red/polySurface41
+        weight: 1
+      - path: M_robot_red/polySurface41/transform22
+        weight: 1
+      - path: M_robot_red/polySurface42
+        weight: 1
+      - path: M_robot_red/polySurface42/transform21
+        weight: 1
+      - path: M_robot_red/polySurface43
+        weight: 1
+      - path: M_robot_red/polySurface44
+        weight: 1
+      - path: M_robot_red/polySurface44/transform20
+        weight: 1
+      - path: M_robot_red/polySurface45
+        weight: 1
+      - path: M_robot_red/polySurface45/transform19
+        weight: 1
+      - path: M_robot_red/polySurface46
+        weight: 1
+      - path: M_robot_red/polySurface46/transform18
+        weight: 1
+      - path: M_robot_red/polySurface47
+        weight: 1
+      - path: M_robot_red/polySurface47/transform17
+        weight: 1
+      - path: M_robot_red/polySurface48
+        weight: 1
+      - path: M_robot_red/polySurface48/transform16
+        weight: 1
+      - path: M_robot_red/polySurface49
+        weight: 1
+      - path: M_robot_red/polySurface49/transform15
+        weight: 1
+      - path: M_robot_red/transform5
+        weight: 1
+      - path: polySurface25
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_head_nobind
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder/red_robot_lowerjaw_elbow
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder/red_robot_lowerjaw_elbow/red_robot_lowerlips
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder/red_robot_lowerjaw_elbow/red_robot_lowerlips/red_robot_lowerleft
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder/red_robot_lowerjaw_elbow/red_robot_lowerlips/red_robot_lowerleft/red_robot_lowerleft_nobind
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder/red_robot_lowerjaw_elbow/red_robot_lowerlips/red_robot_lowermiddle
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder/red_robot_lowerjaw_elbow/red_robot_lowerlips/red_robot_lowermiddle/red_robot_lowerleft_nobind
+          1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder/red_robot_lowerjaw_elbow/red_robot_lowerlips/red_robot_lowerright
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_lowerjaw_shoulder/red_robot_lowerjaw_elbow/red_robot_lowerlips/red_robot_lowerright/red_robot_lowerright_nobind
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_sideleft_back
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_sideleft_back/red_robot_sideleft
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_sideleft_back/red_robot_sideleft/red_robot_sideleft_nobind
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_sideright_back
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_sideright_back/red_robot_sideright
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_sideright_back/red_robot_sideright/red_robot_sideright_nobind
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder/red_robot_upperjaw_elbow
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder/red_robot_upperjaw_elbow/red_robot_upperlips
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder/red_robot_upperjaw_elbow/red_robot_upperlips/red_robot_upperleft
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder/red_robot_upperjaw_elbow/red_robot_upperlips/red_robot_upperleft/red_robot_upperleft_nobind
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder/red_robot_upperjaw_elbow/red_robot_upperlips/red_robot_uppermiddle
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder/red_robot_upperjaw_elbow/red_robot_upperlips/red_robot_uppermiddle/red_robot_uppermiddle_nobind
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder/red_robot_upperjaw_elbow/red_robot_upperlips/red_robot_upperright
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/red_robot_head/red_robot_upperjaw_shoulder/red_robot_upperjaw_elbow/red_robot_upperlips/red_robot_upperright/red_robot_upperright_nobind
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_hair_overlap_1_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_jetpack_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_jetpack_jnt/Red_Robot_Rig_final:red_robot_jetpack_nobind_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_index_1_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_index_1_jnt1/Red_Robot_Rig_final:red_robot_l_index_2_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_index_1_jnt1/Red_Robot_Rig_final:red_robot_l_index_2_jnt1/Red_Robot_Rig_final:red_robot_l_index_3_NOBIND_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_middle_1_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/Red_Robot_Rig_final:red_robot_l_middle_2_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_middle_1_jnt1/Red_Robot_Rig_final:red_robot_l_middle_2_jnt1/Red_Robot_Rig_final:red_robot_l_middle_3_NOBIND_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_palm_jnt1/Red_Robot_Rig_final:red_robot_l_pinkey_1_jnt1/Red_Robot_Rig_final:red_robot_l_pinkey_2_jnt1/Red_Robot_Rig_final:red_robot_l_pinkey_3_NOBIND_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_l_shoulder_jnt1/Red_Robot_Rig_final:red_robot_l_arm_jnt1/Red_Robot_Rig_final:red_robot_l_wrist_jnt1/Red_Robot_Rig_final:red_robot_l_thumb_1_jnt1/Red_Robot_Rig_final:red_robot_l_thumb_2_jnt1/Red_Robot_Rig_final:red_robot_l_thumb_3_NOBIND_jnt1
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_index_1_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_index_1_jnt/Red_Robot_Rig_final:red_robot_r_index_2_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_index_1_jnt/Red_Robot_Rig_final:red_robot_r_index_2_jnt/Red_Robot_Rig_final:red_robot_r_index_3_NOBIND_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_middle_1_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_middle_1_jnt/Red_Robot_Rig_final:red_robot_r_middle_2_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_middle_1_jnt/Red_Robot_Rig_final:red_robot_r_middle_2_jnt/Red_Robot_Rig_final:red_robot_r_middle_3_NOBIND_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_palm_jnt/Red_Robot_Rig_final:red_robot_r_pinkey_1_jnt/Red_Robot_Rig_final:red_robot_r_pinkey_2_jnt/Red_Robot_Rig_final:red_robot_r_pinkey_3_NOBIND_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_thumb_1_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/Red_Robot_Rig_final:red_robot_r_thumb_2_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:HIGH_JNT_GRP/Red_Robot_Rig_final:red_robot_upper_hips_jnt/Red_Robot_Rig_final:red_robot_r_shoulder_jnt/Red_Robot_Rig_final:red_robot_r_arm_jnt/Red_Robot_Rig_final:red_robot_r_wrist_jnt/Red_Robot_Rig_final:red_robot_r_thumb_1_jnt/Red_Robot_Rig_final:red_robot_r_thumb_2_jnt/Red_Robot_Rig_final:red_robot_r_thumb_3_NOBIND_jnt
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_lowermouth_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_lowermouth_CTRL/red_robot_lower_lipsleft_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_lowermouth_CTRL/red_robot_lower_lipsmiddle_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_lowermouth_CTRL/red_robot_lower_lipsright_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_sideleft_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_sideright_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_uppermouth_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_uppermouth_CTRL/red_robot_upper_lipsleft_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_uppermouth_CTRL/red_robot_upper_lipsmiddle_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/red_robot_head_CTRL/red_robot_uppermouth_CTRL/red_robot_upper_lipsright_CTRL
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/Red_Robot_Rig_final:red_robot_jetpack_ctrl
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/Red_Robot_Rig_final:red_robot_l_arm_1_ctrl
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/Red_Robot_Rig_final:red_robot_l_arm_1_ctrl/Red_Robot_Rig_final:red_robot_l_arm_2_ctrl
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/Red_Robot_Rig_final:red_robot_l_arm_1_ctrl/Red_Robot_Rig_final:red_robot_l_arm_2_ctrl/Red_Robot_Rig_final:red_robot_l_wrist_ctrl
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/Red_Robot_Rig_final:red_robot_r_arm_1_ctrl
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/Red_Robot_Rig_final:red_robot_r_arm_1_ctrl/Red_Robot_Rig_final:red_robot_r_arm_2_ctrl
+        weight: 1
+      - path: Red_Robot_Rig_final:red_robot_upper_god_ctrl/Red_Robot_Rig_final:red_robot_r_arm_1_ctrl/Red_Robot_Rig_final:red_robot_r_arm_2_ctrl/Red_Robot_Rig_final:red_robot_r_wrist_ctrl
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
