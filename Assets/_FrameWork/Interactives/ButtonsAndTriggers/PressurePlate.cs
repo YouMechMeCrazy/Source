@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class PressurePlate : MonoBehaviour {
 
     [System.Serializable]
-    struct Input
+    struct InputStruct
     {
         [SerializeField]
         public InputObject target;
@@ -19,10 +19,10 @@ public class PressurePlate : MonoBehaviour {
     float weight;
     
     [SerializeField]
-    Input[] onInputs;
+    InputStruct[] onInputs;
 
     [SerializeField]
-    Input[] offInputs;
+    InputStruct[] offInputs;
 
     [SerializeField]
     PressurePlate[] otherTriggers;
@@ -38,12 +38,20 @@ public class PressurePlate : MonoBehaviour {
 
     float currentWeight = 0;
 
+    [SerializeField]
+    Color activeColor;
+    [SerializeField]
+    Color deactiveColor;
+
 	void Start () 
     {
         TriggerList = new List<Collider>();
+        ChangeColor(false);
 	}
 
     void Update() {
+
+  
 
         if (isCountingDownTimer)
         {
@@ -67,6 +75,7 @@ public class PressurePlate : MonoBehaviour {
         {
             SoundController.Instance.PlayFX("FloorPanel_Pressed", transform.position);
             isOn = true;
+            ChangeColor(true);
             for (int i = 0; i < onInputs.Length; i++)
             {
                 onInputs[i].target.Input(onInputs[i].input);
@@ -75,6 +84,7 @@ public class PressurePlate : MonoBehaviour {
         //triggering but is already on.
         if (currentWeight >= weight && isOn)
         {
+            ChangeColor(true);
             isOn = true;
             for (int i = 0; i < onInputs.Length; i++)
             {
@@ -85,6 +95,7 @@ public class PressurePlate : MonoBehaviour {
         //not triggering and is on.
         if (currentWeight < weight && isOn) 
         {
+            ChangeColor(false);
             SoundController.Instance.PlayFX("FloorPanel_Released", transform.position);
             if (otherTriggers.Length > 0)
             {
@@ -98,6 +109,7 @@ public class PressurePlate : MonoBehaviour {
             }
             if (!hasTimerDelay)
             {
+                
                 isOn = false;
                 for (int i = 0; i < offInputs.Length; i++)
                 {
@@ -106,6 +118,7 @@ public class PressurePlate : MonoBehaviour {
             }
             else 
             {
+
                 isCountingDownTimer = true;
                 StartCoroutine(DelayTimer());
             }
@@ -119,6 +132,7 @@ public class PressurePlate : MonoBehaviour {
     {
         yield return new WaitForSeconds(timerDuration);
         isOn = false;
+        ChangeColor(false);
         for (int i = 0; i < offInputs.Length; i++)
         {
             offInputs[i].target.Input(offInputs[i].input);
@@ -157,9 +171,22 @@ public class PressurePlate : MonoBehaviour {
         
          return isOn;
      }
+     public void SetOnStatus(bool status)
+     {
+
+         isOn = status;
+     }
      public bool GetWeightStatus() 
      {
          return currentWeight >= weight; 
+     }
+
+     void ChangeColor(bool status) 
+     {
+         if(status)
+            transform.FindChild("SM_assets_floor_button_01_mar30").GetComponent<MeshRenderer>().material.color = activeColor;
+         else
+             transform.FindChild("SM_assets_floor_button_01_mar30").GetComponent<MeshRenderer>().material.color = deactiveColor;
      }
 
 }

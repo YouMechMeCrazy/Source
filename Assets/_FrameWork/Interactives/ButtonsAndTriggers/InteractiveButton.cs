@@ -111,4 +111,9 @@ public class InteractiveButton : MonoBehaviour {
     {
         return isOn;
     }
+    public void SetOnStatus(bool status)
+    {
+
+        isOn = status;
+    }
 }

@@ -21,6 +21,13 @@ public class Combiner : MonoBehaviour {
     [SerializeField]
     Input[] offInputs;
 
+    [SerializeField]
+    float delayBeforeOff = 0f;
+    [SerializeField]
+    bool hasTimer = false;
+    [SerializeField]
+    float timerDuration = 5f;
+
     public GameObject plate1;
     public GameObject plate2;
     public GameObject button1;
@@ -28,6 +35,8 @@ public class Combiner : MonoBehaviour {
 
 
     int activeCount = 0;
+    private bool activated = false;
+    private float timerStartime = 0f;
 
     List<GameObject> actives = new List<GameObject>();
 
@@ -60,18 +69,46 @@ public class Combiner : MonoBehaviour {
         {
             if (actives[i].GetComponent<PressurePlate>() != null)
             {
-                activeCount += actives[i].GetComponent<PressurePlate>().GetOnStatus() ? 1 : 0;
+                if (actives[i].GetComponent<PressurePlate>().GetOnStatus())
+                { 
+                    activeCount++;
+                    if(hasTimer)
+                    StartCoroutine(ResetOff(actives[i].GetComponent<PressurePlate>()));
+                }
+   
             }
             else if (actives[i].GetComponent<InteractiveButton>() != null)
             {
-                activeCount += actives[i].GetComponent<InteractiveButton>().GetOnStatus() ? 1 : 0;
+                if(actives[i].GetComponent<InteractiveButton>().GetOnStatus())
+                {
+                    activeCount++;
+                    if (hasTimer)
+                    StartCoroutine(ResetOff(actives[i].GetComponent<InteractiveButton>()));
+                }
+              
             }
         }
+
+        //if we have a timer.
+        if (activated)
+        {
+            if (Time.time > timerStartime )
+            {
+                activated = false;
+            }
+            return;
+        }
+
         if (activeCount == actives.Count)
         {
             for (int i = 0; i < onInputs.Length; i++)
             {
                 onInputs[i].target.Input(onInputs[i].input);
+                activated = true;
+                if (hasTimer)
+                {
+                    timerStartime = Time.time + timerDuration;
+                }
             }
         }
         else 
@@ -81,5 +118,20 @@ public class Combiner : MonoBehaviour {
                 offInputs[i].target.Input(offInputs[i].input);
             }
         }
+
+
 	}
+    IEnumerator ResetOff(PressurePlate plate) 
+    {
+        yield return new WaitForSeconds(delayBeforeOff);
+  
+        plate.SetOnStatus(false);
+    }
+    IEnumerator ResetOff(InteractiveButton button)
+    {
+        yield return new WaitForSeconds(delayBeforeOff);
+       
+        button.SetOnStatus(false);
+    }
+
 }

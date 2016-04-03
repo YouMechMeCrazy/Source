@@ -51,12 +51,16 @@ public class Player : MonoBehaviour {
     private bool isPressing = false;
 
     private string inputbonus = "";
-    private bool isBroken = true;
+    [SerializeField]
+    bool isBroken = true;
 
     Rigidbody rb;
 
+    Quaternion brokenArmRotation;
+
     void Awake()
     {
+
         animTop = transform.FindChild("Arms").transform.FindChild("Top").GetComponent<Animator>();
         animBot = transform.FindChild("Legs").transform.FindChild("Bot").GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
@@ -69,6 +73,7 @@ public class Player : MonoBehaviour {
         facingVector = new Vector3(1f, 0f, 0f);
         legs = transform.FindChild("Legs");
         arms = transform.FindChild("Arms");
+        
         //if broken
         GetComponent<CapsuleCollider>().center = new Vector3(0f, 1.5f, 0f);
         GetComponent<CapsuleCollider>().height = 2.5f;
@@ -101,33 +106,39 @@ public class Player : MonoBehaviour {
         {
             return;
         }
-   
+
        
 
         center = transform.position + new Vector3(0f, 1f, 0f);
-
+     
         facingVector = Quaternion.AngleAxis(facingAngle, Vector3.up) * Vector3.right;
+
+        if (!isBroken)
         armFacingVector = Quaternion.AngleAxis(armFacingAngle, Vector3.up) * Vector3.right;
 
 
         input = new Vector3(Input.GetAxis("Horizontal" + inputbonus), 0f, Input.GetAxis("Vertical" + inputbonus));
+
+      
         arminput = new Vector3(Input.GetAxis("HorizontalArms" + inputbonus), 0f, Input.GetAxis("VerticalArms" + inputbonus));
 
         if (input != Vector3.zero) 
         {
             LegRotate();
         }
-        if (arminput != Vector3.zero)
+        if (arminput != Vector3.zero && !isBroken)
         {
             ArmRotate();
         }
 
         Movement();
 
-        
+        if (!isBroken)
         PickUp(inputbonus);
 
         legs.rotation = Quaternion.LookRotation(facingVector.normalized);
+       
+        if(!isBroken)
         arms.rotation = Quaternion.LookRotation(armFacingVector.normalized);
 
        
@@ -372,7 +383,7 @@ public class Player : MonoBehaviour {
     void BrokenState() 
     {
         arms.position = armsStartingLocation.position;
-
+        arms.rotation = armsStartingLocation.rotation;
 
 
         if (Vector3.Distance(arms.position, legs.position) < 1.5f)

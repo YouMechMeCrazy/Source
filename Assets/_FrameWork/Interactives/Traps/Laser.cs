@@ -67,6 +67,14 @@ public class Laser : InputObject {
             {
                 SoundController.Instance.PlayFX("Laser_Turn_Off", transform.position);
                 laserOn = false;
+
+                Debug.Log("off");
+                if (gameObject.transform.FindChild("countDownTimer") != null)
+                {
+                    Debug.Log("off ff");
+                    gameObject.transform.FindChild("countDownTimer").GetComponent<CountDownTimer>().Enable();
+                }
+
             }
            
             Beam.GetComponent<Renderer>().enabled = false;

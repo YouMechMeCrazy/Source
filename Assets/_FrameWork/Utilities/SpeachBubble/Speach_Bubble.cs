@@ -95,41 +95,41 @@ public class Speach_Bubble : MonoBehaviour
 
     void PopUp() 
     {
-        float scaleX;
-        float scaleY;
+        float scaleX = 0f;
+        float scaleY = 0f;
 
         if (!hasOverReachedX)
         {
-            scaleX = Mathf.Pow((Time.time - startPopTime) * scaleSpeedUp, 3f);
+            scaleX = (Time.time - startPopTime) * scaleSpeedUp;
 
-            if (scaleX >= overShootScaleUp)
+            if (scaleX >= defaultScaleUp)
             {
                 hasOverReachedX = true;
                 xReachedTime = Time.time - startPopTime;
             }
         }
-        else 
+      /*  else 
         {
             xReachedTime -= Time.deltaTime;
             scaleX = Mathf.Pow((xReachedTime) * scaleSpeedUp, 3f);
-        }
+        }*/
         if (!hasOverReachedY)
         {
-            scaleY = Mathf.Pow((Time.time - startPopTime) * scaleSpeedUp, 3f);
+            scaleY = (Time.time - startPopTime) * scaleSpeedUp;
 
-            if (scaleY >= overShootScaleUp)
+            if (scaleY >= defaultScaleUp)
             {
                 hasOverReachedY = true;
                 yReachedTime = Time.time - startPopTime;
             }
         }
-        else 
+     /*   else 
         {
             yReachedTime -= Time.deltaTime;
             scaleY = Mathf.Pow((xReachedTime) * scaleSpeedUp, 3f);
-        }
+        }*/
 
-        if (hasOverReachedX && scaleX <= defaultScaleUp)
+      /*  if (hasOverReachedX && scaleX <= defaultScaleUp)
         {
             scaleX = defaultScaleUp;
         }
@@ -137,8 +137,8 @@ public class Speach_Bubble : MonoBehaviour
         {
             scaleY = defaultScaleUp;
         }
-
-        if (hasOverReachedX && hasOverReachedY && scaleX <= defaultScaleUp && scaleY <= defaultScaleUp)
+        */
+        if (hasOverReachedX && hasOverReachedY)
         {
             uDelagate -= PopUp;
             uDelagate += SetScale;
@@ -156,6 +156,8 @@ public class Speach_Bubble : MonoBehaviour
     {
         uDelagate += PopDown;
         startPopTime = Time.time;
+        hasOverReachedX = false;
+        hasOverReachedY = false;
     }
     
     void PopDown()
@@ -164,8 +166,8 @@ public class Speach_Bubble : MonoBehaviour
         float scaleY;
         float scaleZ = 1f;
 
-        scaleX = Mathf.Pow((0.5f - (Time.time - startPopTime)) * scaleSpeedUp, 3f);
-        scaleY = Mathf.Pow((0.5f - (Time.time - startPopTime)) * scaleSpeedUp, 3f);
+        scaleX = defaultScaleUp - ((Time.time - startPopTime) * scaleSpeedUp);
+        scaleY = defaultScaleUp - ((Time.time - startPopTime) * scaleSpeedUp);
 
         if ( scaleX <= 0f && scaleY <= 0f)
         {
