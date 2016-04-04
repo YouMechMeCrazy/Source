@@ -179,6 +179,15 @@ ModelImporter:
     100342: transform7
     100344: transform8
     100346: transform9
+    100348: john_robot_rig:blue_robot_god_ctrl
+    100350: john_robot_rig:blue_robot_hips
+    100352: john_robot_rig:blue_robot_hips_ctrl
+    100354: john_robot_rig:blue_robot_l_foot
+    100356: john_robot_rig:blue_robot_l_leg_1
+    100358: john_robot_rig:blue_robot_l_leg_2
+    100360: john_robot_rig:blue_robot_r_foot
+    100362: john_robot_rig:blue_robot_r_leg_1
+    100364: john_robot_rig:blue_robot_r_leg_2
     400000: group4
     400002: group5
     400004: group6
@@ -353,6 +362,15 @@ ModelImporter:
     400342: transform7
     400344: transform8
     400346: transform9
+    400348: john_robot_rig:blue_robot_god_ctrl
+    400350: john_robot_rig:blue_robot_hips
+    400352: john_robot_rig:blue_robot_hips_ctrl
+    400354: john_robot_rig:blue_robot_l_foot
+    400356: john_robot_rig:blue_robot_l_leg_1
+    400358: john_robot_rig:blue_robot_l_leg_2
+    400360: john_robot_rig:blue_robot_r_foot
+    400362: john_robot_rig:blue_robot_r_leg_1
+    400364: john_robot_rig:blue_robot_r_leg_2
     4300000: polySurface50
     4300002: john_robot_rig:polySurface38
     4300004: john_robot_rig:polySurface65
