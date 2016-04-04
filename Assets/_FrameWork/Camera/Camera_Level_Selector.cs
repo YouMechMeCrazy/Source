@@ -115,6 +115,23 @@ public class Camera_Level_Selector : MonoBehaviour {
         updateDelegate += FadeIn;
         updateDelegate += RotatePlanet;
         StartCoroutine(DelayOnLoad());
+        
+        if (planetSelected != 1)
+        {
+            leftText.text = planetsName[planetSelected - 2];
+        }
+        else
+        {
+            leftText.text = planetsName[6];
+        }
+        if (planetSelected != 7)
+        {
+            rightText.text = planetsName[planetSelected];
+        }
+        else
+        {
+            rightText.text = planetsName[0];
+        }
     }
 
 	// Update is called once per frame
