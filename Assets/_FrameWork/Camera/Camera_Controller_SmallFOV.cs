@@ -85,6 +85,10 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
         if (levelCinematic != null && levelCinematic.stepsOutro.Count > 0)
         {
             //player control handled by gamecontroller
+            topB.gameObject.SetActive(false);
+            downB.gameObject.SetActive(false);
+            rightB.gameObject.SetActive(false);
+            leftB.gameObject.SetActive(false);
             levelCinematic.Reset();
             dCin += levelCinematic.Cinematic;
             currrentCinematicType = Cinematic_Type.OUTRO;

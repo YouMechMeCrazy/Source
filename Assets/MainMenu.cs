@@ -160,7 +160,7 @@ public class MainMenu : MonoBehaviour {
     IEnumerator DelaySceneLoad()
     {
         yield return new WaitForSeconds(fadingTime);
-        isFading = false;
+        //isFading = false;
         SceneManager.LoadSceneAsync("World_Selection");
     }
 

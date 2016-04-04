@@ -41,19 +41,43 @@ public class Camera_Level_Selector : MonoBehaviour {
     [SerializeField]
     GameObject p1;
     [SerializeField]
+    string p1Name;
+    [SerializeField]
     GameObject p2;
+    [SerializeField]
+    string p2Name;
     [SerializeField]
     GameObject p3;
     [SerializeField]
+    string p3Name;
+    [SerializeField]
     GameObject p4;
+    [SerializeField]
+    string p4Name;
     [SerializeField]
     GameObject p5;
     [SerializeField]
+    string p5Name;
+    [SerializeField]
     GameObject p6;
     [SerializeField]
+    string p6Name;
+    [SerializeField]
     GameObject p7;
+    [SerializeField]
+    string p7Name;
 
+
+    string[] planetsName = new string[7];
     GameObject[] planets = new GameObject[7];
+
+
+    [SerializeField]
+    Text leftText;
+    [SerializeField]
+    Text rightText;
+    [SerializeField]
+    GameObject lockUI;
 
     int planetSelected = 1;
 
@@ -74,6 +98,14 @@ public class Camera_Level_Selector : MonoBehaviour {
         planets[4] = p5;
         planets[5] = p6;
         planets[6] = p7;
+
+        planetsName[0] = p1Name;
+        planetsName[1] = p2Name;
+        planetsName[2] = p3Name;
+        planetsName[3] = p4Name;
+        planetsName[4] = p5Name;
+        planetsName[5] = p6Name;
+        planetsName[6] = p7Name;
     }
 
     void Start() 
@@ -117,6 +149,10 @@ public class Camera_Level_Selector : MonoBehaviour {
 
                 planets[previous-1].transform.FindChild("Outline").gameObject.SetActive(false);
                 targetPlanet.transform.FindChild("Outline").gameObject.SetActive(true);
+
+               
+
+               
 
                 SelectNewDestination();
 
@@ -183,6 +219,15 @@ public class Camera_Level_Selector : MonoBehaviour {
             rotationY = -transform.localEulerAngles.x;
             updateDelegate -= Move;
             updateDelegate += PlayerInput;
+
+            if (planetSelected == 1)
+            {
+                lockUI.SetActive(false);
+            }
+            else
+            {
+                lockUI.SetActive(true);
+            }
             
         }
     }
@@ -204,6 +249,25 @@ public class Camera_Level_Selector : MonoBehaviour {
 
     void SelectNewDestination()
     {
+        if (planetSelected != 1)
+        {
+            leftText.text = planetsName[planetSelected - 2];
+        }
+        else
+        {
+            leftText.text = planetsName[6];
+        }
+        if (planetSelected != 7)
+        {
+            rightText.text = planetsName[planetSelected];
+        }
+        else
+        {
+            rightText.text = planetsName[0];
+        }
+
+        lockUI.SetActive(false);
+
         //Lerping values.
         startPOS = transform.localPosition;
         startTime = Time.time;
@@ -249,6 +313,8 @@ public class Camera_Level_Selector : MonoBehaviour {
     {
         fadeScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, 1f-( ( Time.time - fadeInStartTime) / fadingTime) );
     }
+
+
 
     #endregion
 

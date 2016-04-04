@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
@@ -24,6 +25,22 @@ public class GameController : MonoBehaviour {
 
     float mainVolume = 1f;
 
+    [SerializeField]
+    GameObject fadeInScreen;
+    [SerializeField]
+    float fadeInDuration = 1.5f;
+    private float fadeStartTime;
+    private bool isFadingIn = true;
+
+    [SerializeField]
+    GameObject levelSplash;
+    [SerializeField]
+    float delayBeforeEndLevelSplash = 5f;
+    [SerializeField]
+    float endLevelSplashScaleSpeed = 0.05f;
+    private bool isEndOfLevel = false;
+    private float scale = 0f;
+
     void Awake()
     {
         if (Instance != null)
@@ -43,8 +60,27 @@ public class GameController : MonoBehaviour {
     {
         SetReferences();
         SoundController.Instance.PlayMusic("Level_1", true);
+        fadeStartTime = Time.time;
 	}
 
+    void Update() 
+    {
+        if (isFadingIn)
+        {
+            FadeIn();
+        }
+
+        if (isEndOfLevel)
+        {
+            scale += endLevelSplashScaleSpeed;
+            if (scale >= 1f)
+            {
+                scale = 1f;
+                isEndOfLevel = false;
+            }
+            levelSplash.transform.localScale = new Vector3(scale, scale, scale);
+        }
+    }
 
     public void SetReferences()
     {
@@ -205,12 +241,21 @@ public class GameController : MonoBehaviour {
         if (Camera.main.GetComponent<Cam_Cinematic>() != null)
         {
             Camera.main.GetComponent<Camera_Controller_SmallFOV>().PlayOutro();
+
+            StartCoroutine(EndLevelSplash(delayBeforeEndLevelSplash));
+
             StartCoroutine(DelayLevelOver(Camera.main.GetComponent<Cam_Cinematic>().GetDuration(Cinematic_Type.OUTRO)));
         }
 
     }
 
-
+    IEnumerator EndLevelSplash(float delay) 
+    {
+        yield return new WaitForSeconds(delay);
+        SoundController.Instance.PlayFX("LVLComplete", new Vector3(0f,-999f,0f));
+        isEndOfLevel = true;
+        levelSplash.SetActive(true);
+    }
 
     IEnumerator DelayLevelOver(float delay) 
     {
@@ -218,6 +263,17 @@ public class GameController : MonoBehaviour {
 
 
         SceneManager.LoadScene("MainMenuScene");
+    }
+
+    void FadeIn()
+    {
+        fadeInScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, 1f - ((Time.time - fadeStartTime) / fadeInDuration));
+
+        if ((Time.time - fadeStartTime) > fadeInDuration)
+        {
+            isFadingIn = false;
+            fadeInScreen.SetActive(false);
+        }
     }
 
 }

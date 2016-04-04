@@ -53,6 +53,8 @@ public class Player : MonoBehaviour {
     private string inputbonus = "";
     [SerializeField]
     bool isBroken = true;
+    [SerializeField]
+    float distanceToConnect = 2f;
 
     Rigidbody rb;
 
@@ -394,7 +396,7 @@ public class Player : MonoBehaviour {
         arms.rotation = armsStartingLocation.rotation;
 
 
-        if (Vector3.Distance(arms.position, legs.position) < 1.5f)
+        if (Vector3.Distance(arms.position, legs.position) < distanceToConnect)
         {
             isBroken = false;
             arms.localPosition = new Vector3(0f, 0.84f, 0f);
