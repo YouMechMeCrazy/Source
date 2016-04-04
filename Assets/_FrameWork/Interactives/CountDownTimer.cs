@@ -8,11 +8,21 @@ public class CountDownTimer : MonoBehaviour {
 
     
     public float timerDuration = 5f;
+    [SerializeField]
+    float hurriedTime = 1f;
 
     private float currentTime = 0f;
     private float startTime = 0f;
     private bool enabled = true;
 
+    public float scaleSpeed = 0.1f;
+    float scale = 0f;
+
+    [SerializeField]
+    Color initialColor;
+    [SerializeField]
+    Color hurriedColor;
+    
 
     public void Enable() 
     {
@@ -20,7 +30,9 @@ public class CountDownTimer : MonoBehaviour {
         back.gameObject.SetActive(true);
         startTime = Time.time;
         currentTime = timerDuration;
+        transform.localScale = new Vector3(scale, scale, scale);
         enabled = true;
+        display.color = initialColor;
     }
 
     public void Disable() 
@@ -32,6 +44,7 @@ public class CountDownTimer : MonoBehaviour {
 
     void Update() 
     {
+      
         if (enabled)
         {
             CountDown();
@@ -43,9 +56,26 @@ public class CountDownTimer : MonoBehaviour {
         display.text = currentTime.ToString("F1");
         currentTime -= Time.deltaTime;
 
+        if (scale <= 1f && currentTime > 0f)
+        {
+            scale += scaleSpeed;
+            transform.localScale = new Vector3(scale, scale, scale);
+        }
+
+        if (currentTime <= hurriedTime)
+        {
+            display.color = hurriedColor;
+        }
+
         if (currentTime <= 0f)
         {
-            Disable();
+            currentTime = 0f;
+            scale -= scaleSpeed;
+            transform.localScale = new Vector3(scale, scale, scale);
+            if (scale <= 0f)
+            {
+                Disable();
+            }
         }
     }
 }

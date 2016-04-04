@@ -7,6 +7,8 @@ public class Speach_Bubble : MonoBehaviour
     GameObject cameraTarget;
     [SerializeField][Tooltip("Message to be displayed. The public function ChangeMessage() cant be used to change the content via script.")]
     string textbubble;
+    [SerializeField]
+    Doob_Ctr doob;
     [SerializeField][Tooltip("Makes the bubble appear straight instead of sligthly sweked if the camera is not facing the bubble directly.")]
     bool lockYAxis = false;
 
@@ -26,6 +28,8 @@ public class Speach_Bubble : MonoBehaviour
     float cameraBasePosition = 15f;
     [SerializeField]
     float scalingRatio = 2f;
+
+
 
     private float startPopTime;
     private float xReachedTime;
@@ -91,6 +95,7 @@ public class Speach_Bubble : MonoBehaviour
     {
         uDelagate += PopUp;
         startPopTime = Time.time;
+        doob.PlayClip();
     }
 
     void PopUp() 
@@ -108,11 +113,7 @@ public class Speach_Bubble : MonoBehaviour
                 xReachedTime = Time.time - startPopTime;
             }
         }
-      /*  else 
-        {
-            xReachedTime -= Time.deltaTime;
-            scaleX = Mathf.Pow((xReachedTime) * scaleSpeedUp, 3f);
-        }*/
+  
         if (!hasOverReachedY)
         {
             scaleY = (Time.time - startPopTime) * scaleSpeedUp;
@@ -123,21 +124,7 @@ public class Speach_Bubble : MonoBehaviour
                 yReachedTime = Time.time - startPopTime;
             }
         }
-     /*   else 
-        {
-            yReachedTime -= Time.deltaTime;
-            scaleY = Mathf.Pow((xReachedTime) * scaleSpeedUp, 3f);
-        }*/
-
-      /*  if (hasOverReachedX && scaleX <= defaultScaleUp)
-        {
-            scaleX = defaultScaleUp;
-        }
-        if (hasOverReachedY && scaleY <= defaultScaleUp)
-        {
-            scaleY = defaultScaleUp;
-        }
-        */
+  
         if (hasOverReachedX && hasOverReachedY)
         {
             uDelagate -= PopUp;

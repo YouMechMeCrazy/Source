@@ -5,13 +5,16 @@ using System.Collections;
 public class RandomStartingFrame : MonoBehaviour 
 {
 
+    public string anim;
+
 	void Awake ()
     {
         //Ignore if no animator
         if (this.GetComponent<Animator>() == null)
             return;
-     
-        GetComponent<Animator>().Play("StarAnim", -1, Random.Range(0f, 1f));
+
+        GetComponent<Animator>().Play(anim, -1, Random.Range(0f, 1f));
+      
 	}   
 
 }

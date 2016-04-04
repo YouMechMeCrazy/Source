@@ -43,6 +43,13 @@ public class PressurePlate : MonoBehaviour {
     [SerializeField]
     Color deactiveColor;
 
+    Animation animPlate;
+
+    void Awake() 
+    {
+        animPlate = GetComponent<Animation>();
+    }
+
 	void Start () 
     {
         TriggerList = new List<Collider>();
@@ -73,6 +80,12 @@ public class PressurePlate : MonoBehaviour {
         //triggering and is not on.
         if (currentWeight >= weight && !isOn)
         {
+            animPlate.Play();
+            foreach (AnimationState state in animPlate)
+            {
+                state.time = 0f;
+                state.speed = 2F;
+            }
             SoundController.Instance.PlayFX("FloorPanel_Pressed", transform.position);
             isOn = true;
             ChangeColor(true);
@@ -84,6 +97,7 @@ public class PressurePlate : MonoBehaviour {
         //triggering but is already on.
         if (currentWeight >= weight && isOn)
         {
+            
             ChangeColor(true);
             isOn = true;
             for (int i = 0; i < onInputs.Length; i++)
@@ -95,8 +109,17 @@ public class PressurePlate : MonoBehaviour {
         //not triggering and is on.
         if (currentWeight < weight && isOn) 
         {
+
+            animPlate.Play();
+            foreach (AnimationState state in animPlate)
+            {
+                state.time = 0f;
+                state.speed = -2F;
+            }
             ChangeColor(false);
             SoundController.Instance.PlayFX("FloorPanel_Released", transform.position);
+
+
             if (otherTriggers.Length > 0)
             {
                 for (int i = 0; i < otherTriggers.Length; i++)

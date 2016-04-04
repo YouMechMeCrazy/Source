@@ -72,6 +72,7 @@
      <Compile Include="Assets\_FrameWork\Camera\Camera_Controller_SmallFOV.cs" />
      <Compile Include="Assets\_FrameWork\Camera\Camera_Level_Selector.cs" />
      <Compile Include="Assets\_FrameWork\Camera\LookAtCam.cs" />
+     <Compile Include="Assets\_FrameWork\Characters\Doob_Ctr.cs" />
      <Compile Include="Assets\_FrameWork\Controllers\CTR_LevelSelection.cs" />
      <Compile Include="Assets\_FrameWork\Controllers\CTR_WorldSelection.cs" />
      <Compile Include="Assets\_FrameWork\Controllers\GameController.cs" />

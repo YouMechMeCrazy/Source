@@ -39,7 +39,7 @@ public class Player : MonoBehaviour {
     bool player2;
 
     [SerializeField]
-    float playerHoldingHigth = 2.4f;
+    float playerHoldingHeigth = 2f;
 
     [SerializeField]
     Transform armsStartingLocation;
@@ -153,7 +153,7 @@ public class Player : MonoBehaviour {
 
         if (holding != null) 
         {
-            holding.transform.position = center + armFacingVector * (reach + holding.GetSize()) + new Vector3(0f, Mathf.Clamp(playerHoldingHigth * ((Time.time - pickUpStartTime) * 10f), 0f, playerHoldingHigth), 0f);
+            holding.transform.position = center + armFacingVector * (reach + holding.GetSize()) + new Vector3(0f, Mathf.Clamp(playerHoldingHeigth * ((Time.time - pickUpStartTime) * 10f), 0f, playerHoldingHeigth), 0f);
 
             holdingrotate = Vector2.Angle(new Vector2(armFacingVector.x, armFacingVector.z), new Vector2(holdingAngle.x, holdingAngle.z));
 
@@ -322,6 +322,14 @@ public class Player : MonoBehaviour {
 
     public void Death()
     {
+        if (holding != null)
+        {
+            GetComponent<Weight>().RemoveWeight(holding.gameObject.GetComponent<Weight>().GetWeight());
+            holding.OnPutDown(); holding = null;
+            animTop.SetBool("pickingUp", false);
+        }
+        
+
         animBot.SetTrigger("shock");
         animTop.SetTrigger("shock");
         animBot.SetFloat("move", 0f);
