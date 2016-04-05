@@ -245,7 +245,8 @@ public class Camera_Level_Selector : MonoBehaviour {
             {
                 lockUI.SetActive(true);
             }
-            
+            leftText.transform.parent.gameObject.SetActive(true);
+            rightText.transform.parent.gameObject.SetActive(true);
         }
     }
 
@@ -283,6 +284,8 @@ public class Camera_Level_Selector : MonoBehaviour {
             rightText.text = planetsName[0];
         }
 
+        leftText.transform.parent.gameObject.SetActive(false);
+        rightText.transform.parent.gameObject.SetActive(false);
         lockUI.SetActive(false);
 
         //Lerping values.
