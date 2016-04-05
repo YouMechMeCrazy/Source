@@ -25,7 +25,12 @@ public class Object_Spawner : MonoBehaviour {
         {
             if (!spawningObjects[i].activeSelf)
             {
-                Debug.Log(spawningObjects[i].name);
+
+                if (spawningObjects[i].GetComponent<Pickup>().heldBy != null)
+                {
+                    spawningObjects[i].GetComponent<Pickup>().heldBy.RemoveHeldObject();
+                }
+
                 spawningObjects[i].transform.position = spawnPoint.position;
                 spawningObjects[i].SetActive(true);
                 return;

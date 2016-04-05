@@ -32,6 +32,11 @@ namespace Kirnu
 		Mesh newMesh;
 		private List<FloatingObject> internalFloatingObjects = new List<FloatingObject>();
 
+        [SerializeField]
+        int updateEveryXFrames = 10;
+        int timer = 0;
+
+
 		void preCalculateFloatingObjects(){
 			foreach (Transform t in floatingObjects) {
 				FloatingObject fo=new FloatingObject();
@@ -78,19 +83,26 @@ namespace Kirnu
 	
 		void Update ()
 		{
-			if (newMesh) {
-				for (int i=0; i<newVertices.Length; i++) {
-					Vector3 vertex = vertices [i];
-					float xz = ((vertex.x + 0.5f*vertex.z)* xPower + vertex.z * zPower);
-					float y = speeds [i].r * yPower;
-					vertex.y += Mathf.Sin ((Time.time * waveSpeed) + y + xz) * (waveHeight);
-					newVertices [i] = vertex;
-				}
-				newMesh.vertices = newVertices;
-				newMesh.RecalculateNormals ();
-				normals = newMesh.normals;
-				calculateFloatingObjects();
-			}
+            timer++;
+            if (timer >= updateEveryXFrames)
+            {
+                timer = 0;
+                if (newMesh)
+                {
+                    for (int i = 0; i < newVertices.Length; i++)
+                    {
+                        Vector3 vertex = vertices[i];
+                        float xz = ((vertex.x + 0.5f * vertex.z) * xPower + vertex.z * zPower);
+                        float y = speeds[i].r * yPower;
+                        vertex.y += Mathf.Sin((Time.time * waveSpeed) + y + xz) * (waveHeight);
+                        newVertices[i] = vertex;
+                    }
+                    newMesh.vertices = newVertices;
+                    newMesh.RecalculateNormals();
+                    normals = newMesh.normals;
+                    //calculateFloatingObjects();
+                }
+            }
 		}
 	}
 }

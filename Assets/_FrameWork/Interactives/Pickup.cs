@@ -12,6 +12,8 @@ public class Pickup : MonoBehaviour {
     bool isHold;
     Rigidbody rb;
     float maxVelocity = 5f;
+    [System.NonSerialized]
+    public Player heldBy = null;
 
 
     // Use this for initialization
@@ -28,8 +30,9 @@ public class Pickup : MonoBehaviour {
 
 
 
-    public virtual void OnPickedUp() {
-        
+    public virtual void OnPickedUp(Player player) 
+    {
+        heldBy = player;
         isHold = true;
         if (gameObject.GetComponent<BoxCollider>() != null)
         {
@@ -41,6 +44,7 @@ public class Pickup : MonoBehaviour {
     public virtual void OnPutDown() 
     {
         SoundController.Instance.PlayFX("Box_Drop_Metal", transform.position);
+        heldBy = null;
         isHold = false;
         if (gameObject.GetComponent<BoxCollider>() != null)
         {

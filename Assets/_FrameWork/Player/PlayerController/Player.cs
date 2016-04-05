@@ -31,7 +31,9 @@ public class Player : MonoBehaviour {
     Animator animTop;
     Animator animBot;
 
-    Pickup holding = null;
+    [System.NonSerialized]
+    public Pickup holding = null;
+
     Vector3 holdingAngle;
     float holdingrotate = 0;
 
@@ -184,7 +186,7 @@ public class Player : MonoBehaviour {
                     {
                         SoundController.Instance.PlayFX("Mech_PickUp", transform.position);
 
-                        temp.OnPickedUp();
+                        temp.OnPickedUp(this);
                         holding = temp;
                         holding.transform.position = (center + armFacingVector * (reach + holding.GetSize()));
                         holdingAngle = (holding.transform.position - transform.position).normalized;
@@ -222,6 +224,20 @@ public class Player : MonoBehaviour {
         }
 
 
+    }
+
+    public void RemoveHeldObject() 
+    {
+        if (holding != null)
+        {
+            GetComponent<Weight>().RemoveWeight(holding.gameObject.GetComponent<Weight>().GetWeight());
+            holding.OnPutDown(); 
+            holding = null;
+            animTop.SetBool("pickingUp", false);
+
+            //SoundController.Instance.PlayFX("Mech_Release", transform.position);
+        }
+        isPressing = false;
     }
 
     void OnTriggerStay(Collider other) 

@@ -91,25 +91,27 @@ public class Laser : InputObject {
 
     void OnTriggerStay(Collider other)
     {
-        
-        if (other.gameObject.tag == "Player" && state == input._On)
+        if (state == input._On)
         {
-            SoundController.Instance.PlayFX("Laser_Hitting_Mech", transform.position);
-            GameController.Instance.KillPlayer(other.gameObject.GetComponent<Player>().IsPlayerTwo());
-        }
+            if (other.gameObject.tag == "Player" )
+            {
+                SoundController.Instance.PlayFX("Laser_Hitting_Mech", transform.position);
+                GameController.Instance.KillPlayer(other.gameObject.GetComponent<Player>().IsPlayerTwo());
+            }
 
-        /*  JOHN COMMENTED THIS OUT SO THAT BOXES DON'T GET DESTROYED
-         * 
-        if (other.gameObject.GetComponent<Destructable>() && other.gameObject.activeSelf)
-        {
-            SoundController.Instance.PlayFX("Box_Destroyed_Laser_Metal", transform.position);
-            other.gameObject.SetActive(false);
-        }
-        */
+            /*  JOHN COMMENTED THIS OUT SO THAT BOXES DON'T GET DESTROYED
+             * 
+            if (other.gameObject.GetComponent<Destructable>() && other.gameObject.activeSelf)
+            {
+                SoundController.Instance.PlayFX("Box_Destroyed_Laser_Metal", transform.position);
+                other.gameObject.SetActive(false);
+            }
+            */
 
-        if (other.gameObject.GetComponent<InteractiveButton>() && state == input._On && canActivateButtons)
-        {
-            other.gameObject.GetComponent<InteractiveButton>().Hit();
+            if (other.gameObject.GetComponent<InteractiveButton>() && canActivateButtons)
+            {
+                other.gameObject.GetComponent<InteractiveButton>().Hit();
+            }
         }
 
     }
