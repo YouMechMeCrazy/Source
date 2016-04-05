@@ -103,6 +103,7 @@
      <Compile Include="Assets\_FrameWork\Static\Statics.cs" />
      <Compile Include="Assets\_FrameWork\TempFixes\SwapMaterialOnTrigger.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\Destructable.cs" />
+     <Compile Include="Assets\_FrameWork\Utilities\Remove_After_Time.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\Rotation_Script.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\SpeachBubble\Speach_Bubble.cs" />
      <Compile Include="Assets\_FrameWork\Utilities\SpeachBubble\Trigger_Bubble.cs" />

@@ -376,7 +376,8 @@ public class Player : MonoBehaviour {
 
     public void RespawnPlayer()
     {
-        respawnAnimation.SetActive(true);
+        CreateSpawnAnim();
+
         GetComponent<CapsuleCollider>().isTrigger = false;
         SoundController.Instance.PlayFX("Mech_Respawn", transform.position);
         StartCoroutine(RespawnAnimation());
@@ -423,9 +424,16 @@ public class Player : MonoBehaviour {
             GetComponent<CapsuleCollider>().height = 3.5f;
 
             GetComponent<CapsuleCollider>().center = new Vector3(0f, 2.17f, 0f);
+
+
             
         }
 
+    }
+
+    public void CreateSpawnAnim() 
+    {
+        Instantiate(respawnAnimation, transform.position, Quaternion.identity);
     }
 
     public void EndOfLevel() 

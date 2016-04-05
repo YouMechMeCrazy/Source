@@ -137,6 +137,9 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
 
         player1.transform.rotation = Quaternion.identity;
         player2.transform.rotation = Quaternion.identity;
+
+        player1.GetComponent<Player>().CreateSpawnAnim();
+        player2.GetComponent<Player>().CreateSpawnAnim();
     }
 
     Vector3 previousPOS = new Vector3(0f,0f,0f);
