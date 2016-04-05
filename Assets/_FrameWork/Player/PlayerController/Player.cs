@@ -60,6 +60,9 @@ public class Player : MonoBehaviour {
 
     Quaternion brokenArmRotation;
 
+    [SerializeField]
+    GameObject respawnAnimation;
+
     void Awake()
     {
 
@@ -357,7 +360,7 @@ public class Player : MonoBehaviour {
 
     public void RespawnPlayer()
     {
-        //play anim
+        respawnAnimation.SetActive(true);
         GetComponent<CapsuleCollider>().isTrigger = false;
         SoundController.Instance.PlayFX("Mech_Respawn", transform.position);
         StartCoroutine(RespawnAnimation());
@@ -368,6 +371,7 @@ public class Player : MonoBehaviour {
         yield return new WaitForSeconds(reviveAnimDuration);
         rb.isKinematic = false;
         hasControl = true;
+        respawnAnimation.SetActive(false);
     }
 
     public bool HasControl() 

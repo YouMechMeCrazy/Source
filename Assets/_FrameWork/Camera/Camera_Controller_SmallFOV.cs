@@ -26,6 +26,8 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
     [Tooltip("The factor by which the Y position of the camera get multiplied by. Lower number means a more zoomed in environment.")]
     float zoomFactor = 5f;
     [SerializeField]
+    float verticalZoomFactor = 2f;
+    [SerializeField]
     [Tooltip("Speed of movement of the Camera.")]
     float smoothing = 2f;
     [SerializeField]
@@ -414,8 +416,8 @@ public class Camera_Controller_SmallFOV : MonoBehaviour {
 
       
         //We set the Y position by taking our biggest distance between X and Z and adding a small bonus base on the Y distance of our players.
-        float yReturned = Mathf.Clamp(((Mathf.Max(planeValues) + (yMean * 2f)) * zoomFactor), minDistanceZoomedOut, maxDistanceZoomedOut);
-
+        float yReturned = Mathf.Clamp(((Mathf.Max(planeValues) + Mathf.Abs(((p1.y - p2.y) * verticalZoomFactor))) * zoomFactor), minDistanceZoomedOut, maxDistanceZoomedOut);
+       
         //figure the correct z offset with fancy math.
         float zMeanOffset = -Mathf.Sqrt((Mathf.Pow((yMean - yReturned), 2) * Mathf.Pow((Mathf.Cos(cameraAngle * Mathf.Deg2Rad)), 2) + Mathf.Pow((xMean - xReturned), 2) * Mathf.Pow(Mathf.Cos(cameraAngle * Mathf.Deg2Rad), 2))
             / (1f - Mathf.Pow(Mathf.Cos(cameraAngle * Mathf.Deg2Rad), 2)));

@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Cinematic\YMMCCinematic.cs" />
+     <Compile Include="Assets\DestroyBoxAnim.cs" />
      <Compile Include="Assets\MainMenu.cs" />
      <Compile Include="Assets\MarvelousTechniques\Scripts\CameraOverlay.cs" />
      <Compile Include="Assets\MarvelousTechniques\Scripts\CubeMover.cs" />

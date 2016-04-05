@@ -116,4 +116,14 @@ public class InteractiveButton : MonoBehaviour {
 
         isOn = status;
     }
+
+    void OntriggerStay(Collider other) 
+    {
+        Debug.Log("hit");
+        if (other.gameObject.GetComponent<Laser>() != null && other.gameObject.GetComponent<Laser>().GetStatus())
+        {
+            Hit();
+            Debug.Log("hit");
+        }
+    }
 }
