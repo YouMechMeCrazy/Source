@@ -170,7 +170,7 @@ public class PressurePlate : MonoBehaviour {
          //if the object is not already in the list
          if(!TriggerList.Contains(other))
          {
-             Debug.Log(other.name + "Added");
+             
              //add the object to the list
              TriggerList.Add(other);
          }
@@ -180,7 +180,7 @@ public class PressurePlate : MonoBehaviour {
      //called when something exits the trigger
      void OnTriggerExit(Collider other)
      {
-         Debug.Log(other.name + "Removed");
+     
          //if the object is in the list
          if(TriggerList.Contains(other))
          {

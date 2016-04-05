@@ -433,7 +433,10 @@ public class Player : MonoBehaviour {
 
     public void CreateSpawnAnim() 
     {
-        Instantiate(respawnAnimation, transform.position, Quaternion.identity);
+       
+        GameObject aRespawn = Instantiate(respawnAnimation, new Vector3(transform.position.x, transform.position.y+1.5f, transform.position.z-2f), Quaternion.identity) as GameObject;
+        aRespawn.SetActive(true);
+
     }
 
     public void EndOfLevel() 
