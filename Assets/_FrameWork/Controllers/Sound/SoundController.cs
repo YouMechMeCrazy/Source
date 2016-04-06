@@ -60,7 +60,7 @@ public class SoundController : MonoBehaviour {
         return 0f;
     }
 
-    public void PlayMusic(string music, bool overrideMusic = false)
+    public void PlayMusic(string music, bool overrideMusic = false, bool looping = true )
     {
         if (soundDB.musicDic[music].clip != null)
         {
@@ -69,18 +69,26 @@ public class SoundController : MonoBehaviour {
             {
                 if (aud.clip == soundDB.musicDic[music].clip)
                 {
-                    return;
+                    return ;
                 }
             }
             aud.clip = soundDB.musicDic[music].clip;
             aud.volume = soundDB.musicDic[music].volume;
             aud.Play();
+            
         }
         else 
         {
             Debug.LogError("Can't load resource: Music " + music);
         }
-        
+        if (!looping)
+        {
+            Loop(false);
+        }
+        else
+        {
+            Loop(true);
+        }
     }
 
     public float PlayVO(string VO)

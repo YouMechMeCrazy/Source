@@ -167,7 +167,7 @@ public class MainMenu : MonoBehaviour {
 
     void FadeToBack()
     {
-        SoundController.Instance.Volume(-0.005f);
+        //SoundController.Instance.Volume(-0.005f);
         fadeScreen.GetComponent<Image>().color = new Color(0f, 0f, 0f, (Time.time - fadingStartTime) / fadingTime);
        
     }

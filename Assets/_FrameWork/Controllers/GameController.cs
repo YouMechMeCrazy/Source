@@ -137,8 +137,7 @@ public class GameController : MonoBehaviour {
 
         if (!Camera.main.GetComponent<Camera_Controller_SmallFOV>().IsSpawnPointInView())
         {
-            Debug.LogError("not in view");
-            
+           
             StartCoroutine(DelayTryRespawn(isPlayerTwo, 1f));
         }
         else 

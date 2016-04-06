@@ -6,13 +6,18 @@ public class YMMCCinematic : MonoBehaviour {
     public MovieTexture ymmcMovie;
     float timePassed;
     bool startCounting;
+
+    [SerializeField]
+    float delaySound;
+    [SerializeField]
+    float delayVid;
+
+    float duration;
 	// Use this for initialization
 	void Start () 
     {
-        GetComponent<Renderer>().material.mainTexture = ymmcMovie;
-        ymmcMovie.Play();
-        startCounting = true;
-        SoundController.Instance.PlayMusic("Cinematic_Intro", true);
+        SoundController.Instance.PlayMusic("Cinematic_Intro", true, false);
+        StartCoroutine(PlayDelay());
 	}
 
     void Update() 
@@ -39,4 +44,13 @@ public class YMMCCinematic : MonoBehaviour {
        
 
 	}
+
+    IEnumerator PlayDelay() 
+    {
+        yield return new WaitForSeconds(delayVid);
+        GetComponent<Renderer>().material.mainTexture = ymmcMovie;
+        ymmcMovie.Play();
+        startCounting = true;
+    }
+   
 }
