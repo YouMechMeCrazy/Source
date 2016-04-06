@@ -235,7 +235,7 @@ public class GameController : MonoBehaviour {
         player1Script.EndOfLevel();
         player2Script.EndOfLevel();
 
-        SoundController.Instance.PlayMusic("Level_Completed", true);
+        //SoundController.Instance.PlayMusic("Level_Completed", true);
 
         if (Camera.main.GetComponent<Cam_Cinematic>() != null)
         {
