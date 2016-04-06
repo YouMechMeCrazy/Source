@@ -186,6 +186,7 @@ public class Cam_Cinematic : MonoBehaviour
                 break;
             case Movement_Type.SETPOSITION:
                 transform.position = nextStep.position;
+                transform.rotation = nextStep.rotation;
                 mDel += SetPosition;
                 break;
             case Movement_Type.SETROTATION:

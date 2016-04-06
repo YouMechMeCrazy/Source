@@ -40,6 +40,10 @@ public class Speach_Bubble : MonoBehaviour
     private bool hasOverReachedX = false;
     private bool hasOverReachedY = false;
 
+
+
+
+
     void Awake() 
     {
         cameraTarget = Camera.main.gameObject;
@@ -93,13 +97,19 @@ public class Speach_Bubble : MonoBehaviour
 
     public void AddPopUp()
     {
+      
         uDelagate += PopUp;
         startPopTime = Time.time;
-        doob.PlayClip();
+        if (doob != null)
+            doob.PlayClip();
+        
+    
     }
 
     void PopUp() 
     {
+
+      
         float scaleX = 0f;
         float scaleY = 0f;
 
@@ -132,6 +142,8 @@ public class Speach_Bubble : MonoBehaviour
             hasOverReachedY = false;
             hasOverReachedX = false;
 
+
+
         }
 
         transform.localScale = new Vector3(scaleX, scaleY, defaultScaleUp);
@@ -141,10 +153,12 @@ public class Speach_Bubble : MonoBehaviour
 
     public void AddPopDown() 
     {
+    
         uDelagate += PopDown;
         startPopTime = Time.time;
         hasOverReachedX = false;
         hasOverReachedY = false;
+      
     }
     
     void PopDown()
@@ -189,4 +203,13 @@ public class Speach_Bubble : MonoBehaviour
         transform.FindChild("Background").localScale = new Vector3(transform.FindChild("Background").localScale.x, transform.FindChild("Background").localScale.y + numberOfLines, transform.FindChild("Background").localScale.z);
         transform.FindChild("Text").GetComponent<TextMesh>().text = temp;
     }
+
+    public void FixTheThing()
+    {
+        gameObject.transform.parent.transform.FindChild("PopUpZone").gameObject.SetActive(false);
+        
+        AddPopDown();
+
+    }
+
 }

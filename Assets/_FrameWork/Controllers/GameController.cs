@@ -41,6 +41,8 @@ public class GameController : MonoBehaviour {
     private bool isEndOfLevel = false;
     private float scale = 0f;
 
+    public Speach_Bubble tempBubbleFixLevelUp;
+   
     void Awake()
     {
         if (Instance != null)
@@ -251,6 +253,8 @@ public class GameController : MonoBehaviour {
     IEnumerator EndLevelSplash(float delay) 
     {
         yield return new WaitForSeconds(delay);
+
+        tempBubbleFixLevelUp.FixTheThing();
         SoundController.Instance.PlayFX("LVLComplete", new Vector3(0f,-999f,0f));
         isEndOfLevel = true;
         levelSplash.SetActive(true);
