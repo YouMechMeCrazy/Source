@@ -60,6 +60,7 @@
      <Compile Include="Assets\Editor\ImageEffects\SunShaftsEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\TonemappingEditor.cs" />
      <Compile Include="Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+     <Compile Include="Assets\Editor\Instant Screenshot\ScreenshotTaker.cs" />
      <Compile Include="Assets\MarvelousTechniques\Scripts\Editor\UVLayoutGeneratorEditor.cs" />
      <Compile Include="Assets\MarvelousTechniques\Scripts\MeshTools\Editor\MeshGrid.cs" />
      <Compile Include="Assets\MarvelousTechniques\Scripts\MeshTools\Editor\MeshTools.cs" />
